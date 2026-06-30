@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réalisations — Portfolio Photo &amp; Vidéo | Rémi CHAUVIN</title>
+  <meta name="description" content="Découvrez le portfolio de Rémi CHAUVIN : photographie (portrait, événement, sport, nature) et vidéo (clip commercial, drone, reels) en Loire-Atlantique.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.remiproduction.fr/realisations.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.remiproduction.fr/realisations.html">
+  <meta property="og:title" content="Réalisations — Portfolio Photo &amp; Vidéo | Rémi CHAUVIN">
+  <meta property="og:image" content="https://www.remiproduction.fr/images/hero-background.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/webp" href="images/logo.webp">
+  <style>
+    .page-hero {
+      padding-top: calc(68px + clamp(3rem, 8vh, 5rem));
+      padding-bottom: clamp(3rem, 6vh, 4rem);
+      background: linear-gradient(to bottom, rgba(200,169,110,0.03) 0%, transparent 100%);
+    }
+    .tabs-nav {
+      display: flex;
+      gap: 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: var(--space-xl);
+    }
+    .tab-btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color var(--t-fast), border-color var(--t-fast);
+      background: none;
+      cursor: pointer;
+      font-family: var(--font-body);
+    }
+    .tab-btn:hover { color: var(--text); }
+    .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    .video-full-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-md);
+    }
+    @media (max-width: 768px) { .video-full-grid { grid-template-columns: 1fr; } }
+    .gallery-full-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-sm);
+    }
+    @media (max-width: 900px) { .gallery-full-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .gallery-full-grid { grid-template-columns: 1fr 1fr; gap: 0.375rem; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Rémi <span>CHAUVIN</span></a>
+      <div class="nav__links" role="list">
+        <a href="realisations.html" class="nav__link" aria-current="page" role="listitem">Réalisations</a>
+        <a href="services.html" class="nav__link" role="listitem">Services</a>
+        <a href="a-propos.html" class="nav__link" role="listitem">À propos</a>
+        <a href="index.html#faq" class="nav__link" role="listitem">FAQ</a>
+      </div>
+      <a href="contact.html" class="nav__cta">Démarrer un projet <span class="btn__arrow" aria-hidden="true">→</span></a>
+      <button class="nav__hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="nav__mobile" aria-label="Menu mobile">
+      <a href="realisations.html" class="nav__link">Réalisations</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="a-propos.html" class="nav__link">À propos</a>
+      <a href="index.html#faq" class="nav__link">FAQ</a>
+      <a href="contact.html" class="btn btn--primary">Démarrer un projet →</a>
+    </nav>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="reveal">
+        <p class="t-kicker">Portfolio complet</p>
+        <h1 class="t-h2" style="margin-top:0.75rem">Réalisations <em class="accent">photo &amp; vidéo</em></h1>
+        <p class="t-sub mt-md" style="max-width:520px">Projets clients, créations personnelles, collaborations. Chaque image raconte quelque chose.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true"></div>
+
+  <section class="section--sm">
+    <div class="container">
+
+      <!-- Tabs -->
+      <div class="tabs-nav" role="tablist" aria-label="Type de réalisations">
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-photos" id="tab-photos">Photographie</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-videos" id="tab-videos">Vidéo &amp; Films</button>
+      </div>
+
+      <!-- Photos Panel -->
+      <div class="tab-panel active" id="panel-photos" role="tabpanel" aria-labelledby="tab-photos">
+
+        <div class="gallery-filters" role="group" aria-label="Filtrer par catégorie">
+          <button class="gallery-filter active" data-filter="all" aria-pressed="true">Tout</button>
+          <button class="gallery-filter" data-filter="portrait" aria-pressed="false">Portrait</button>
+          <button class="gallery-filter" data-filter="evenement" aria-pressed="false">Événement</button>
+          <button class="gallery-filter" data-filter="sport" aria-pressed="false">Sport</button>
+          <button class="gallery-filter" data-filter="nature" aria-pressed="false">Nature</button>
+        </div>
+
+        <div class="gallery-full-grid" role="list" aria-label="Galerie photo complète" data-gallery-grid></div>
+
+        <!-- Photo lightbox -->
+        <div class="photo-lightbox" role="dialog" aria-modal="true" aria-label="Agrandissement photo" tabindex="-1">
+          <button class="lightbox-prev" aria-label="Photo précédente">‹</button>
+          <div class="photo-lightbox__inner">
+            <button class="photo-lightbox__close" aria-label="Fermer">✕</button>
+            <img class="photo-lightbox__img" src="" alt="">
+          </div>
+          <button class="lightbox-next" aria-label="Photo suivante">›</button>
+        </div>
+
+      </div>
+
+      <!-- Videos Panel -->
+      <div class="tab-panel" id="panel-videos" role="tabpanel" aria-labelledby="tab-videos">
+        <div class="video-full-grid">
+
+          <article class="video-card reveal" data-video-id="dQw4w9WgXcQ" aria-label="Vidéo : Les Chênes Verts — film promotionnel camping">
+            <div class="video-card__thumb">
+              <img src="images/video-thumb-camping.webp" alt="Film promotionnel — Camping Les Chênes Verts, drone et sol" loading="lazy" decoding="async" width="1280" height="720">
+              <div class="video-card__overlay" aria-hidden="true">
+                <div class="video-play-btn" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 14,8 4,14"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="video-card__meta">
+              <div class="video-card__tag">Film promotionnel · Camping · Drone</div>
+              <div class="video-card__title">Les Chênes Verts — Film d'entreprise</div>
+              <div class="video-card__desc">Vidéo promotionnelle complète avec prises de vue drone DJI et interviews. Format 2 min pour site web et réseaux sociaux.</div>
+            </div>
+          </article>
+
+          <article class="video-card reveal reveal-delay-1" data-video-id="dQw4w9WgXcQ" aria-label="Vidéo : Jardin Cinematic — court métrage nature">
+            <div class="video-card__thumb">
+              <img src="images/video-thumb-nature.webp" alt="Court métrage nature — Jardin Cinematic, végétation lumière naturelle" loading="lazy" decoding="async" width="1280" height="720">
+              <div class="video-card__overlay" aria-hidden="true">
+                <div class="video-play-btn" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 14,8 4,14"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="video-card__meta">
+              <div class="video-card__tag">Court métrage · Nature · Cinematic</div>
+              <div class="video-card__title">Jardin Cinematic</div>
+              <div class="video-card__desc">Exploration cinématographique de la flore locale. Mouvement de caméra fluides, étalonnage chaud et organique.</div>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-video-id="dQw4w9WgXcQ" aria-label="Vidéo : Reel motocross — action sport">
+            <div class="video-card__thumb">
+              <img src="images/photo-sport-moto-01.webp" alt="Reel motocross — action sportive dynamique" loading="lazy" decoding="async" width="900" height="600">
+              <div class="video-card__overlay" aria-hidden="true">
+                <div class="video-play-btn" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 14,8 4,14"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="video-card__meta">
+              <div class="video-card__tag">Reel Instagram · Sport · Action</div>
+              <div class="video-card__title">Action Motocross — Reel</div>
+              <div class="video-card__desc">Montage vertical dynamique pour Instagram Reels. Slow-motion combiné à l'action temps réel.</div>
+            </div>
+          </article>
+
+          <article class="video-card reveal reveal-delay-1" data-video-id="dQw4w9WgXcQ" aria-label="Vidéo : Concert live — clip événementiel">
+            <div class="video-card__thumb">
+              <img src="images/photo-event-concert-01.webp" alt="Concert live — captation événementielle" loading="lazy" decoding="async" width="900" height="600">
+              <div class="video-card__overlay" aria-hidden="true">
+                <div class="video-play-btn" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 14,8 4,14"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="video-card__meta">
+              <div class="video-card__tag">Clip événementiel · Concert · Live</div>
+              <div class="video-card__title">Live Concert — Captation</div>
+              <div class="video-card__desc">Captation multi-angles d'un concert en extérieur. Montage rythmé sur la musique live.</div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Video lightbox -->
+        <div class="video-lightbox" role="dialog" aria-modal="true" aria-label="Lecteur vidéo" tabindex="-1">
+          <div class="video-lightbox__inner">
+            <button class="video-lightbox__close" aria-label="Fermer la vidéo">✕</button>
+            <iframe title="Vidéo Rémi CHAUVIN" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true"></div>
+
+  <!-- CTA -->
+  <section class="section--sm">
+    <div class="container">
+      <div class="cta-section reveal">
+        <p class="t-kicker">Votre projet</p>
+        <h2 class="t-h2">Prêt à créer <em class="accent">quelque chose de remarquable ?</em></h2>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn--primary">Démarrer un projet →</a>
+          <a href="services.html" class="btn btn--ghost">Voir les tarifs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo">Rémi <span class="text-accent">CHAUVIN</span></div>
+        <p class="footer__tagline">Photographe &amp; Vidéaste · Machecoul (44)</p>
+      </div>
+      <nav class="footer__links" aria-label="Liens footer">
+        <a href="realisations.html" class="footer__link">Réalisations</a>
+        <a href="services.html" class="footer__link">Services</a>
+        <a href="a-propos.html" class="footer__link">À propos</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Rémi CHAUVIN — Tous droits réservés</p>
+      <div class="footer__legal-links">
+        <a href="mentions-legales.html" class="footer__legal-link">Mentions légales</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Revenir en haut de page">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="gallery-loader.js" defer></script>
+<script src="script.js" defer></script>
+<script>
+// Tab switching for this page
+(function() {
+  const tabs = document.querySelectorAll('.tab-btn');
+  const panels = document.querySelectorAll('.tab-panel');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+      panels.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
+      document.getElementById(tab.getAttribute('aria-controls')).classList.add('active');
+    });
+  });
+})();
+</script>
+</body>
+</html>

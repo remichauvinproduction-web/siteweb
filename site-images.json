@@ -1,0 +1,19 @@
+{
+  "accueil": {
+    "hero": "images/hero-background.webp",
+    "video_camping": "images/video-thumb-camping.webp",
+    "video_nature": "images/video-thumb-nature.webp",
+    "moto": "images/photo-sport-moto-01.webp"
+  },
+  "a_propos": {
+    "portrait": "images/remi-portrait.webp"
+  },
+  "services": {
+    "exemple_portrait": "images/photo-portrait-studio-01.webp",
+    "exemple_video": "images/video-thumb-camping.webp",
+    "exemple_drone": "images/photo-event-outdoor-01.webp"
+  },
+  "general": {
+    "logo": "images/logo.webp"
+  }
+}

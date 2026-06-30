@@ -1,0 +1,25 @@
+{
+  "items": [
+    { "image": "images/photo-portrait-studio-01.webp", "category": "portrait", "label": "Portrait · Studio", "alt": "Portrait studio — lumière directionnelle" },
+    { "image": "images/photo-event-concert-01.webp", "category": "evenement", "label": "Événement · Concert", "alt": "Concert en extérieur — atmosphère nocturne" },
+    { "image": "images/photo-square-sport-01.webp", "category": "sport", "label": "Sport · Action", "alt": "Sport — action gelée" },
+    { "image": "images/photo-event-concert-02.webp", "category": "evenement", "label": "Événement · Scène", "alt": "Scène — lumières de spectacle" },
+    { "image": "images/photo-portrait-model-01.webp", "category": "portrait", "label": "Portrait · Book", "alt": "Book modèle — pose naturelle" },
+    { "image": "images/photo-square-nature-01.webp", "category": "nature", "label": "Nature · Paysage", "alt": "Nature — végétation Loire-Atlantique" },
+    { "image": "images/photo-sport-moto-01.webp", "category": "sport", "label": "Sport · Moto", "alt": "Motocross — terre et vitesse" },
+    { "image": "images/photo-portrait-sport-01.webp", "category": "portrait", "label": "Portrait · Sportif", "alt": "Portrait sportif — regard déterminé" },
+    { "image": "images/photo-square-nature-02.webp", "category": "nature", "label": "Nature · Macro", "alt": "Nature — macro végétal" },
+    { "image": "images/photo-portrait-model-02.webp", "category": "portrait", "label": "Portrait · Naturel", "alt": "Portrait — lumière naturelle douce" },
+    { "image": "images/photo-square-event-01.webp", "category": "evenement", "label": "Événement", "alt": "Événement — ambiance générale" },
+    { "image": "images/photo-square-sport-02.webp", "category": "sport", "label": "Sport · Concentration", "alt": "Sport — effort et concentration" },
+    { "image": "images/photo-portrait-sport-02.webp", "category": "portrait", "label": "Portrait · Pro", "alt": "Portrait — book sportif professionnel" },
+    { "image": "images/photo-square-nature-03.webp", "category": "nature", "label": "Nature · Golden Hour", "alt": "Nature — lumière dorée" },
+    { "image": "images/photo-square-event-02.webp", "category": "evenement", "label": "Événement · Humain", "alt": "Événement — interaction humaine" },
+    { "image": "images/photo-portrait-model-03.webp", "category": "portrait", "label": "Portrait · Extérieur", "alt": "Portrait — shooting extérieur" },
+    { "image": "images/photo-portrait-sport-03.webp", "category": "sport", "label": "Sport · Athlète", "alt": "Sport — portrait athlète" },
+    { "image": "images/photo-square-event-03.webp", "category": "evenement", "label": "Événement · Instant", "alt": "Événement — moment capturé" },
+    { "image": "images/photo-portrait-studio-02.webp", "category": "portrait", "label": "Portrait · Fond noir", "alt": "Portrait studio — fond sombre" },
+    { "image": "images/photo-square-portrait-01.webp", "category": "nature", "label": "Paysage · Brume", "alt": "Paysage — horizon brumeux" },
+    { "image": "images/photo-square-portrait-02.webp", "category": "portrait", "label": "Portrait · Artistique", "alt": "Portrait — carrière artistique" }
+  ]
+}
