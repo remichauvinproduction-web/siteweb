@@ -92,9 +92,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Space+Mono&display=swap" rel="stylesheet">
 
-  <!-- Preload critical images -->
-  <link rel="preload" as="image" href="images/hero-background.webp" fetchpriority="high">
-
   <link rel="stylesheet" href="style.css">
 
   <!-- Favicon -->
@@ -233,77 +230,7 @@
       <p class="t-sub mt-md">Clips commerciaux, court métrages, contenus drone — chaque projet raconte une histoire avec précision.</p>
     </div>
 
-    <div class="video-grid">
-      <article class="video-card reveal" data-video-id="dQw4w9WgXcQ" aria-label="Vidéo : Camping Les Chênes Verts — film promotionnel">
-        <div class="video-card__thumb">
-          <img
-            src="images/video-thumb-camping.webp"
-            data-img-key="accueil.video_camping"
-            alt="Film promotionnel — Camping Les Chênes Verts"
-            loading="lazy"
-            decoding="async"
-            width="1280" height="720"
-          >
-          <div class="video-card__overlay" aria-hidden="true">
-            <div class="video-play-btn" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 14,8 4,14"/></svg>
-            </div>
-          </div>
-        </div>
-        <div class="video-card__meta">
-          <div class="video-card__tag">Film promotionnel · Camping</div>
-          <div class="video-card__title">Les Chênes Verts</div>
-          <div class="video-card__desc">Vidéo promotionnelle immersive. Drone DJI + prises de vue sol.</div>
-        </div>
-      </article>
-
-      <article class="video-card reveal reveal-delay-1" data-video-id="dQw4w9WgXcQ" aria-label="Vidéo : Jardin Cinematic — nature &amp; botanique">
-        <div class="video-card__thumb">
-          <img
-            src="images/video-thumb-nature.webp"
-            data-img-key="accueil.video_nature"
-            alt="Court métrage nature — Jardin cinématique"
-            loading="lazy"
-            decoding="async"
-            width="1280" height="720"
-          >
-          <div class="video-card__overlay" aria-hidden="true">
-            <div class="video-play-btn" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 14,8 4,14"/></svg>
-            </div>
-          </div>
-        </div>
-        <div class="video-card__meta">
-          <div class="video-card__tag">Court métrage · Nature</div>
-          <div class="video-card__title">Jardin Cinematic</div>
-          <div class="video-card__desc">Cinematic de mon jardin</div>
-        </div>
-      </article>
-
-      <article class="video-card reveal reveal-delay-2" data-video-id="dQw4w9WgXcQ" aria-label="Vidéo : Reel sportif — motocross">
-        <div class="video-card__thumb">
-          <img
-            src="images/photo-sport-moto-01.webp"
-            data-img-key="accueil.moto"
-            alt="Reel sportif — Motocross action"
-            loading="lazy"
-            decoding="async"
-            width="900" height="600"
-          >
-          <div class="video-card__overlay" aria-hidden="true">
-            <div class="video-play-btn" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 14,8 4,14"/></svg>
-            </div>
-          </div>
-        </div>
-        <div class="video-card__meta">
-          <div class="video-card__tag">Court métrage · Acting </div>
-          <div class="video-card__title">
-Rêve , Evolution , Révolution</div>
-          <div class="video-card__desc">Montage dynamique autour de la musique de JJ Goldman</div>
-        </div>
-      </article>
-    </div>
+    <div class="video-grid" data-video-grid="3"></div>
 
     <div class="text-center mt-xl reveal">
       <a href="realisations.html" class="btn btn--ghost">
@@ -333,7 +260,7 @@ Rêve , Evolution , Révolution</div>
     <div class="section-header reveal">
       <p class="t-kicker">Portfolio photo</p>
       <h2 class="t-h2" id="gallery-heading"><em class="accent">Chaque image</em><br>a une intention.</h2>
-      <p class="t-sub mt-md">Portrait, événement, sport, nature — </p>
+      <p class="t-sub mt-md">Portrait, événement, sport, nature — une approche toujours juste, jamais hasardeuse.</p>
     </div>
 
     <div class="gallery-filters" role="group" aria-label="Filtrer par catégorie">
@@ -457,7 +384,55 @@ Rêve , Evolution , Révolution</div>
 
 <div class="section-divider" aria-hidden="true"></div>
 
+<!-- ── TESTIMONIALS ───────────────────────────────────────────── -->
+<section class="section" id="temoignages" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="t-kicker">Ils m'ont fait confiance</p>
+      <h2 class="t-h2" id="testimonials-heading">Ce qu'ils en <em class="accent">disent.</em></h2>
+    </div>
 
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote" aria-hidden="true">"</div>
+        <p class="testimonial-text">Rémi a su capturer exactement l'ambiance que nous recherchions pour notre camping. Le film promotionnel a largement contribué à notre saison record cette année.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">M</div>
+          <div>
+            <div class="testimonial-name">Mathieu D.</div>
+            <div class="testimonial-role">Gérant · Camping Les Chênes Verts</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-quote" aria-hidden="true">"</div>
+        <p class="testimonial-text">Des portraits qui subliment vraiment les participants. Rémi est professionnel, ponctuel et créatif. On le re-sollicitera sans hésiter pour nos prochains événements.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">S</div>
+          <div>
+            <div class="testimonial-name">Sophie L.</div>
+            <div class="testimonial-role">Directrice · Cinécréatis Nantes</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-quote" aria-hidden="true">"</div>
+        <p class="testimonial-text">Le Reel réalisé pour notre lancement a atteint 40 000 vues en 48h. Un vrai sens du storytelling visuel et une réactivité remarquable.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">A</div>
+          <div>
+            <div class="testimonial-name">Antoine R.</div>
+            <div class="testimonial-role">Responsable comm. · Marque locale</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
 
 <!-- ── FAQ ───────────────────────────────────────────────────── -->
 <section class="section" id="faq" aria-labelledby="faq-heading">
@@ -626,6 +601,7 @@ Rêve , Evolution , Révolution</div>
 
 <script src="fixed-images-loader.js" defer></script>
 <script src="gallery-loader.js" defer></script>
+<script src="video-loader.js" defer></script>
 <script src="script.js" defer></script>
 
 <!-- Netlify Identity : intercepte le token d'invitation et de récupération de mot de passe -->
