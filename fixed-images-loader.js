@@ -12,11 +12,17 @@
         const value = data[section] && data[section][field];
         if (!value) return;
 
-        /* Précharge la nouvelle image avant de l'afficher pour éviter
-           l'effet de double image / flash pendant le chargement */
         const preloader = new Image();
-        preloader.onload = () => { el.src = value; };
-        preloader.onerror = () => { /* garde l'image src originale */ };
+        preloader.onload = () => {
+          el.src = value;
+          /* Fondu d'apparition une fois l'image chargée */
+          requestAnimationFrame(() => { el.style.opacity = '1'; });
+        };
+        preloader.onerror = () => {
+          /* En cas d'erreur, affiche quand même l'image pour ne pas bloquer */
+          el.src = value;
+          el.style.opacity = '1';
+        };
         preloader.src = value;
       });
     })
