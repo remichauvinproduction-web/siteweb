@@ -15,3 +15,6 @@ collections:
         label: "Accueil"
         fields:
           - { name: "body", label: "Contenu", widget: "markdown" }
+auth:
+  client_id: Ov23liJDgPtmAJwsfdfm
+  scope: repo
