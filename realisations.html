@@ -136,73 +136,7 @@
 
       <!-- Videos Panel -->
       <div class="tab-panel" id="panel-videos" role="tabpanel" aria-labelledby="tab-videos">
-        <div class="video-full-grid">
-
-          <article class="video-card reveal" data-video-id="dQw4w9WgXcQ" aria-label="Vidéo : Les Chênes Verts — film promotionnel camping">
-            <div class="video-card__thumb">
-              <img src="images/video-thumb-camping.webp" alt="Film promotionnel — Camping Les Chênes Verts, drone et sol" loading="lazy" decoding="async" width="1280" height="720">
-              <div class="video-card__overlay" aria-hidden="true">
-                <div class="video-play-btn" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 14,8 4,14"/></svg>
-                </div>
-              </div>
-            </div>
-            <div class="video-card__meta">
-              <div class="video-card__tag">Film promotionnel · Camping · Drone</div>
-              <div class="video-card__title">Les Chênes Verts — Film d'entreprise</div>
-              <div class="video-card__desc">Vidéo promotionnelle complète avec prises de vue drone DJI et interviews. Format 2 min pour site web et réseaux sociaux.</div>
-            </div>
-          </article>
-
-          <article class="video-card reveal reveal-delay-1" data-video-id="dQw4w9WgXcQ" aria-label="Vidéo : Jardin Cinematic — court métrage nature">
-            <div class="video-card__thumb">
-              <img src="images/video-thumb-nature.webp" alt="Court métrage nature — Jardin Cinematic, végétation lumière naturelle" loading="lazy" decoding="async" width="1280" height="720">
-              <div class="video-card__overlay" aria-hidden="true">
-                <div class="video-play-btn" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 14,8 4,14"/></svg>
-                </div>
-              </div>
-            </div>
-            <div class="video-card__meta">
-              <div class="video-card__tag">Court métrage · Nature · Cinematic</div>
-              <div class="video-card__title">Jardin Cinematic</div>
-              <div class="video-card__desc">Exploration cinématographique de la flore locale. Mouvement de caméra fluides, étalonnage chaud et organique.</div>
-            </div>
-          </article>
-
-          <article class="video-card reveal" data-video-id="dQw4w9WgXcQ" aria-label="Vidéo : Reel motocross — action sport">
-            <div class="video-card__thumb">
-              <img src="images/photo-sport-moto-01.webp" alt="Reel motocross — action sportive dynamique" loading="lazy" decoding="async" width="900" height="600">
-              <div class="video-card__overlay" aria-hidden="true">
-                <div class="video-play-btn" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 14,8 4,14"/></svg>
-                </div>
-              </div>
-            </div>
-            <div class="video-card__meta">
-              <div class="video-card__tag">Reel Instagram · Sport · Action</div>
-              <div class="video-card__title">Action Motocross — Reel</div>
-              <div class="video-card__desc">Montage vertical dynamique pour Instagram Reels. Slow-motion combiné à l'action temps réel.</div>
-            </div>
-          </article>
-
-          <article class="video-card reveal reveal-delay-1" data-video-id="dQw4w9WgXcQ" aria-label="Vidéo : Concert live — clip événementiel">
-            <div class="video-card__thumb">
-              <img src="images/photo-event-concert-01.webp" alt="Concert live — captation événementielle" loading="lazy" decoding="async" width="900" height="600">
-              <div class="video-card__overlay" aria-hidden="true">
-                <div class="video-play-btn" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 14,8 4,14"/></svg>
-                </div>
-              </div>
-            </div>
-            <div class="video-card__meta">
-              <div class="video-card__tag">Clip événementiel · Concert · Live</div>
-              <div class="video-card__title">Live Concert — Captation</div>
-              <div class="video-card__desc">Captation multi-angles d'un concert en extérieur. Montage rythmé sur la musique live.</div>
-            </div>
-          </article>
-
-        </div>
+        <div class="video-full-grid" data-video-grid></div>
 
         <!-- Video lightbox -->
         <div class="video-lightbox" role="dialog" aria-modal="true" aria-label="Lecteur vidéo" tabindex="-1">
@@ -261,6 +195,7 @@
 </button>
 
 <script src="gallery-loader.js" defer></script>
+<script src="video-loader.js" defer></script>
 <script src="script.js" defer></script>
 <script>
 // Tab switching for this page
