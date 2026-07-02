@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "youtube_id": "",
+      "thumbnail": "images/video-thumb-camping.webp",
+      "tag": "Film promotionnel · Camping · Drone",
+      "title": "Les Chênes Verts — Film d'entreprise",
+      "description": "Vidéo promotionnelle complète avec prises de vue drone DJI et interviews. Format 2 min pour site web et réseaux sociaux."
+    },
+    {
+      "youtube_id": "",
+      "thumbnail": "images/video-thumb-nature.webp",
+      "tag": "Court métrage · Nature · Cinematic",
+      "title": "Jardin Cinematic",
+      "description": "Exploration cinématographique de la flore locale. Mouvements de caméra fluides, étalonnage chaud et organique."
+    },
+    {
+      "youtube_id": "",
+      "thumbnail": "images/photo-sport-moto-01.webp",
+      "tag": "Reel Instagram · Sport · Action",
+      "title": "Action Motocross — Reel",
+      "description": "Montage vertical dynamique pour Instagram Reels. Slow-motion combiné à l'action temps réel."
+    },
+    {
+      "youtube_id": "",
+      "thumbnail": "images/photo-event-concert-01.webp",
+      "tag": "Clip événementiel · Concert · Live",
+      "title": "Live Concert — Captation",
+      "description": "Captation multi-angles d'un concert en extérieur. Montage rythmé sur la musique live."
+    }
+  ]
+}
