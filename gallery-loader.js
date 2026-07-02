@@ -13,8 +13,9 @@
         grid.innerHTML = '<p style="color:var(--text-muted);grid-column:1/-1;text-align:center;padding:2rem">Aucune photo pour le moment.</p>';
         return;
       }
+
       grid.innerHTML = items.map((item, i) => `
-        <figure class="gallery-item reveal" data-cat="${item.category || 'all'}" role="listitem">
+        <figure class="gallery-item" data-cat="${item.category || 'all'}" role="listitem">
           <img class="gallery-item__img"
                src="${item.image}"
                alt="${item.alt || ''}"
@@ -26,7 +27,15 @@
             <span class="gallery-item__label">${item.label || ''}</span>
           </div>
         </figure>
-      `).join(''); 
+      `).join('');
+
+      /* Les figures sont générées dynamiquement donc l'IntersectionObserver
+         du script principal ne les a pas vues. On les rend visibles directement
+         sans passer par l'animation reveal (qui les laisserait à opacity:0). */
+      grid.querySelectorAll('.gallery-item').forEach(el => {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      });
 
       document.dispatchEvent(new CustomEvent('gallery:loaded'));
     })
