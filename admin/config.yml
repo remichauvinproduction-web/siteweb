@@ -2,8 +2,8 @@ backend:
   name: github
   repo: remichauvinproduction-web/siteweb
   branch: main
-  auth_scope: repo
-  app_id: Ov23liJDgPtmAJwsfdfm
+  base_url: https://oauth-proxy.remiproduction.workers.dev
+  auth_endpoint: oauth
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
