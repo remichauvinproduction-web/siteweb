@@ -1,14 +1,76 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Admin</title>
+backend:
+  name: github
+  repo: remichauvinproduction-web/siteweb
+  branch: main
+  base_url: https://remiproduction.fr
+  auth_endpoint: /oauth/callback
 
-  <!-- Decap CMS uniquement -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-</head>
+media_folder: "images"
+public_folder: "/images"
 
-<body>
-</body>
-</html>
+collections:
+
+  # ── 1. GALERIE LIBRE (page Réalisations + aperçu page d'accueil) ──
+  - name: "gallery"
+    label: "Galerie de réalisations"
+    files:
+      - name: "gallery"
+        label: "Photos de la galerie"
+        file: "gallery.json"
+        fields:
+          - label: "Photos"
+            name: "items"
+            widget: "list"
+            label_singular: "Photo"
+            summary: "{{fields.label}} ({{fields.category}})"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Catégorie"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Portrait", value: "portrait" }
+                  - { label: "Événement", value: "evenement" }
+                  - { label: "Sport", value: "sport" }
+                  - { label: "Nature", value: "nature" }
+              - label: "Légende affichée"
+                name: "label"
+                widget: "string"
+                hint: "Ex : Portrait · Studio"
+              - label: "Texte alternatif (accessibilité / SEO)"
+                name: "alt"
+                widget: "string"
+
+  # ── 2. IMAGES FIXES DU SITE ──
+  - name: "site_images"
+    label: "Images fixes du site"
+    files:
+      - name: "fixed_images"
+        label: "Images principales"
+        file: "site-images.json"
+        fields:
+          - label: "Page d'accueil"
+            name: "accueil"
+            widget: "object"
+            fields:
+              - { label: "Photo de fond (hero)", name: "hero", widget: "image" }
+              - { label: "Vignette vidéo — Camping", name: "video_camping", widget: "image" }
+              - { label: "Vignette vidéo — Nature", name: "video_nature", widget: "image" }
+              - { label: "Photo mise en avant (moto)", name: "moto", widget: "image" }
+          - label: "Page À propos"
+            name: "a_propos"
+            widget: "object"
+            fields:
+              - { label: "Portrait de Rémi", name: "portrait", widget: "image" }
+          - label: "Page Services"
+            name: "services"
+            widget: "object"
+            fields:
+              - { label: "Exemple — Portrait studio", name: "exemple_portrait", widget: "image" }
+              - { label: "Exemple — Vidéo entreprise", name: "exemple_video", widget: "image" }
+              - { label: "Exemple — Prise de vue drone", name: "exemple_drone", widget: "image" }
+          - label: "Général"
+            name: "general"
+            widget: "object"
+            fields:
+              - { label: "Logo du site", name: "logo", widget: "image" }
