@@ -11,17 +11,19 @@
   <!-- Decap CMS (anciennement Netlify CMS) : génère l'interface d'admin -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
-    // Redirige vers la page de login si l'utilisateur n'est pas connecté,
-    // et recharge la page après connexion pour que Decap CMS s'initialise.
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.open("login");
     }
-  </script>
+  });
+
+  window.netlifyIdentity.on("login", () => {
+    document.location.href = "/admin/";
+  });
+
+  window.netlifyIdentity.init();
+}
+</script>
 </body>
 </html>
