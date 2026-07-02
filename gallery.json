@@ -1,25 +1,58 @@
 {
   "items": [
-    { "image": "images/photo-portrait-studio-01.webp", "category": "portrait", "label": "Portrait · Studio", "alt": "Portrait studio — lumière directionnelle" },
-    { "image": "images/photo-event-concert-01.webp", "category": "evenement", "label": "Événement · Concert", "alt": "Concert en extérieur — atmosphère nocturne" },
-    { "image": "images/photo-square-sport-01.webp", "category": "sport", "label": "Sport · Action", "alt": "Sport — action gelée" },
-    { "image": "images/photo-event-concert-02.webp", "category": "evenement", "label": "Événement · Scène", "alt": "Scène — lumières de spectacle" },
-    { "image": "images/photo-portrait-model-01.webp", "category": "portrait", "label": "Portrait · Book", "alt": "Book modèle — pose naturelle" },
-    { "image": "images/photo-square-nature-01.webp", "category": "nature", "label": "Nature · Paysage", "alt": "Nature — végétation Loire-Atlantique" },
-    { "image": "images/photo-sport-moto-01.webp", "category": "sport", "label": "Sport · Moto", "alt": "Motocross — terre et vitesse" },
-    { "image": "images/photo-portrait-sport-01.webp", "category": "portrait", "label": "Portrait · Sportif", "alt": "Portrait sportif — regard déterminé" },
-    { "image": "images/photo-square-nature-02.webp", "category": "nature", "label": "Nature · Macro", "alt": "Nature — macro végétal" },
-    { "image": "images/photo-portrait-model-02.webp", "category": "portrait", "label": "Portrait · Naturel", "alt": "Portrait — lumière naturelle douce" },
-    { "image": "images/photo-square-event-01.webp", "category": "evenement", "label": "Événement", "alt": "Événement — ambiance générale" },
-    { "image": "images/photo-square-sport-02.webp", "category": "sport", "label": "Sport · Concentration", "alt": "Sport — effort et concentration" },
-    { "image": "images/photo-portrait-sport-02.webp", "category": "portrait", "label": "Portrait · Pro", "alt": "Portrait — book sportif professionnel" },
-    { "image": "images/photo-square-nature-03.webp", "category": "nature", "label": "Nature · Golden Hour", "alt": "Nature — lumière dorée" },
-    { "image": "images/photo-square-event-02.webp", "category": "evenement", "label": "Événement · Humain", "alt": "Événement — interaction humaine" },
-    { "image": "images/photo-portrait-model-03.webp", "category": "portrait", "label": "Portrait · Extérieur", "alt": "Portrait — shooting extérieur" },
-    { "image": "images/photo-portrait-sport-03.webp", "category": "sport", "label": "Sport · Athlète", "alt": "Sport — portrait athlète" },
-    { "image": "images/photo-square-event-03.webp", "category": "evenement", "label": "Événement · Instant", "alt": "Événement — moment capturé" },
-    { "image": "images/photo-portrait-studio-02.webp", "category": "portrait", "label": "Portrait · Fond noir", "alt": "Portrait studio — fond sombre" },
-    { "image": "images/photo-square-portrait-01.webp", "category": "nature", "label": "Paysage · Brume", "alt": "Paysage — horizon brumeux" },
-    { "image": "images/photo-square-portrait-02.webp", "category": "portrait", "label": "Portrait · Artistique", "alt": "Portrait — carrière artistique" }
+    {
+      "image": "/images/img-20260225-wa0000.jpg",
+      "category": "portrait",
+      "label": "Portrait · Studio",
+      "alt": "Portrait studio — lumière directionnelle"
+    },
+    {
+      "image": "/images/portrait-02.jpg",
+      "category": "portrait",
+      "label": "Portrait à cheval",
+      "alt": "Portrait - extérieur - cheval"
+    },
+    {
+      "image": "/images/image-11-.webp",
+      "category": "sport",
+      "label": "Motocross",
+      "alt": "Motocross"
+    },
+    {
+      "image": "/images/image-16-.webp",
+      "category": "sport",
+      "label": "Football",
+      "alt": "Football"
+    },
+    {
+      "image": "/images/image-3-.webp",
+      "category": "evenement",
+      "label": "Cracheur de feu",
+      "alt": "Cracheur de feu"
+    },
+    {
+      "image": "/images/_mg_0464.jpg",
+      "category": "evenement",
+      "label": "Élection Miss 15/17 Vendée",
+      "alt": "Élection Miss 15/17 Vendée"
+    },
+    {
+      "image": "/images/dji_0866.jpg",
+      "category": "evenement",
+      "label": "Shooting aérien",
+      "alt": "Drone camping"
+    },
+    {
+      "image": "/images/dji_0813.jpg",
+      "label": "Shooting aérien",
+      "category": "evenement",
+      "alt": "Drone camping"
+    },
+    {
+      "image": "/images/image-1-.webp",
+      "category": "portrait",
+      "label": "Portrait DUO",
+      "alt": "Portrait DUO"
+    }
   ]
 }
