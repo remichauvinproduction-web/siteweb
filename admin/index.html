@@ -3,46 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Administration — remiproduction.fr</title>
+  <title>Admin</title>
 
-  <!-- Netlify Identity -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-  <!-- Decap CMS -->
+  <!-- Decap CMS uniquement -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </head>
 
 <body>
-
-<script>
-  // Sécurité : attendre que tout soit chargé
-  document.addEventListener("DOMContentLoaded", function () {
-
-    if (window.netlifyIdentity) {
-
-      // Ouvre login si pas connecté
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.open();
-        }
-      });
-
-      // Après connexion → recharge admin
-      window.netlifyIdentity.on("login", () => {
-        document.location.href = "/admin/";
-      });
-
-      // Après déconnexion → retour login
-      window.netlifyIdentity.on("logout", () => {
-        document.location.href = "/admin/";
-      });
-
-      // Init Identity
-      window.netlifyIdentity.init();
-    }
-
-  });
-</script>
-
 </body>
 </html>
