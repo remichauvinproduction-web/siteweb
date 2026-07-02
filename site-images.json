@@ -6,10 +6,10 @@
     "moto": "images/photo-sport-moto-01.webp"
   },
   "a_propos": {
-    "portrait": "images/remi-portrait.webp"
+    "portrait": "/images/whatsapp-image-2026-05-15-at-17.10.35.jpeg"
   },
   "services": {
-    "exemple_portrait": "images/photo-portrait-studio-01.webp",
+    "exemple_portrait": "/images/_mg_1016.jpg",
     "exemple_video": "images/video-thumb-camping.webp",
     "exemple_drone": "images/photo-event-outdoor-01.webp"
   },
