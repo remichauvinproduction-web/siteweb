@@ -26,7 +26,7 @@
             <span class="gallery-item__label">${item.label || ''}</span>
           </div>
         </figure>
-      `).join('');
+      `).join(''); 
 
       document.dispatchEvent(new CustomEvent('gallery:loaded'));
     })
