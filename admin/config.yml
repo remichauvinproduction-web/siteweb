@@ -2,6 +2,8 @@ backend:
   name: github
   repo: remichauvinproduction-web/siteweb
   branch: main
+  auth_scope: repo
+  app_id: Ov23liJDgPtmAJwsfdfm
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
@@ -15,6 +17,3 @@ collections:
         label: "Accueil"
         fields:
           - { name: "body", label: "Contenu", widget: "markdown" }
-auth:
-  client_id: Ov23liJDgPtmAJwsfdfm
-  scope: repo
