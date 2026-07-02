@@ -4,26 +4,45 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Administration — remiproduction.fr</title>
-  <!-- Netlify Identity : gère le login (email/mot de passe) qui protège cette page -->
+
+  <!-- Netlify Identity -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
-<body>
-  <!-- Decap CMS (anciennement Netlify CMS) : génère l'interface d'admin -->
+
+  <!-- Decap CMS -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <script>
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("init", user => {
-    if (!user) {
-      window.netlifyIdentity.open("login");
+</head>
+
+<body>
+
+<script>
+  // Sécurité : attendre que tout soit chargé
+  document.addEventListener("DOMContentLoaded", function () {
+
+    if (window.netlifyIdentity) {
+
+      // Ouvre login si pas connecté
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.open();
+        }
+      });
+
+      // Après connexion → recharge admin
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+
+      // Après déconnexion → retour login
+      window.netlifyIdentity.on("logout", () => {
+        document.location.href = "/admin/";
+      });
+
+      // Init Identity
+      window.netlifyIdentity.init();
     }
-  });
 
-  window.netlifyIdentity.on("login", () => {
-    document.location.href = "/admin/";
   });
-
-  window.netlifyIdentity.init();
-}
 </script>
+
 </body>
 </html>
