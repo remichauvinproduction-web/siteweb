@@ -7,7 +7,7 @@ backend:
   auth_endpoint: oauth
 
 # ── Configuration des Médias ──
-media_folder: "public/images"
+media_folder: "images"
 public_folder: "/images"
 
 # ── Définition des Collections (Contenu éditable) ──
