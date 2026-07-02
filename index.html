@@ -141,11 +141,12 @@
 <section class="hero" aria-label="Introduction">
   <div class="hero__bg">
     <img
-      src="images/hero-background.webp"
+      src=""
       data-img-key="accueil.hero"
       alt="Photo de nuit, ambiance cinématographique — Rémi CHAUVIN"
       fetchpriority="high"
       decoding="async"
+      style="opacity:0;transition:opacity 0.4s ease"
     >
     <div class="hero__overlay" aria-hidden="true"></div>
     <div class="hero__overlay-2" aria-hidden="true"></div>
@@ -275,7 +276,7 @@
         <div class="video-card__meta">
           <div class="video-card__tag">Court métrage · Nature</div>
           <div class="video-card__title">Jardin Cinematic</div>
-          <div class="video-card__desc">Exploration cinématographique de la végétation locale.</div>
+          <div class="video-card__desc">Cinematic de mon jardin</div>
         </div>
       </article>
 
@@ -296,9 +297,10 @@
           </div>
         </div>
         <div class="video-card__meta">
-          <div class="video-card__tag">Reel · Sport</div>
-          <div class="video-card__title">Action Motocross</div>
-          <div class="video-card__desc">Montage dynamique pour réseaux sociaux — format Reels.</div>
+          <div class="video-card__tag">Court métrage · Acting </div>
+          <div class="video-card__title">
+Rêve , Evolution , Révolution</div>
+          <div class="video-card__desc">Montage dynamique autour de la musique de JJ Goldman</div>
         </div>
       </article>
     </div>
@@ -331,7 +333,7 @@
     <div class="section-header reveal">
       <p class="t-kicker">Portfolio photo</p>
       <h2 class="t-h2" id="gallery-heading"><em class="accent">Chaque image</em><br>a une intention.</h2>
-      <p class="t-sub mt-md">Portrait, événement, sport, nature — une approche toujours juste, jamais hasardeuse.</p>
+      <p class="t-sub mt-md">Portrait, événement, sport, nature — </p>
     </div>
 
     <div class="gallery-filters" role="group" aria-label="Filtrer par catégorie">
@@ -455,55 +457,7 @@
 
 <div class="section-divider" aria-hidden="true"></div>
 
-<!-- ── TESTIMONIALS ───────────────────────────────────────────── -->
-<section class="section" id="temoignages" aria-labelledby="testimonials-heading">
-  <div class="container">
-    <div class="section-header reveal">
-      <p class="t-kicker">Ils m'ont fait confiance</p>
-      <h2 class="t-h2" id="testimonials-heading">Ce qu'ils en <em class="accent">disent.</em></h2>
-    </div>
 
-    <div class="testimonials-grid">
-      <div class="testimonial-card reveal">
-        <div class="testimonial-quote" aria-hidden="true">"</div>
-        <p class="testimonial-text">Rémi a su capturer exactement l'ambiance que nous recherchions pour notre camping. Le film promotionnel a largement contribué à notre saison record cette année.</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar" aria-hidden="true">M</div>
-          <div>
-            <div class="testimonial-name">Mathieu D.</div>
-            <div class="testimonial-role">Gérant · Camping Les Chênes Verts</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card reveal reveal-delay-1">
-        <div class="testimonial-quote" aria-hidden="true">"</div>
-        <p class="testimonial-text">Des portraits qui subliment vraiment les participants. Rémi est professionnel, ponctuel et créatif. On le re-sollicitera sans hésiter pour nos prochains événements.</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar" aria-hidden="true">S</div>
-          <div>
-            <div class="testimonial-name">Sophie L.</div>
-            <div class="testimonial-role">Directrice · Cinécréatis Nantes</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card reveal reveal-delay-2">
-        <div class="testimonial-quote" aria-hidden="true">"</div>
-        <p class="testimonial-text">Le Reel réalisé pour notre lancement a atteint 40 000 vues en 48h. Un vrai sens du storytelling visuel et une réactivité remarquable.</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar" aria-hidden="true">A</div>
-          <div>
-            <div class="testimonial-name">Antoine R.</div>
-            <div class="testimonial-role">Responsable comm. · Marque locale</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider" aria-hidden="true"></div>
 
 <!-- ── FAQ ───────────────────────────────────────────────────── -->
 <section class="section" id="faq" aria-labelledby="faq-heading">
@@ -673,6 +627,8 @@
 <script src="fixed-images-loader.js" defer></script>
 <script src="gallery-loader.js" defer></script>
 <script src="script.js" defer></script>
+
+<!-- Netlify Identity : intercepte le token d'invitation et de récupération de mot de passe -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {
