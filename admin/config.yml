@@ -1,17 +1,15 @@
-# ── Configuration du Backend (Liaison GitHub via Cloudflare Worker) ──
 backend:
   name: github
   repo: remichauvinproduction-web/siteweb
   branch: main
-  base_url: https://oauth-proxy.remiproduction.workers.dev
-  auth_endpoint: oauth
+  base_url: https://remiproduction.fr
+  auth_endpoint: /oauth/callback
 
-# ── Configuration des Médias ──
 media_folder: "images"
 public_folder: "/images"
 
-# ── Définition des Collections (Contenu éditable) ──
 collections:
+
   # ── 1. GALERIE LIBRE (page Réalisations + aperçu page d'accueil) ──
   - name: "gallery"
     label: "Galerie de réalisations"
@@ -76,3 +74,27 @@ collections:
             widget: "object"
             fields:
               - { label: "Logo du site", name: "logo", widget: "image" }
+
+  # ── 3. VIDÉOS ──
+  - name: "videos"
+    label: "Vidéos & Films"
+    files:
+      - name: "videos"
+        label: "Liste des vidéos"
+        file: "videos.json"
+        fields:
+          - label: "Vidéos"
+            name: "items"
+            widget: "list"
+            label_singular: "Vidéo"
+            summary: "{{fields.title}}"
+            fields:
+              - label: "ID YouTube"
+                name: "youtube_id"
+                widget: "string"
+                hint: "Colle ici l'ID YouTube uniquement (ex: dQw4w9WgXcQ depuis youtube.com/watch?v=dQw4w9WgXcQ). Laisse vide si la vidéo n'est pas encore en ligne."
+                required: false
+              - { label: "Vignette", name: "thumbnail", widget: "image" }
+              - { label: "Tag / Catégorie", name: "tag", widget: "string", hint: "Ex: Film promotionnel · Camping · Drone" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description courte", name: "description", widget: "text" }
