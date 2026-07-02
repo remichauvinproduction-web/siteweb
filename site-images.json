@@ -1,6 +1,6 @@
 {
   "accueil": {
-    "hero": "images/hero-background.webp",
+    "hero": "/images/21.png",
     "video_camping": "images/video-thumb-camping.webp",
     "video_nature": "images/video-thumb-nature.webp",
     "moto": "images/photo-sport-moto-01.webp"
