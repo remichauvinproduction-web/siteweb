@@ -51,13 +51,9 @@
 
 /* ── SCROLL REVEAL ───────────────────────────────────────────── */
 (function initReveal() {
-  const els = document.querySelectorAll('.reveal');
-  if (!els.length) return;
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    els.forEach(el => el.classList.add('visible'));
-    return;
-  }
-  const observer = new IntersectionObserver(
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const observer = reduceMotion ? null : new IntersectionObserver(
     entries => entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
@@ -66,7 +62,29 @@
     }),
     { rootMargin: '0px 0px -60px 0px', threshold: 0.08 }
   );
-  els.forEach(el => observer.observe(el));
+
+  function reveal(el) {
+    if (reduceMotion) {
+      el.classList.add('visible');
+    } else {
+      observer.observe(el);
+    }
+  }
+
+  // Éléments déjà présents au chargement de la page
+  document.querySelectorAll('.reveal').forEach(reveal);
+
+  // Éléments ajoutés plus tard par JS (galerie, vidéos, contenu du CMS...)
+  const mo = new MutationObserver(mutations => {
+    mutations.forEach(m => {
+      m.addedNodes.forEach(node => {
+        if (node.nodeType !== 1) return;
+        if (node.classList && node.classList.contains('reveal')) reveal(node);
+        node.querySelectorAll && node.querySelectorAll('.reveal').forEach(reveal);
+      });
+    });
+  });
+  mo.observe(document.body, { childList: true, subtree: true });
 })();
 
 /* ── BACK TO TOP ─────────────────────────────────────────────── */
