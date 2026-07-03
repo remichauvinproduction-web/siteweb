@@ -1,32 +1,32 @@
 {
   "items": [
     {
-      "youtube_id": "",
-      "thumbnail": "images/video-thumb-camping.webp",
+      "youtube_id": "https://www.youtube.com/watch?v=moNNm05GPL4",
+      "thumbnail": "/images/maxresdefault.jpg",
       "tag": "Film promotionnel · Camping · Drone",
-      "title": "Les Chênes Verts — Film d'entreprise",
-      "description": "Vidéo promotionnelle complète avec prises de vue drone DJI et interviews. Format 2 min pour site web et réseaux sociaux."
+      "title": "Les Chênes Verts ",
+      "description": "Vidéo promotionnelle complète avec prises de vue drone DJI . Format 2 min pour site web et réseaux sociaux."
     },
     {
-      "youtube_id": "",
-      "thumbnail": "images/video-thumb-nature.webp",
-      "tag": "Court métrage · Nature · Cinematic",
-      "title": "Jardin Cinematic",
-      "description": "Exploration cinématographique de la flore locale. Mouvements de caméra fluides, étalonnage chaud et organique."
+      "youtube_id": "https://www.youtube.com/watch?v=fUu_y0V9e54",
+      "thumbnail": "/images/maxresdefault-2-.jpg",
+      "tag": "Court métrage · ",
+      "title": "Rêve , Evolution , Révolution",
+      "description": "Court métrage fait dans le cadre de l'atelier Arts & Vidéo "
     },
     {
-      "youtube_id": "",
-      "thumbnail": "images/photo-sport-moto-01.webp",
-      "tag": "Reel Instagram · Sport · Action",
-      "title": "Action Motocross — Reel",
-      "description": "Montage vertical dynamique pour Instagram Reels. Slow-motion combiné à l'action temps réel."
+      "youtube_id": "https://www.youtube.com/watch?v=fWFlAkEkldY",
+      "thumbnail": "/images/maxresdefault-3-.jpg",
+      "tag": "Court métrage",
+      "title": "En panne ! ",
+      "description": "Court métrage réalisé pour le concours d’admission de la La CinéFabrique."
     },
     {
-      "youtube_id": "",
-      "thumbnail": "images/photo-event-concert-01.webp",
-      "tag": "Clip événementiel · Concert · Live",
-      "title": "Live Concert — Captation",
-      "description": "Captation multi-angles d'un concert en extérieur. Montage rythmé sur la musique live."
+      "youtube_id": "https://www.youtube.com/watch?v=pyaBJmrXP68  ",
+      "thumbnail": "/images/maxresdefault-4-.jpg",
+      "tag": "Cinematique",
+      "title": " Cinematic Garden",
+      "description": "Entrainement pour de la cinématique"
     }
   ]
 }
