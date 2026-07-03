@@ -4,97 +4,523 @@ backend:
   branch: main
   base_url: https://remiproduction.fr
   auth_endpoint: /oauth/callback
-
-media_folder: "images"
-public_folder: "/images"
-
+media_folder: images
+public_folder: /images
 collections:
-
-  # ── 1. GALERIE LIBRE (page Réalisations + aperçu page d'accueil) ──
-  - name: "gallery"
-    label: "Galerie de réalisations"
-    files:
-      - name: "gallery"
-        label: "Photos de la galerie"
-        file: "gallery.json"
+- name: gallery
+  label: Galerie de réalisations
+  files:
+  - name: gallery
+    label: Photos de la galerie
+    file: gallery.json
+    fields:
+    - label: Photos
+      name: items
+      widget: list
+      label_singular: Photo
+      summary: '{{fields.label}} ({{fields.category}})'
+      fields:
+      - label: Image
+        name: image
+        widget: image
+      - label: Catégorie
+        name: category
+        widget: select
+        options:
+        - label: Portrait
+          value: portrait
+        - label: Événement
+          value: evenement
+        - label: Sport
+          value: sport
+        - label: Nature
+          value: nature
+      - label: Légende affichée
+        name: label
+        widget: string
+        hint: 'Ex : Portrait · Studio'
+      - label: Texte alternatif (accessibilité / SEO)
+        name: alt
+        widget: string
+- name: site_images
+  label: Images fixes du site
+  files:
+  - name: fixed_images
+    label: Images principales
+    file: site-images.json
+    fields:
+    - label: Page d'accueil
+      name: accueil
+      widget: object
+      fields:
+      - label: Photo de fond (hero)
+        name: hero
+        widget: image
+      - label: Vignette vidéo — Camping
+        name: video_camping
+        widget: image
+      - label: Vignette vidéo — Nature
+        name: video_nature
+        widget: image
+      - label: Photo mise en avant (moto)
+        name: moto
+        widget: image
+    - label: Page À propos
+      name: a_propos
+      widget: object
+      fields:
+      - label: Portrait de Rémi
+        name: portrait
+        widget: image
+    - label: Page Services
+      name: services
+      widget: object
+      fields:
+      - label: Exemple — Portrait studio
+        name: exemple_portrait
+        widget: image
+      - label: Exemple — Vidéo entreprise
+        name: exemple_video
+        widget: image
+      - label: Exemple — Prise de vue drone
+        name: exemple_drone
+        widget: image
+    - label: Général
+      name: general
+      widget: object
+      fields:
+      - label: Logo du site
+        name: logo
+        widget: image
+- name: videos
+  label: Vidéos & Films
+  files:
+  - name: videos
+    label: Liste des vidéos
+    file: videos.json
+    fields:
+    - label: Vidéos
+      name: items
+      widget: list
+      label_singular: Vidéo
+      summary: '{{fields.title}}'
+      fields:
+      - label: ID YouTube
+        name: youtube_id
+        widget: string
+        hint: 'Colle ici l''ID YouTube uniquement (ex: dQw4w9WgXcQ depuis youtube.com/watch?v=dQw4w9WgXcQ). Laisse vide si la vidéo n''est pas encore en ligne.'
+        required: false
+      - label: Vignette
+        name: thumbnail
+        widget: image
+      - label: Tag / Catégorie
+        name: tag
+        widget: string
+        hint: 'Ex: Film promotionnel · Camping · Drone'
+      - label: Titre
+        name: title
+        widget: string
+      - label: Description courte
+        name: description
+        widget: text
+- name: site_content
+  label: Textes du site
+  files:
+  - name: content
+    label: Tous les textes
+    file: site-content.json
+    fields:
+    - label: Textes communs (toutes les pages)
+      name: global
+      widget: object
+      fields:
+      - label: Texte du bouton principal ("Démarrer un projet")
+        name: cta_label
+        widget: string
+      - label: Slogan du footer
+        name: footer_tagline
+        widget: string
+      - label: Copyright du footer
+        name: footer_copyright
+        widget: string
+    - label: Page d'accueil
+      name: accueil
+      widget: object
+      fields:
+      - label: Kicker du hero
+        name: hero_kicker
+        widget: string
+      - label: Titre — ligne 1
+        name: hero_title_line1
+        widget: string
+      - label: Titre — ligne 2 (en accent)
+        name: hero_title_line2
+        widget: string
+      - label: Sous-titre du hero
+        name: hero_subtitle
+        widget: text
+      - label: Bouton principal
+        name: hero_cta_primary
+        widget: string
+      - label: Bouton secondaire
+        name: hero_cta_secondary
+        widget: string
+      - label: Badge de confiance 1
+        name: hero_trust_1
+        widget: string
+      - label: Badge de confiance 2
+        name: hero_trust_2
+        widget: string
+      - label: Badge de confiance 3
+        name: hero_trust_3
+        widget: string
+      - label: Chiffres clés
+        name: stats
+        widget: list
         fields:
-          - label: "Photos"
-            name: "items"
-            widget: "list"
-            label_singular: "Photo"
-            summary: "{{fields.label}} ({{fields.category}})"
-            fields:
-              - { label: "Image", name: "image", widget: "image" }
-              - label: "Catégorie"
-                name: "category"
-                widget: "select"
-                options:
-                  - { label: "Portrait", value: "portrait" }
-                  - { label: "Événement", value: "evenement" }
-                  - { label: "Sport", value: "sport" }
-                  - { label: "Nature", value: "nature" }
-              - label: "Légende affichée"
-                name: "label"
-                widget: "string"
-                hint: "Ex : Portrait · Studio"
-              - label: "Texte alternatif (accessibilité / SEO)"
-                name: "alt"
-                widget: "string"
-
-  # ── 2. IMAGES FIXES DU SITE ──
-  - name: "site_images"
-    label: "Images fixes du site"
-    files:
-      - name: "fixed_images"
-        label: "Images principales"
-        file: "site-images.json"
+        - label: Chiffre
+          name: number
+          widget: string
+        - label: Légende
+          name: label
+          widget: string
+      - label: Kicker galerie
+        name: gallery_kicker
+        widget: string
+      - label: Titre galerie (HTML autorisé)
+        name: gallery_title
+        widget: text
+      - label: Sous-titre galerie
+        name: gallery_subtitle
+        widget: text
+      - label: Texte bouton "voir toutes les photos"
+        name: gallery_cta
+        widget: string
+      - label: Kicker services
+        name: services_kicker
+        widget: string
+      - label: Titre services (HTML autorisé)
+        name: services_title
+        widget: text
+      - label: Cartes services
+        name: services
+        widget: list
         fields:
-          - label: "Page d'accueil"
-            name: "accueil"
-            widget: "object"
-            fields:
-              - { label: "Photo de fond (hero)", name: "hero", widget: "image" }
-              - { label: "Vignette vidéo — Camping", name: "video_camping", widget: "image" }
-              - { label: "Vignette vidéo — Nature", name: "video_nature", widget: "image" }
-              - { label: "Photo mise en avant (moto)", name: "moto", widget: "image" }
-          - label: "Page À propos"
-            name: "a_propos"
-            widget: "object"
-            fields:
-              - { label: "Portrait de Rémi", name: "portrait", widget: "image" }
-          - label: "Page Services"
-            name: "services"
-            widget: "object"
-            fields:
-              - { label: "Exemple — Portrait studio", name: "exemple_portrait", widget: "image" }
-              - { label: "Exemple — Vidéo entreprise", name: "exemple_video", widget: "image" }
-              - { label: "Exemple — Prise de vue drone", name: "exemple_drone", widget: "image" }
-          - label: "Général"
-            name: "general"
-            widget: "object"
-            fields:
-              - { label: "Logo du site", name: "logo", widget: "image" }
-
-  # ── 3. VIDÉOS ──
-  - name: "videos"
-    label: "Vidéos & Films"
-    files:
-      - name: "videos"
-        label: "Liste des vidéos"
-        file: "videos.json"
+        - label: Nom
+          name: name
+          widget: string
+        - label: Description
+          name: desc
+          widget: text
+      - label: Texte bouton "voir les tarifs"
+        name: services_cta
+        widget: string
+      - label: Kicker processus
+        name: process_kicker
+        widget: string
+      - label: Titre processus (HTML autorisé)
+        name: process_title
+        widget: text
+      - label: Sous-titre processus
+        name: process_subtitle
+        widget: text
+      - label: Étapes du processus
+        name: process_steps
+        widget: list
         fields:
-          - label: "Vidéos"
-            name: "items"
-            widget: "list"
-            label_singular: "Vidéo"
-            summary: "{{fields.title}}"
-            fields:
-              - label: "ID YouTube"
-                name: "youtube_id"
-                widget: "string"
-                hint: "Colle ici l'ID YouTube uniquement (ex: dQw4w9WgXcQ depuis youtube.com/watch?v=dQw4w9WgXcQ). Laisse vide si la vidéo n'est pas encore en ligne."
-                required: false
-              - { label: "Vignette", name: "thumbnail", widget: "image" }
-              - { label: "Tag / Catégorie", name: "tag", widget: "string", hint: "Ex: Film promotionnel · Camping · Drone" }
-              - { label: "Titre", name: "title", widget: "string" }
-              - { label: "Description courte", name: "description", widget: "text" }
+        - label: Titre
+          name: title
+          widget: string
+        - label: Description
+          name: desc
+          widget: text
+      - label: Kicker FAQ
+        name: faq_kicker
+        widget: string
+      - label: Titre FAQ (HTML autorisé)
+        name: faq_title
+        widget: text
+      - label: Questions fréquentes
+        name: faq_items
+        widget: list
+        fields:
+        - label: Question
+          name: question
+          widget: string
+        - label: Réponse (HTML autorisé)
+          name: answer
+          widget: text
+      - label: Kicker CTA final
+        name: cta_final_kicker
+        widget: string
+      - label: Titre CTA final (HTML autorisé)
+        name: cta_final_title
+        widget: text
+      - label: Sous-titre CTA final
+        name: cta_final_subtitle
+        widget: text
+    - label: Page À propos
+      name: a_propos
+      widget: object
+      fields:
+      - label: Kicker hero
+        name: hero_kicker
+        widget: string
+      - label: Titre hero (HTML autorisé)
+        name: hero_title
+        widget: string
+      - label: Kicker introduction
+        name: intro_kicker
+        widget: string
+      - label: Nom affiché
+        name: intro_name
+        widget: string
+      - label: Paragraphe 1
+        name: intro_p1
+        widget: text
+      - label: Paragraphe 2
+        name: intro_p2
+        widget: text
+      - label: Paragraphe 3
+        name: intro_p3
+        widget: text
+      - label: Badge — nombre
+        name: badge_number
+        widget: string
+      - label: Badge — légende
+        name: badge_label
+        widget: string
+      - label: Kicker valeurs
+        name: values_kicker
+        widget: string
+      - label: Titre valeurs (HTML autorisé)
+        name: values_title
+        widget: text
+      - label: Valeurs / méthode
+        name: values
+        widget: list
+        fields:
+        - label: Label court
+          name: label
+          widget: string
+        - label: Titre
+          name: title
+          widget: string
+        - label: Description
+          name: desc
+          widget: text
+      - label: Kicker CTA
+        name: cta_kicker
+        widget: string
+      - label: Titre CTA (HTML autorisé)
+        name: cta_title
+        widget: text
+      - label: Bouton principal
+        name: cta_primary
+        widget: string
+      - label: Bouton secondaire
+        name: cta_secondary
+        widget: string
+    - label: Page Contact
+      name: contact
+      widget: object
+      fields:
+      - label: Kicker hero
+        name: hero_kicker
+        widget: string
+      - label: Titre hero (HTML autorisé)
+        name: hero_title
+        widget: string
+      - label: Sous-titre hero
+        name: hero_subtitle
+        widget: text
+      - label: Adresse email affichée
+        name: email
+        widget: string
+      - label: Pseudo Instagram affiché
+        name: instagram_handle
+        widget: string
+      - label: Lien Instagram
+        name: instagram_url
+        widget: string
+      - label: Zone d'intervention
+        name: zone
+        widget: string
+      - label: Disponibilité
+        name: disponibilite
+        widget: string
+      - label: Texte badge disponibilité (HTML autorisé)
+        name: availability_text
+        widget: string
+      - label: Note en bas de formulaire
+        name: form_hint
+        widget: text
+      - label: Texte bouton d'envoi
+        name: form_submit
+        widget: string
+    - label: Page Services & Tarifs
+      name: services
+      widget: object
+      fields:
+      - label: Kicker hero
+        name: hero_kicker
+        widget: string
+      - label: Titre hero (HTML autorisé)
+        name: hero_title
+        widget: string
+      - label: Sous-titre hero
+        name: hero_subtitle
+        widget: text
+      - label: Kicker — Photographie
+        name: photo_kicker
+        widget: string
+      - label: Titre — Photographie
+        name: photo_title
+        widget: string
+      - label: Description — Photographie
+        name: photo_desc
+        widget: text
+      - label: Points clés — Photographie
+        name: photo_features
+        widget: list
+      - label: Kicker — Vidéo
+        name: video_kicker
+        widget: string
+      - label: Titre — Vidéo
+        name: video_title
+        widget: string
+      - label: Description — Vidéo
+        name: video_desc
+        widget: text
+      - label: Points clés — Vidéo
+        name: video_features
+        widget: list
+      - label: Kicker — Drone
+        name: drone_kicker
+        widget: string
+      - label: Titre — Drone
+        name: drone_title
+        widget: string
+      - label: Description — Drone
+        name: drone_desc
+        widget: text
+      - label: Points clés — Drone
+        name: drone_features
+        widget: list
+      - label: Kicker tarifs
+        name: pricing_kicker
+        widget: string
+      - label: Titre tarifs (HTML autorisé)
+        name: pricing_title
+        widget: text
+      - label: Sous-titre tarifs
+        name: pricing_subtitle
+        widget: text
+      - label: Formules tarifaires
+        name: pricing
+        widget: list
+        fields:
+        - label: Nom de la formule
+          name: name
+          widget: string
+        - label: Description courte
+          name: desc
+          widget: text
+        - label: Prix affiché
+          name: price
+          widget: string
+        - label: Caractéristiques incluses
+          name: features
+          widget: list
+        - label: Texte du bouton
+          name: cta
+          widget: string
+      - label: Badge "le plus choisi"
+        name: pricing_badge
+        widget: string
+      - label: Note sous les tarifs
+        name: pricing_note
+        widget: text
+      - label: Kicker CTA
+        name: cta_kicker
+        widget: string
+      - label: Titre CTA (HTML autorisé)
+        name: cta_title
+        widget: text
+      - label: Sous-titre CTA
+        name: cta_subtitle
+        widget: string
+      - label: Texte du bouton CTA
+        name: cta_button
+        widget: string
+    - label: Page Réalisations
+      name: realisations
+      widget: object
+      fields:
+      - label: Kicker hero
+        name: hero_kicker
+        widget: string
+      - label: Titre hero (HTML autorisé)
+        name: hero_title
+        widget: string
+      - label: Sous-titre hero
+        name: hero_subtitle
+        widget: text
+      - label: Onglet "Photographie"
+        name: tab_photos
+        widget: string
+      - label: Onglet "Vidéo & Films"
+        name: tab_videos
+        widget: string
+      - label: Kicker CTA
+        name: cta_kicker
+        widget: string
+      - label: Titre CTA (HTML autorisé)
+        name: cta_title
+        widget: text
+      - label: Bouton principal
+        name: cta_primary
+        widget: string
+      - label: Bouton secondaire
+        name: cta_secondary
+        widget: string
+    - label: Page Mentions légales
+      name: mentions_legales
+      widget: object
+      fields:
+      - label: Kicker hero
+        name: hero_kicker
+        widget: string
+      - label: Titre hero (HTML autorisé)
+        name: hero_title
+        widget: string
+      - label: Éditeur du site — paragraphe
+        name: editeur_p1
+        widget: text
+      - label: Éditeur du site — SIRET
+        name: editeur_siret
+        widget: string
+      - label: Directeur de la publication
+        name: directeur_pub
+        widget: text
+      - label: Hébergement
+        name: hebergement
+        widget: text
+      - label: Propriété intellectuelle
+        name: propriete
+        widget: text
+      - label: RGPD — paragraphe 1
+        name: rgpd_p1
+        widget: text
+      - label: RGPD — paragraphe 2
+        name: rgpd_p2
+        widget: text
+      - label: Cookies
+        name: cookies
+        widget: text
+      - label: Crédits photo & vidéo
+        name: credits
+        widget: text
+      - label: Droit applicable
+        name: droit
+        widget: text

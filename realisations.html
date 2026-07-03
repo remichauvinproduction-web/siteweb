@@ -70,7 +70,7 @@
         <a href="a-propos.html" class="nav__link" role="listitem">À propos</a>
         <a href="index.html#faq" class="nav__link" role="listitem">FAQ</a>
       </div>
-      <a href="contact.html" class="nav__cta">Démarrer un projet <span class="btn__arrow" aria-hidden="true">→</span></a>
+      <a href="contact.html" class="nav__cta"><span data-content="global.cta_label">Démarrer un projet</span> <span class="btn__arrow" aria-hidden="true">→</span></a>
       <button class="nav__hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
         <span></span><span></span><span></span>
       </button>
@@ -91,9 +91,9 @@
   <section class="page-hero">
     <div class="container">
       <div class="reveal">
-        <p class="t-kicker">Portfolio complet</p>
-        <h1 class="t-h2" style="margin-top:0.75rem">Réalisations <em class="accent">photo &amp; vidéo</em></h1>
-        <p class="t-sub mt-md" style="max-width:520px">Projets clients, créations personnelles, collaborations. Chaque image raconte quelque chose.</p>
+        <p class="t-kicker" data-content="realisations.hero_kicker">Portfolio complet</p>
+        <h1 class="t-h2" style="margin-top:0.75rem" data-content="realisations.hero_title">Réalisations <em class="accent">photo &amp; vidéo</em></h1>
+        <p class="t-sub mt-md" style="max-width:520px" data-content="realisations.hero_subtitle">Projets clients, créations personnelles, collaborations. Chaque image raconte quelque chose.</p>
       </div>
     </div>
   </section>
@@ -105,8 +105,8 @@
 
       <!-- Tabs -->
       <div class="tabs-nav" role="tablist" aria-label="Type de réalisations">
-        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-photos" id="tab-photos">Photographie</button>
-        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-videos" id="tab-videos">Vidéo &amp; Films</button>
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-photos" id="tab-photos" data-content="realisations.tab_photos">Photographie</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-videos" id="tab-videos" data-content="realisations.tab_videos">Vidéo &amp; Films</button>
       </div>
 
       <!-- Photos Panel -->
@@ -156,11 +156,11 @@
   <section class="section--sm">
     <div class="container">
       <div class="cta-section reveal">
-        <p class="t-kicker">Votre projet</p>
-        <h2 class="t-h2">Prêt à créer <em class="accent">quelque chose de remarquable ?</em></h2>
+        <p class="t-kicker" data-content="realisations.cta_kicker">Votre projet</p>
+        <h2 class="t-h2" data-content="realisations.cta_title">Prêt à créer <em class="accent">quelque chose de remarquable ?</em></h2>
         <div class="cta-actions">
-          <a href="contact.html" class="btn btn--primary">Démarrer un projet →</a>
-          <a href="services.html" class="btn btn--ghost">Voir les tarifs</a>
+          <a href="contact.html" class="btn btn--primary" data-content="realisations.cta_primary">Démarrer un projet →</a>
+          <a href="services.html" class="btn btn--ghost" data-content="realisations.cta_secondary">Voir les tarifs</a>
         </div>
       </div>
     </div>
@@ -172,7 +172,7 @@
     <div class="footer__inner">
       <div>
         <div class="footer__logo">Rémi <span class="text-accent">CHAUVIN</span></div>
-        <p class="footer__tagline">Photographe &amp; Vidéaste · Machecoul (44)</p>
+        <p class="footer__tagline" data-content="global.footer_tagline">Photographe &amp; Vidéaste · Machecoul (44)</p>
       </div>
       <nav class="footer__links" aria-label="Liens footer">
         <a href="realisations.html" class="footer__link">Réalisations</a>
@@ -182,7 +182,7 @@
       </nav>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">© 2026 Rémi CHAUVIN — Tous droits réservés</p>
+      <p class="footer__copy" data-content="global.footer_copyright">© 2026 Rémi CHAUVIN — Tous droits réservés</p>
       <div class="footer__legal-links">
         <a href="mentions-legales.html" class="footer__legal-link">Mentions légales</a>
       </div>
@@ -195,6 +195,7 @@
 </button>
 
 <script src="gallery-loader.js" defer></script>
+<script src="content-loader.js" defer></script>
 <script src="video-loader.js" defer></script>
 <script src="script.js" defer></script>
 <script>

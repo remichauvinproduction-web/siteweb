@@ -82,7 +82,7 @@
         <a href="a-propos.html" class="nav__link" role="listitem">À propos</a>
         <a href="index.html#faq" class="nav__link" role="listitem">FAQ</a>
       </div>
-      <a href="contact.html" class="nav__cta">Démarrer un projet <span class="btn__arrow" aria-hidden="true">→</span></a>
+      <a href="contact.html" class="nav__cta"><span data-content="global.cta_label">Démarrer un projet</span> <span class="btn__arrow" aria-hidden="true">→</span></a>
       <button class="nav__hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
         <span></span><span></span><span></span>
       </button>
@@ -103,9 +103,9 @@
   <section class="page-hero">
     <div class="container">
       <div class="reveal">
-        <p class="t-kicker">Ce que je propose</p>
-        <h1 class="t-h2" style="margin-top:0.75rem">Services <em class="accent">&amp; tarifs</em></h1>
-        <p class="t-sub mt-md" style="max-width:560px">Des formules claires, sans surprise. Chaque prestation est pensée pour répondre à un objectif précis — visibilité, image de marque, souvenir.</p>
+        <p class="t-kicker" data-content="services.hero_kicker">Ce que je propose</p>
+        <h1 class="t-h2" style="margin-top:0.75rem" data-content="services.hero_title">Services <em class="accent">&amp; tarifs</em></h1>
+        <p class="t-sub mt-md" style="max-width:560px" data-content="services.hero_subtitle">Des formules claires, sans surprise. Chaque prestation est pensée pour répondre à un objectif précis — visibilité, image de marque, souvenir.</p>
       </div>
     </div>
   </section>
@@ -117,14 +117,14 @@
     <div class="container">
       <div class="service-detail reveal">
         <div>
-          <p class="t-kicker">01 · Photographie</p>
-          <h2 class="t-h2 mt-sm">Portrait, book, événement.</h2>
-          <p class="t-sub mt-md">Que ce soit pour un portrait professionnel, un book artistique ou la couverture complète d'un événement, j'apporte une direction claire et une retouche soignée à chaque image livrée.</p>
+          <p class="t-kicker" data-content="services.photo_kicker">01 · Photographie</p>
+          <h2 class="t-h2 mt-sm" data-content="services.photo_title">Portrait, book, événement.</h2>
+          <p class="t-sub mt-md" data-content="services.photo_desc">Que ce soit pour un portrait professionnel, un book artistique ou la couverture complète d'un événement, j'apporte une direction claire et une retouche soignée à chaque image livrée.</p>
           <ul class="service-detail__list">
-            <li>Séances en studio ou en extérieur</li>
-            <li>Retouche professionnelle incluse sur toutes les photos</li>
-            <li>Galerie privée en ligne, téléchargement haute résolution</li>
-            <li>Livraison sous 5 jours ouvrés</li>
+            <li data-content="services.photo_features.0">Séances en studio ou en extérieur</li>
+            <li data-content="services.photo_features.1">Retouche professionnelle incluse sur toutes les photos</li>
+            <li data-content="services.photo_features.2">Galerie privée en ligne, téléchargement haute résolution</li>
+            <li data-content="services.photo_features.3">Livraison sous 5 jours ouvrés</li>
           </ul>
         </div>
         <div class="service-detail__visual">
@@ -143,14 +143,14 @@
           <img src="images/video-thumb-camping.webp" data-img-key="services.exemple_video" alt="Tournage vidéo professionnel — exemple film d'entreprise" loading="lazy" decoding="async" width="600" height="450">
         </div>
         <div>
-          <p class="t-kicker">02 · Vidéo &amp; Reels</p>
-          <h2 class="t-h2 mt-sm">Du film d'entreprise au Reel viral.</h2>
-          <p class="t-sub mt-md">Clip commercial, vidéo institutionnelle, contenu pour réseaux sociaux : chaque projet vidéo est pensé pour son canal de diffusion, avec un montage rythmé et un étalonnage soigné.</p>
+          <p class="t-kicker" data-content="services.video_kicker">02 · Vidéo &amp; Reels</p>
+          <h2 class="t-h2 mt-sm" data-content="services.video_title">Du film d'entreprise au Reel viral.</h2>
+          <p class="t-sub mt-md" data-content="services.video_desc">Clip commercial, vidéo institutionnelle, contenu pour réseaux sociaux : chaque projet vidéo est pensé pour son canal de diffusion, avec un montage rythmé et un étalonnage soigné.</p>
           <ul class="service-detail__list">
-            <li>Montage sur DaVinci Resolve, étalonnage professionnel</li>
-            <li>Livraison multi-formats : horizontal, vertical, carré</li>
-            <li>Musique libre de droits incluse</li>
-            <li>Livraison sous 7 à 10 jours ouvrés</li>
+            <li data-content="services.video_features.0">Montage sur DaVinci Resolve, étalonnage professionnel</li>
+            <li data-content="services.video_features.1">Livraison multi-formats : horizontal, vertical, carré</li>
+            <li data-content="services.video_features.2">Musique libre de droits incluse</li>
+            <li data-content="services.video_features.3">Livraison sous 7 à 10 jours ouvrés</li>
           </ul>
         </div>
       </div>
@@ -163,14 +163,14 @@
     <div class="container">
       <div class="service-detail reveal">
         <div>
-          <p class="t-kicker">03 · Drone DJI</p>
-          <h2 class="t-h2 mt-sm">La vue d'ensemble qui change tout.</h2>
-          <p class="t-sub mt-md">Pour un domaine, un événement ou un bien immobilier, la prise de vue aérienne ajoute une dimension que le sol ne permet pas. Pilotage certifié, sécurité et conformité réglementaire.</p>
+          <p class="t-kicker" data-content="services.drone_kicker">03 · Drone DJI</p>
+          <h2 class="t-h2 mt-sm" data-content="services.drone_title">La vue d'ensemble qui change tout.</h2>
+          <p class="t-sub mt-md" data-content="services.drone_desc">Pour un domaine, un événement ou un bien immobilier, la prise de vue aérienne ajoute une dimension que le sol ne permet pas. Pilotage certifié, sécurité et conformité réglementaire.</p>
           <ul class="service-detail__list">
-            <li>Résolution 4K, stabilisation native</li>
-            <li>Photo et vidéo aérienne combinées</li>
-            <li>Idéal pour camping, domaine, événement, immobilier</li>
-            <li>Pilote conforme à la réglementation DGAC</li>
+            <li data-content="services.drone_features.0">Résolution 4K, stabilisation native</li>
+            <li data-content="services.drone_features.1">Photo et vidéo aérienne combinées</li>
+            <li data-content="services.drone_features.2">Idéal pour camping, domaine, événement, immobilier</li>
+            <li data-content="services.drone_features.3">Pilote conforme à la réglementation DGAC</li>
           </ul>
         </div>
         <div class="service-detail__visual">
@@ -186,64 +186,64 @@
   <section class="section" id="tarifs" aria-labelledby="pricing-heading">
     <div class="container">
       <div class="section-header section-header--center reveal">
-        <p class="t-kicker">Tarifs</p>
-        <h2 class="t-h2" id="pricing-heading">Trois formules, <em class="accent">une exigence.</em></h2>
-        <p class="t-sub mt-md">Tarifs indicatifs pour la photographie. Chaque devis est personnalisé selon votre projet — contactez-moi pour un chiffrage précis, y compris pour la vidéo.</p>
+        <p class="t-kicker" data-content="services.pricing_kicker">Tarifs</p>
+        <h2 class="t-h2" id="pricing-heading" data-content="services.pricing_title">Trois formules, <em class="accent">une exigence.</em></h2>
+        <p class="t-sub mt-md" data-content="services.pricing_subtitle">Tarifs indicatifs pour la photographie. Chaque devis est personnalisé selon votre projet — contactez-moi pour un chiffrage précis, y compris pour la vidéo.</p>
       </div>
 
       <div class="pricing-grid">
 
         <article class="pricing-card reveal" aria-label="Formule Essentielle, 180 euros">
-          <div class="pricing-card__name">Essentielle</div>
-          <p class="pricing-card__desc">Pour un portrait professionnel ou un mini-shooting ciblé.</p>
-          <div class="pricing-card__price">180€</div>
+          <div class="pricing-card__name" data-content="services.pricing.0.name">Essentielle</div>
+          <p class="pricing-card__desc" data-content="services.pricing.0.desc">Pour un portrait professionnel ou un mini-shooting ciblé.</p>
+          <div class="pricing-card__price" data-content="services.pricing.0.price">180€</div>
           <div class="pricing-divider"></div>
           <div class="pricing-features">
-            <div class="pricing-feature">Session de 1 heure</div>
-            <div class="pricing-feature">15 photos retouchées</div>
-            <div class="pricing-feature">1 lieu, 1 tenue</div>
-            <div class="pricing-feature">Galerie en ligne privée</div>
-            <div class="pricing-feature">Livraison sous 5 jours</div>
+            <div class="pricing-feature" data-content="services.pricing.0.features.0">Session de 1 heure</div>
+            <div class="pricing-feature" data-content="services.pricing.0.features.1">15 photos retouchées</div>
+            <div class="pricing-feature" data-content="services.pricing.0.features.2">1 lieu, 1 tenue</div>
+            <div class="pricing-feature" data-content="services.pricing.0.features.3">Galerie en ligne privée</div>
+            <div class="pricing-feature" data-content="services.pricing.0.features.4">Livraison sous 5 jours</div>
           </div>
-          <a href="contact.html?formule=essentielle" class="btn btn--ghost btn--sm" style="width:100%;justify-content:center">Choisir cette formule</a>
+          <a href="contact.html?formule=essentielle" class="btn btn--ghost btn--sm" style="width:100%;justify-content:center" data-content="services.pricing.0.cta">Choisir cette formule</a>
         </article>
 
         <article class="pricing-card featured reveal reveal-delay-1" aria-label="Formule Signature, 420 euros, recommandée">
-          <span class="pricing-badge">Le plus choisi</span>
-          <div class="pricing-card__name">Signature</div>
-          <p class="pricing-card__desc">Pour une direction artistique poussée et un rendu premium.</p>
-          <div class="pricing-card__price">420€</div>
+          <span class="pricing-badge" data-content="services.pricing_badge">Le plus choisi</span>
+          <div class="pricing-card__name" data-content="services.pricing.1.name">Signature</div>
+          <p class="pricing-card__desc" data-content="services.pricing.1.desc">Pour une direction artistique poussée et un rendu premium.</p>
+          <div class="pricing-card__price" data-content="services.pricing.1.price">420€</div>
           <div class="pricing-divider"></div>
           <div class="pricing-features">
-            <div class="pricing-feature">Session de 3 heures</div>
-            <div class="pricing-feature">40 photos retouchées</div>
-            <div class="pricing-feature">Jusqu'à 3 lieux ou tenues</div>
-            <div class="pricing-feature">Direction artistique personnalisée</div>
-            <div class="pricing-feature">Galerie en ligne privée</div>
-            <div class="pricing-feature">Accès prioritaire à l'agenda</div>
+            <div class="pricing-feature" data-content="services.pricing.1.features.0">Session de 3 heures</div>
+            <div class="pricing-feature" data-content="services.pricing.1.features.1">40 photos retouchées</div>
+            <div class="pricing-feature" data-content="services.pricing.1.features.2">Jusqu'à 3 lieux ou tenues</div>
+            <div class="pricing-feature" data-content="services.pricing.1.features.3">Direction artistique personnalisée</div>
+            <div class="pricing-feature" data-content="services.pricing.1.features.4">Galerie en ligne privée</div>
+            <div class="pricing-feature" data-content="services.pricing.1.features.5">Accès prioritaire à l'agenda</div>
           </div>
-          <a href="contact.html?formule=signature" class="btn btn--primary btn--sm" style="width:100%;justify-content:center">Choisir cette formule</a>
+          <a href="contact.html?formule=signature" class="btn btn--primary btn--sm" style="width:100%;justify-content:center" data-content="services.pricing.1.cta">Choisir cette formule</a>
         </article>
 
         <article class="pricing-card reveal reveal-delay-2" aria-label="Formule Entreprise, à partir de 750 euros">
-          <div class="pricing-card__name">Entreprise</div>
-          <p class="pricing-card__desc">Pour les marques, événements et campagnes de communication.</p>
-          <div class="pricing-card__price">Dès 750€</div>
+          <div class="pricing-card__name" data-content="services.pricing.2.name">Entreprise</div>
+          <p class="pricing-card__desc" data-content="services.pricing.2.desc">Pour les marques, événements et campagnes de communication.</p>
+          <div class="pricing-card__price" data-content="services.pricing.2.price">Dès 750€</div>
           <div class="pricing-divider"></div>
           <div class="pricing-features">
-            <div class="pricing-feature">Journée complète sur site</div>
-            <div class="pricing-feature">Photo et/ou vidéo selon besoin</div>
-            <div class="pricing-feature">Drone inclus si pertinent</div>
-            <div class="pricing-feature">Droits d'usage commercial étendus</div>
-            <div class="pricing-feature">Livraison multi-formats</div>
-            <div class="pricing-feature">Interlocuteur dédié</div>
+            <div class="pricing-feature" data-content="services.pricing.2.features.0">Journée complète sur site</div>
+            <div class="pricing-feature" data-content="services.pricing.2.features.1">Photo et/ou vidéo selon besoin</div>
+            <div class="pricing-feature" data-content="services.pricing.2.features.2">Drone inclus si pertinent</div>
+            <div class="pricing-feature" data-content="services.pricing.2.features.3">Droits d'usage commercial étendus</div>
+            <div class="pricing-feature" data-content="services.pricing.2.features.4">Livraison multi-formats</div>
+            <div class="pricing-feature" data-content="services.pricing.2.features.5">Interlocuteur dédié</div>
           </div>
-          <a href="contact.html?formule=entreprise" class="btn btn--ghost btn--sm" style="width:100%;justify-content:center">Demander un devis</a>
+          <a href="contact.html?formule=entreprise" class="btn btn--ghost btn--sm" style="width:100%;justify-content:center" data-content="services.pricing.2.cta">Demander un devis</a>
         </article>
 
       </div>
 
-      <p class="t-sub text-center mt-xl" style="font-size:0.85rem">Tarifs pour la Loire-Atlantique. Déplacement gratuit jusqu'à 50 km de Machecoul. Tous les prix sont nets, je ne suis pas assujetti à la TVA.</p>
+      <p class="t-sub text-center mt-xl" style="font-size:0.85rem" data-content="services.pricing_note">Tarifs pour la Loire-Atlantique. Déplacement gratuit jusqu'à 50 km de Machecoul. Tous les prix sont nets, je ne suis pas assujetti à la TVA.</p>
     </div>
   </section>
 
@@ -253,11 +253,11 @@
   <section class="section--sm">
     <div class="container">
       <div class="cta-section reveal">
-        <p class="t-kicker">Un projet sur-mesure ?</p>
-        <h2 class="t-h2">Discutons de vos <em class="accent">besoins précis.</em></h2>
-        <p class="t-sub mt-md" style="max-width:480px;margin-inline:auto">Chaque devis est gratuit et personnalisé. Réponse sous 24h.</p>
+        <p class="t-kicker" data-content="services.cta_kicker">Un projet sur-mesure ?</p>
+        <h2 class="t-h2" data-content="services.cta_title">Discutons de vos <em class="accent">besoins précis.</em></h2>
+        <p class="t-sub mt-md" style="max-width:480px;margin-inline:auto" data-content="services.cta_subtitle">Chaque devis est gratuit et personnalisé. Réponse sous 24h.</p>
         <div class="cta-actions">
-          <a href="contact.html" class="btn btn--primary">Demander un devis →</a>
+          <a href="contact.html" class="btn btn--primary" data-content="services.cta_button">Demander un devis →</a>
         </div>
       </div>
     </div>
@@ -269,7 +269,7 @@
     <div class="footer__inner">
       <div>
         <div class="footer__logo">Rémi <span class="text-accent">CHAUVIN</span></div>
-        <p class="footer__tagline">Photographe &amp; Vidéaste · Machecoul (44)</p>
+        <p class="footer__tagline" data-content="global.footer_tagline">Photographe &amp; Vidéaste · Machecoul (44)</p>
       </div>
       <nav class="footer__links" aria-label="Liens footer">
         <a href="realisations.html" class="footer__link">Réalisations</a>
@@ -279,7 +279,7 @@
       </nav>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">© 2026 Rémi CHAUVIN — Tous droits réservés</p>
+      <p class="footer__copy" data-content="global.footer_copyright">© 2026 Rémi CHAUVIN — Tous droits réservés</p>
       <div class="footer__legal-links">
         <a href="mentions-legales.html" class="footer__legal-link">Mentions légales</a>
       </div>
@@ -292,6 +292,7 @@
 </button>
 
 <script src="fixed-images-loader.js" defer></script>
+<script src="content-loader.js" defer></script>
 <script src="script.js" defer></script>
 </body>
 </html>

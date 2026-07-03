@@ -85,7 +85,7 @@
         <a href="a-propos.html" class="nav__link" aria-current="page" role="listitem">À propos</a>
         <a href="index.html#faq" class="nav__link" role="listitem">FAQ</a>
       </div>
-      <a href="contact.html" class="nav__cta">Démarrer un projet <span class="btn__arrow" aria-hidden="true">→</span></a>
+      <a href="contact.html" class="nav__cta"><span data-content="global.cta_label">Démarrer un projet</span> <span class="btn__arrow" aria-hidden="true">→</span></a>
       <button class="nav__hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
         <span></span><span></span><span></span>
       </button>
@@ -106,8 +106,8 @@
   <section class="page-hero">
     <div class="container">
       <div class="reveal">
-        <p class="t-kicker">Qui je suis</p>
-        <h1 class="t-h2" style="margin-top:0.75rem">À <em class="accent">propos</em></h1>
+        <p class="t-kicker" data-content="a_propos.hero_kicker">Qui je suis</p>
+        <h1 class="t-h2" style="margin-top:0.75rem" data-content="a_propos.hero_title">À <em class="accent">propos</em></h1>
       </div>
     </div>
   </section>
@@ -121,21 +121,21 @@
         <div class="about-portrait reveal">
           <img class="about-portrait__img" src="images/remi-portrait.webp" data-img-key="a_propos.portrait" alt="Portrait de Rémi CHAUVIN, photographe et vidéaste" loading="eager" decoding="async" width="600" height="800">
           <div class="about-portrait__badge">
-            <div class="about-badge-number">4</div>
-            <div class="about-badge-label">ans d'expérience</div>
+            <div class="about-badge-number" data-content="a_propos.badge_number">4</div>
+            <div class="about-badge-label" data-content="a_propos.badge_label">ans d'expérience</div>
           </div>
         </div>
 
         <div class="about-content reveal reveal-delay-1">
-          <p class="t-kicker">Photographe &amp; Vidéaste</p>
-          <h2 class="t-h2 mt-sm">Rémi CHAUVIN</h2>
-          <p class="t-sub mt-md">
+          <p class="t-kicker" data-content="a_propos.intro_kicker">Photographe &amp; Vidéaste</p>
+          <h2 class="t-h2 mt-sm" data-content="a_propos.intro_name">Rémi CHAUVIN</h2>
+          <p class="t-sub mt-md" data-content="a_propos.intro_p1">
             Basé à Machecoul, en Loire-Atlantique, je réalise des photos et des vidéos pour des marques, des artistes et des entreprises depuis 2022. Mon approche : comprendre d'abord ce que vous voulez communiquer, puis trouver la manière visuelle la plus juste de le faire.
           </p>
-          <p class="t-sub mt-md">
+          <p class="t-sub mt-md" data-content="a_propos.intro_p2">
             Je me suis formé sur le terrain en travaillant sur des projets concrets. Cette expérience pratique se traduit directement dans la façon dont j'aborde chaque tournage : efficace, organisé, et toujours à l'écoute du résultat attendu.
           </p>
-          <p class="t-sub mt-md">
+          <p class="t-sub mt-md" data-content="a_propos.intro_p3">
             Aujourd'hui, j'accompagne des clients variés — campings, artistes, marques locales, écoles — sur des projets allant du simple portrait à la production vidéo complète avec drone. Chaque projet est différent ; ma méthode reste la même : rigueur, créativité, respect des délais.
           </p>
 
@@ -160,25 +160,25 @@
   <section class="section" aria-labelledby="values-heading">
     <div class="container">
       <div class="section-header reveal">
-        <p class="t-kicker">Ma méthode</p>
-        <h2 class="t-h2" id="values-heading">Trois principes qui guident <em class="accent">chaque projet.</em></h2>
+        <p class="t-kicker" data-content="a_propos.values_kicker">Ma méthode</p>
+        <h2 class="t-h2" id="values-heading" data-content="a_propos.values_title">Trois principes qui guident <em class="accent">chaque projet.</em></h2>
       </div>
 
       <div class="values-grid">
         <div class="value-card reveal">
-          <div class="value-card__num">Écoute</div>
-          <div class="value-card__title">Comprendre avant de créer</div>
-          <p class="value-card__desc">Chaque projet commence par une vraie conversation sur vos objectifs — pas un brief standardisé. Le résultat visuel doit servir votre intention, pas l'inverse.</p>
+          <div class="value-card__num" data-content="a_propos.values.0.label">Écoute</div>
+          <div class="value-card__title" data-content="a_propos.values.0.title">Comprendre avant de créer</div>
+          <p class="value-card__desc" data-content="a_propos.values.0.desc">Chaque projet commence par une vraie conversation sur vos objectifs — pas un brief standardisé. Le résultat visuel doit servir votre intention, pas l'inverse.</p>
         </div>
         <div class="value-card reveal reveal-delay-1">
-          <div class="value-card__num">Rigueur</div>
-          <div class="value-card__title">Des délais tenus, sans exception</div>
-          <p class="value-card__desc">Un devis clair, un calendrier précis, une livraison dans les temps. La fiabilité fait partie du service autant que la qualité créative.</p>
+          <div class="value-card__num" data-content="a_propos.values.1.label">Rigueur</div>
+          <div class="value-card__title" data-content="a_propos.values.1.title">Des délais tenus, sans exception</div>
+          <p class="value-card__desc" data-content="a_propos.values.1.desc">Un devis clair, un calendrier précis, une livraison dans les temps. La fiabilité fait partie du service autant que la qualité créative.</p>
         </div>
         <div class="value-card reveal reveal-delay-2">
-          <div class="value-card__num">Exigence</div>
-          <div class="value-card__title">Chaque image a une intention</div>
-          <p class="value-card__desc">Pas de remplissage. Chaque photo livrée, chaque plan monté répond à un objectif précis de communication ou d'émotion.</p>
+          <div class="value-card__num" data-content="a_propos.values.2.label">Exigence</div>
+          <div class="value-card__title" data-content="a_propos.values.2.title">Chaque image a une intention</div>
+          <p class="value-card__desc" data-content="a_propos.values.2.desc">Pas de remplissage. Chaque photo livrée, chaque plan monté répond à un objectif précis de communication ou d'émotion.</p>
         </div>
       </div>
     </div>
@@ -191,11 +191,11 @@
   <section class="section--sm">
     <div class="container">
       <div class="cta-section reveal">
-        <p class="t-kicker">Travaillons ensemble</p>
-        <h2 class="t-h2">Une question ? <em class="accent">Discutons-en.</em></h2>
+        <p class="t-kicker" data-content="a_propos.cta_kicker">Travaillons ensemble</p>
+        <h2 class="t-h2" data-content="a_propos.cta_title">Une question ? <em class="accent">Discutons-en.</em></h2>
         <div class="cta-actions">
-          <a href="contact.html" class="btn btn--primary">Me contacter →</a>
-          <a href="realisations.html" class="btn btn--ghost">Voir le portfolio</a>
+          <a href="contact.html" class="btn btn--primary" data-content="a_propos.cta_primary">Me contacter →</a>
+          <a href="realisations.html" class="btn btn--ghost" data-content="a_propos.cta_secondary">Voir le portfolio</a>
         </div>
       </div>
     </div>
@@ -207,7 +207,7 @@
     <div class="footer__inner">
       <div>
         <div class="footer__logo">Rémi <span class="text-accent">CHAUVIN</span></div>
-        <p class="footer__tagline">Photographe &amp; Vidéaste · Machecoul (44)</p>
+        <p class="footer__tagline" data-content="global.footer_tagline">Photographe &amp; Vidéaste · Machecoul (44)</p>
       </div>
       <nav class="footer__links" aria-label="Liens footer">
         <a href="realisations.html" class="footer__link">Réalisations</a>
@@ -217,7 +217,7 @@
       </nav>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">© 2026 Rémi CHAUVIN — Tous droits réservés</p>
+      <p class="footer__copy" data-content="global.footer_copyright">© 2026 Rémi CHAUVIN — Tous droits réservés</p>
       <div class="footer__legal-links">
         <a href="mentions-legales.html" class="footer__legal-link">Mentions légales</a>
       </div>
@@ -230,6 +230,7 @@
 </button>
 
 <script src="fixed-images-loader.js" defer></script>
+<script src="content-loader.js" defer></script>
 <script src="script.js" defer></script>
 </body>
 </html>

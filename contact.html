@@ -37,7 +37,7 @@
         <a href="a-propos.html" class="nav__link" role="listitem">À propos</a>
         <a href="index.html#faq" class="nav__link" role="listitem">FAQ</a>
       </div>
-      <a href="contact.html" class="nav__cta" aria-current="page">Démarrer un projet <span class="btn__arrow" aria-hidden="true">→</span></a>
+      <a href="contact.html" class="nav__cta" aria-current="page"><span data-content="global.cta_label">Démarrer un projet</span> <span class="btn__arrow" aria-hidden="true">→</span></a>
       <button class="nav__hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
         <span></span><span></span><span></span>
       </button>
@@ -58,9 +58,9 @@
   <section class="page-hero">
     <div class="container">
       <div class="reveal">
-        <p class="t-kicker">Contact</p>
-        <h1 class="t-h2" style="margin-top:0.75rem">Parlons de <em class="accent">votre projet.</em></h1>
-        <p class="t-sub mt-md" style="max-width:520px">Je vous réponds personnellement sous 24 heures. Devis gratuit, sans engagement.</p>
+        <p class="t-kicker" data-content="contact.hero_kicker">Contact</p>
+        <h1 class="t-h2" style="margin-top:0.75rem" data-content="contact.hero_title">Parlons de <em class="accent">votre projet.</em></h1>
+        <p class="t-sub mt-md" style="max-width:520px" data-content="contact.hero_subtitle">Je vous réponds personnellement sous 24 heures. Devis gratuit, sans engagement.</p>
       </div>
     </div>
   </section>
@@ -80,7 +80,7 @@
               </div>
               <div>
                 <div class="contact-info-label">Email</div>
-                <div class="contact-info-value"><a href="mailto:contact@remiproduction.fr">contact@remiproduction.fr</a></div>
+                <div class="contact-info-value"><a href="mailto:contact@remiproduction.fr" data-content="contact.email">contact@remiproduction.fr</a></div>
               </div>
             </div>
 
@@ -90,7 +90,7 @@
               </div>
               <div>
                 <div class="contact-info-label">Instagram</div>
-                <div class="contact-info-value"><a href="https://www.instagram.com/remi.prod" target="_blank" rel="noopener noreferrer">@remi.prod</a></div>
+                <div class="contact-info-value"><a href="https://www.instagram.com/remi.prod" target="_blank" rel="noopener noreferrer" data-content="contact.instagram_handle">@remi.prod</a></div>
               </div>
             </div>
 
@@ -100,7 +100,7 @@
               </div>
               <div>
                 <div class="contact-info-label">Zone d'intervention</div>
-                <div class="contact-info-value">Machecoul &amp; Loire-Atlantique</div>
+                <div class="contact-info-value" data-content="contact.zone">Machecoul &amp; Loire-Atlantique</div>
               </div>
             </div>
 
@@ -110,14 +110,14 @@
               </div>
               <div>
                 <div class="contact-info-label">Disponibilité</div>
-                <div class="contact-info-value">Weekends · Vacances · Sur demande</div>
+                <div class="contact-info-value" data-content="contact.disponibilite">Weekends · Vacances · Sur demande</div>
               </div>
             </div>
           </div>
 
           <div class="availability-badge">
             <span class="availability-dot" aria-hidden="true"></span>
-            <span class="availability-text">Disponible — <strong>réponse sous 24h garantie</strong></span>
+            <span class="availability-text" data-content="contact.availability_text">Disponible — <strong>réponse sous 24h garantie</strong></span>
           </div>
         </div>
 
@@ -166,10 +166,10 @@
               <textarea class="form-textarea" id="message" name="message" required placeholder="Décrivez votre projet : contexte, objectifs, lieu, contraintes éventuelles..."></textarea>
             </div>
 
-            <p class="form-hint">* Champs obligatoires. Vos données ne sont utilisées que pour répondre à votre demande, jamais transmises à des tiers.</p>
+            <p class="form-hint" data-content="contact.form_hint">* Champs obligatoires. Vos données ne sont utilisées que pour répondre à votre demande, jamais transmises à des tiers.</p>
 
             <button type="submit" class="btn btn--primary form-submit">
-              Envoyer ma demande <span class="btn__arrow" aria-hidden="true">→</span>
+              <span data-content="contact.form_submit">Envoyer ma demande</span> <span class="btn__arrow" aria-hidden="true">→</span>
             </button>
 
             <div class="form-success" role="status" aria-live="polite"></div>
@@ -187,7 +187,7 @@
     <div class="footer__inner">
       <div>
         <div class="footer__logo">Rémi <span class="text-accent">CHAUVIN</span></div>
-        <p class="footer__tagline">Photographe &amp; Vidéaste · Machecoul (44)</p>
+        <p class="footer__tagline" data-content="global.footer_tagline">Photographe &amp; Vidéaste · Machecoul (44)</p>
       </div>
       <nav class="footer__links" aria-label="Liens footer">
         <a href="realisations.html" class="footer__link">Réalisations</a>
@@ -197,7 +197,7 @@
       </nav>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">© 2026 Rémi CHAUVIN — Tous droits réservés</p>
+      <p class="footer__copy" data-content="global.footer_copyright">© 2026 Rémi CHAUVIN — Tous droits réservés</p>
       <div class="footer__legal-links">
         <a href="mentions-legales.html" class="footer__legal-link">Mentions légales</a>
       </div>
@@ -210,6 +210,7 @@
 </button>
 
 <script src="script.js" defer></script>
+<script src="content-loader.js" defer></script>
 <script>
 // Pre-fill project type from URL param (?formule=...)
 (function() {
