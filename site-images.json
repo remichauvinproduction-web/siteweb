@@ -1,19 +1,19 @@
 {
   "accueil": {
-    "hero": "/images/dji_0754.jpg",
-    "video_camping": "/images/maxresdefault.jpg",
-    "video_nature": "/images/maxresdefault-1-.jpg",
-    "moto": "images/photo-sport-moto-01.webp"
+    "hero": "",
+    "video_camping": "",
+    "video_nature": "",
+    "moto": ""
   },
   "a_propos": {
-    "portrait": "/images/whatsapp-image-2026-05-15-at-17.10.35.jpeg"
+    "portrait": ""
   },
   "services": {
-    "exemple_portrait": "/images/img-20260225-wa0001.jpg",
-    "exemple_video": "images/video-thumb-camping.webp",
-    "exemple_drone": "/images/dji_0805.jpg"
+    "exemple_portrait": "",
+    "exemple_video": "",
+    "exemple_drone": ""
   },
   "general": {
-    "logo": "images/logo.webp"
+    "logo": ""
   }
 }

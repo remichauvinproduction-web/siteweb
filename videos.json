@@ -1,32 +1,3 @@
 {
-  "items": [
-    {
-      "youtube_id": "moNNm05GPL4",
-      "thumbnail": "/images/maxresdefault.jpg",
-      "tag": "Film promotionnel · Camping · Drone",
-      "title": "Les Chênes Verts",
-      "description": "Vidéo promotionnelle complète avec prises de vue drone DJI. Format 2 min pour site web et réseaux sociaux."
-    },
-    {
-      "youtube_id": "fUu_y0V9e54",
-      "thumbnail": "/images/maxresdefault-2-.jpg",
-      "tag": "Court métrage",
-      "title": "Rêve, Evolution, Révolution",
-      "description": "Court métrage fait dans le cadre de l'atelier Arts & Vidéo."
-    },
-    {
-      "youtube_id": "fWFlAkEkldY",
-      "thumbnail": "/images/maxresdefault-2-.jpg",
-      "tag": "Court métrage",
-      "title": "En panne !",
-      "description": "Court métrage réalisé pour le concours d'admission de la CinéFabrique."
-    },
-    {
-      "youtube_id": "pyaBJmrXP68",
-      "thumbnail": "/images/maxresdefault-3-.jpg",
-      "tag": "Cinématique",
-      "title": "Cinematic Garden",
-      "description": "Entraînement pour de la cinématique."
-    }
-  ]
+  "items": []
 }
