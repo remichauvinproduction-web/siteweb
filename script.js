@@ -209,19 +209,50 @@ document.addEventListener('gallery:loaded', () => {
   const iframe = lightbox.querySelector('iframe');
   const closeBtn = lightbox.querySelector('.video-lightbox__close');
 
-  document.querySelectorAll('.video-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const videoId = card.dataset.videoId;
-      if (!videoId) return;
-      iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`;
-      lightbox.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
+  /* Extrait l'ID YouTube, que le champ contienne déjà juste l'ID
+     ou une URL complète (youtube.com/watch?v=..., youtu.be/..., /embed/...). */
+  function extractYoutubeId(raw) {
+    if (!raw) return null;
+    const value = raw.trim();
+    const patterns = [
+      /(?:v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})/,
+    ];
+    for (const re of patterns) {
+      const m = value.match(re);
+      if (m) return m[1];
+    }
+    // Si aucun motif d'URL ne correspond, on suppose que c'est déjà un ID brut.
+    return /^[a-zA-Z0-9_-]{11}$/.test(value) ? value : null;
+  }
+
+  function openVideo(card) {
+    const videoId = extractYoutubeId(card.dataset.videoId);
+    if (!videoId) return;
+    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  /* Délégation d'événements sur tout le document : fonctionne même
+     pour les cartes vidéo injectées après coup par video-loader.js. */
+  document.addEventListener('click', e => {
+    const card = e.target.closest('.video-card');
+    if (card) openVideo(card);
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const card = e.target.closest('.video-card');
+    if (card) { e.preventDefault(); openVideo(card); }
+  });
+
+  /* Rend les cartes accessibles au clavier, y compris celles ajoutées plus tard. */
+  function makeAccessible(card) {
     card.setAttribute('role', 'button');
     card.setAttribute('tabindex', '0');
-    card.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
-    });
+  }
+  document.querySelectorAll('.video-card').forEach(makeAccessible);
+  document.addEventListener('videos:loaded', () => {
+    document.querySelectorAll('.video-card').forEach(makeAccessible);
   });
 
   const closeVideo = () => {
