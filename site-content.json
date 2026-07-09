@@ -5,145 +5,261 @@
     "footer_copyright": "© 2026 Rémi CHAUVIN — Tous droits réservés"
   },
   "accueil": {
-    "hero_kicker": "Photographe · Vidéaste · Machecoul (44)",
-    "hero_title_line1": "Votre projet mérite",
-    "hero_title_line2": "des images qui marquent.",
-    "hero_subtitle": "Photo &amp; vidéo professionnelle pour marques, artistes et entreprises en Loire-Atlantique.",
-    "hero_cta_primary": "Voir mes réalisations",
     "hero_cta_secondary": "Discutons de votre projet",
+    "cta_final_title": "Parlons de <em class=\"accent\">votre projet.</em>",
+    "gallery_kicker": "Portfolio photo",
+    "process_kicker": "Comment ça se passe",
+    "gallery_cta": "Voir toutes les photos",
     "hero_trust_1": "20+ projets réalisés",
+    "gallery_subtitle": "Portrait, événement, sport, nature — une approche qui vous ressemble.",
     "hero_trust_2": "Loire-Atlantique &amp; Vendée",
     "hero_trust_3": "Réponse sous 24h",
-    "stats": [
-      { "number": "20+", "label": "Projets réalisés" },
-      { "number": "4", "label": "Ans d'expérience" },
-      { "number": "24h", "label": "Réponse garantie" }
-    ],
-    "gallery_kicker": "Portfolio photo",
-    "gallery_title": "<em class=\"accent\">Chaque image</em><br>a une intention.",
-    "gallery_subtitle": "Portrait, événement, sport, nature — une approche toujours juste, jamais hasardeuse.",
-    "gallery_cta": "Voir toutes les photos",
-    "services_kicker": "Expertises",
-    "services_title": "Ce que je fais <em class=\"accent\">pour vous.</em>",
-    "services": [
-      { "name": "Photographie", "desc": "Portrait, book, événements et concerts. Retouche professionnelle incluse. Galerie en ligne livrée sous 5 jours ouvrés." },
-      { "name": "Vidéo &amp; Reels", "desc": "Clips commerciaux, publicités, court métrages et Reels Instagram. Montage sur DaVinci Resolve. Multi-formats, prêt à publier." },
-      { "name": "Drone DJI", "desc": "Prises de vue aériennes spectaculaires pour vos films d'entreprise, immobilier ou événements. Résolution 4K." }
-    ],
-    "services_cta": "Voir les tarifs &amp; formules",
-    "process_kicker": "Comment ça se passe",
     "process_title": "Simple, clair, <em class=\"accent\">efficace.</em>",
     "process_subtitle": "De la première prise de contact à la livraison finale, je gère tout.",
-    "process_steps": [
-      { "title": "Brief &amp; Devis", "desc": "Vous m'expliquez votre projet. Je vous envoie un devis personnalisé et gratuit sous 24h. Aucun engagement." },
-      { "title": "Tournage", "desc": "Nous fixons ensemble la date, le lieu, les intentions artistiques. Le jour J, je m'occupe de tout." },
-      { "title": "Livraison", "desc": "Galerie en ligne, exports multi-formats, une révision incluse. Vous repartez avec des images prêtes à l'emploi." }
-    ],
-    "faq_kicker": "Questions fréquentes",
-    "faq_title": "Tout ce que vous <em class=\"accent\">voulez savoir.</em>",
-    "faq_items": [
-      { "question": "Combien de temps pour recevoir mes photos ou vidéos ?", "answer": "Pour la photographie, la galerie est livrée sous <strong>5 jours ouvrés</strong>. Pour la vidéo, comptez <strong>7 à 10 jours</strong> selon la complexité du montage. Un délai express est possible sur demande." },
-      { "question": "Vous vous déplacez en dehors de Machecoul ?", "answer": "Oui, je me déplace dans toute la Loire-Atlantique et les départements limitrophes (Vendée, Maine-et-Loire) <strong>sans supplément jusqu'à 50 km</strong> de Machecoul. Au-delà, les frais kilométriques sont calculés au cas par cas." },
-      { "question": "Je ne suis pas à l'aise devant l'objectif, est-ce un problème ?", "answer": "Pas du tout. La grande majorité de mes clients ne sont pas mannequins ! Je prends le temps de vous mettre à l'aise, de vous guider dans les poses et de créer une ambiance détendue. Les meilleurs portraits sont souvent les plus naturels." },
-      { "question": "Est-ce que le paiement en plusieurs fois est possible ?", "answer": "Oui. Pour les prestations supérieures à 300 €, un <strong>acompte de 30 % à la réservation</strong> et le solde à la livraison sont la norme. Des arrangements en deux ou trois versements peuvent être discutés selon les projets." },
-      { "question": "Les droits d'utilisation commerciale sont-ils inclus ?", "answer": "Oui. Toutes mes prestations incluent les <strong>droits d'utilisation pour vos supports de communication</strong> : site web, réseaux sociaux, print. Pour une diffusion commerciale large (télévision, affichage national), contactez-moi pour établir un contrat adapté." },
-      { "question": "Que se passe-t-il en cas de mauvais temps ?", "answer": "Pour les shootings en extérieur, je surveille la météo la veille. En cas de conditions défavorables, nous pouvons <strong>reporter la séance sans frais</strong> sur une date qui vous convient. Parfois, une lumière couverte est même plus flatteuse qu'un soleil direct !" },
-      { "question": "Comment réserver et démarrer un projet ?", "answer": "Rien de plus simple : remplissez le formulaire de contact en décrivant votre projet (type de prestation, date souhaitée, contexte). Je vous réponds <strong>personnellement sous 24h</strong> avec un devis et les premières questions. Pas de jargon, pas d'attente interminable." },
-      { "question": "Quelle est la différence entre vos formules Essentielle et Signature ?", "answer": "La formule <strong>Essentielle</strong> couvre une session de 1h avec livraison de 15 photos retouchées — idéale pour un portrait professionnel ou un mini-shooting. La formule <strong>Signature</strong> inclut une session longue (3h), 40 photos, une direction artistique poussée et un accès prioritaire à l'agenda. Consultez la page Services pour le détail complet." }
-    ],
     "cta_final_kicker": "Prêt à démarrer ?",
-    "cta_final_title": "Parlons de <em class=\"accent\">votre projet.</em>",
-    "cta_final_subtitle": "Je vous réponds personnellement sous 24 heures. Devis gratuit, sans engagement."
+    "gallery_title": "<em class=\"accent\">Chaque image</em><br>a une intention.",
+    "hero_cta_primary": "Voir mes réalisations",
+    "services_cta": "Voir les tarifs &amp; formules",
+    "faq_title": "Tout ce que vous <em class=\"accent\">voulez savoir.</em>",
+    "cta_final_subtitle": "Je vous réponds personnellement sous 24 heures. Devis gratuit, sans engagement.",
+    "hero_title_line1": "Votre projet mérite",
+    "hero_title_line2": "des images qui marquent.",
+    "services_kicker": "Mes Services",
+    "process_steps": [
+      {
+        "title": "Brief &amp; Devis",
+        "desc": "Vous m'expliquez votre projet. Je vous envoie un devis personnalisé et gratuit sous 24h. Aucun engagement."
+      },
+      {
+        "title": "Tournage",
+        "desc": "Nous fixons ensemble la date, le lieu, les intentions artistiques. Le jour J, je m'occupe de tout."
+      },
+      {
+        "title": "Livraison",
+        "desc": "Galerie en ligne, exports multi-formats, une révision incluse. Vous repartez avec des images prêtes à l'emploi."
+      }
+    ],
+    "faq_items": [
+      {
+        "question": "Combien de temps pour recevoir mes photos ou vidéos ?",
+        "answer": "Pour la photographie, la galerie est livrée sous <strong>5 jours ouvrés</strong>. Pour la vidéo, comptez <strong>7 à 10 jours</strong> selon la complexité du montage. Un délai express est possible sur demande."
+      },
+      {
+        "question": "Vous vous déplacez en dehors de Machecoul ?",
+        "answer": "Oui, je me déplace dans toute la Loire-Atlantique et les départements limitrophes (Vendée, Maine-et-Loire) <strong>sans supplément jusqu'à 30 km</strong> de Machecoul. Au-delà, les frais kilométriques sont calculés a 60ct/km"
+      },
+      {
+        "question": "Je ne suis pas à l'aise devant l'objectif, est-ce un problème ?",
+        "answer": "Pas du tout. La grande majorité de mes clients ne sont pas mannequins ! Je prends le temps de vous mettre à l'aise, de vous guider dans les poses et de créer une ambiance détendue. Les meilleurs portraits sont souvent les plus naturels."
+      },
+      {
+        "question": "Est-ce que le paiement en plusieurs fois est possible ?",
+        "answer": "Oui. Pour les prestations supérieures à 300 €, un <strong>acompte de 30 % à la réservation</strong> et le solde à la livraison sont la norme. Des arrangements en deux ou trois versements peuvent être discutés selon les projets."
+      },
+      {
+        "question": "Les droits d'utilisation commerciale sont-ils inclus ?",
+        "answer": "Oui. Toutes mes prestations incluent les <strong>droits d'utilisation pour vos supports de communication</strong> : site web, réseaux sociaux, print. Pour une diffusion commerciale large (télévision, affichage national), contactez-moi pour établir un contrat adapté."
+      },
+      {
+        "question": "Que se passe-t-il en cas de mauvais temps ?",
+        "answer": "Pour les shootings en extérieur, je surveille la météo la veille. En cas de conditions défavorables, nous pouvons <strong>reporter la séance sans frais</strong> sur une date qui vous convient. Parfois, une lumière couverte est même plus flatteuse qu'un soleil direct !"
+      },
+      {
+        "question": "Comment réserver et démarrer un projet ?",
+        "answer": "Rien de plus simple : remplissez le formulaire de contact en décrivant votre projet (type de prestation, date souhaitée, contexte). Je vous réponds <strong>personnellement sous 24h</strong> avec un devis et les premières questions. Pas de jargon, pas d'attente interminable."
+      }
+    ],
+    "services_title": "Ce que je fais <em class=\"accent\">pour vous.</em>",
+    "hero_kicker": "Photographe · Vidéaste · Machecoul (44)",
+    "faq_kicker": "Questions fréquentes",
+    "hero_subtitle": "Photo &amp; vidéo professionnelle pour marques, artistes, particuliers et entreprises en Loire-Atlantique.",
+    "services": [
+      {
+        "name": "Vidéo &amp; Reels",
+        "desc": "Clips commerciaux, publicités, court métrages et Reels Instagram. Multi-formats, prêt à publier."
+      },
+      {
+        "name": "Photographie",
+        "desc": "Portrait, book, événements et concerts. Retouche  incluse. Galerie en ligne livrée sous 5 jours ouvrés."
+      },
+      {
+        "name": "Dron",
+        "desc": "Prises de vue aériennes pour vos films d'entreprise, immobilier ou événements. "
+      }
+    ],
+    "stats": [
+      {
+        "number": "20+",
+        "label": "Projets réalisés"
+      },
+      {
+        "number": "4",
+        "label": "Ans d'expérience"
+      },
+      {
+        "number": "24h",
+        "label": "Réponse garantie"
+      }
+    ]
   },
   "a_propos": {
-    "hero_kicker": "Qui je suis",
-    "hero_title": "À <em class=\"accent\">propos</em>",
-    "intro_kicker": "Photographe &amp; Vidéaste",
-    "intro_name": "Rémi CHAUVIN",
-    "intro_p1": "Basé à Machecoul, en Loire-Atlantique, je réalise des photos et des vidéos pour des marques, des artistes et des entreprises depuis 2022. Mon approche : comprendre d'abord ce que vous voulez communiquer, puis trouver la manière visuelle la plus juste de le faire.",
-    "intro_p2": "Je me suis formé sur le terrain en travaillant sur des projets concrets. Cette expérience pratique se traduit directement dans la façon dont j'aborde chaque tournage : efficace, organisé, et toujours à l'écoute du résultat attendu.",
-    "intro_p3": "Aujourd'hui, j'accompagne des clients variés — campings, artistes, marques locales, écoles — sur des projets allant du simple portrait à la production vidéo complète avec drone. Chaque projet est différent ; ma méthode reste la même : rigueur, créativité, respect des délais.",
-    "badge_number": "4",
-    "badge_label": "ans d'expérience",
-    "values_kicker": "Ma méthode",
-    "values_title": "Trois principes qui guident <em class=\"accent\">chaque projet.</em>",
     "values": [
-      { "label": "Écoute", "title": "Comprendre avant de créer", "desc": "Chaque projet commence par une vraie conversation sur vos objectifs — pas un brief standardisé. Le résultat visuel doit servir votre intention, pas l'inverse." },
-      { "label": "Rigueur", "title": "Des délais tenus, sans exception", "desc": "Un devis clair, un calendrier précis, une livraison dans les temps. La fiabilité fait partie du service autant que la qualité créative." },
-      { "label": "Exigence", "title": "Chaque image a une intention", "desc": "Pas de remplissage. Chaque photo livrée, chaque plan monté répond à un objectif précis de communication ou d'émotion." }
+      {
+        "label": "Écoute",
+        "title": "Comprendre avant de créer",
+        "desc": "Chaque projet commence par une vraie conversation sur vos objectifs  pas un brief standardisé. Le résultat visuel doit servir votre intention, pas l'inverse."
+      },
+      {
+        "label": "Rigueur",
+        "title": "Des délais tenus, sans exception",
+        "desc": "Un devis clair, un calendrier précis, une livraison dans les temps. La fiabilité fait partie du service autant que la qualité créative."
+      },
+      {
+        "label": "Exigence",
+        "title": "Chaque image a une intention",
+        "desc": "Chaque photo livrée, chaque plan monté répond à un objectif précis de communication ou d'émotion."
+      }
     ],
     "cta_kicker": "Travaillons ensemble",
+    "cta_secondary": "Voir le portfolio",
+    "badge_number": "4",
+    "intro_kicker": "Photographe &amp; Vidéaste",
     "cta_title": "Une question ? <em class=\"accent\">Discutons-en.</em>",
+    "values_kicker": "Ma méthode",
+    "hero_title": "À <em class=\"accent\">propos</em>",
     "cta_primary": "Me contacter →",
-    "cta_secondary": "Voir le portfolio"
+    "intro_p1": "Basé à Machecoul, en Loire-Atlantique, je réalise des photos et des vidéos pour des marques, des artistes et des entreprises depuis 2022. Mon approche : comprendre d'abord ce que vous voulez communiquer, puis trouver la manière visuelle la plus juste de le faire.",
+    "intro_p2": "Je me suis formé sur le terrain en travaillant sur des projets concrets. Cette expérience pratique se traduit directement dans la façon dont j'aborde chaque tournage : efficace, organisé, et toujours à l'écoute du résultat attendu.",
+    "intro_p3": "Aujourd'hui, j'accompagne des clients variés — campings, artistes, marques locales — sur des projets allant du simple portrait à la production vidéo complète avec drone. Chaque projet est différent ; ma méthode reste la même : rigueur, créativité, respect des délais.",
+    "hero_kicker": "Qui je suis",
+    "badge_label": "ans d'expérience",
+    "values_title": "Trois principes qui guident <em class=\"accent\">chaque projet.</em>",
+    "intro_name": "Rémi CHAUVIN"
   },
   "contact": {
-    "hero_kicker": "Contact",
-    "hero_title": "Parlons de <em class=\"accent\">votre projet.</em>",
-    "hero_subtitle": "Je vous réponds personnellement sous 24 heures. Devis gratuit, sans engagement.",
-    "email": "contact@remiproduction.fr",
-    "instagram_handle": "@remi.prod",
-    "instagram_url": "https://www.instagram.com/remi.prod",
-    "zone": "Machecoul &amp; Loire-Atlantique",
-    "disponibilite": "Weekends · Vacances · Sur demande",
-    "availability_text": "Disponible — <strong>réponse sous 24h garantie</strong>",
     "form_hint": "* Champs obligatoires. Vos données ne sont utilisées que pour répondre à votre demande, jamais transmises à des tiers.",
-    "form_submit": "Envoyer ma demande"
+    "instagram_url": "https://www.instagram.com/remi.prod",
+    "zone": "Loire-Atlantique",
+    "availability_text": "Disponible — <strong>réponse sous 24h garantie</strong>",
+    "hero_title": "Parlons de <em class=\"accent\">votre projet.</em>",
+    "form_submit": "Envoyer ma demande",
+    "instagram_handle": "@remi.prod",
+    "hero_kicker": "Contact",
+    "email": "remichauvinproduction@gmail.com",
+    "disponibilite": "Weekends · Vacances · Sur demande",
+    "hero_subtitle": "Je vous réponds sous 24 heures. Devis gratuit, sans engagement."
   },
   "services": {
-    "hero_kicker": "Ce que je propose",
-    "hero_title": "Services <em class=\"accent\">&amp; tarifs</em>",
-    "hero_subtitle": "Des formules claires, sans surprise. Chaque prestation est pensée pour répondre à un objectif précis — visibilité, image de marque, souvenir.",
     "photo_kicker": "01 · Photographie",
+    "cta_button": "Demander un devis →",
+    "video_features": [
+      "Montage sur DaVinci Resolve, étalonnage professionnel",
+      "Livraison multi-formats : horizontal, vertical, carré",
+      "Musique libre de droits incluse",
+      "Livraison sous 7 à 10 jours ouvrés"
+    ],
+    "cta_kicker": "Un projet sur-mesure ?",
+    "drone_features": [
+      "Résolution 4K, stabilisation native",
+      "Photo et vidéo aérienne combinées",
+      "Idéal pour camping, domaine, événement, immobilier",
+      "Pilote conforme à la réglementation DGAC"
+    ],
+    "pricing": [
+      {
+        "name": "Découverte",
+        "desc": "1 à 2 h de tournage, Durée de la vidéo (30 à 60 s),",
+        "price": "120 à 180 €",
+        "features": [
+          "Jusqu'à 2 h de tournage",
+          "Étalonnage (color grading)",
+          "Durée de la vidéo Jusqu'à 45 s",
+          "",
+          "Drone En option",
+          "Sous-titres En option"
+        ],
+        "cta": "Choisir cette formule"
+      },
+      {
+        "name": "Essentielle",
+        "desc": "Demi-journée de tournage, vidéo de 30 s à 1 min, étalonnage, musique libre de droits, 2 révisions",
+        "price": "250 à 350 €",
+        "features": [
+          "Demi-journée (4 h)",
+          "Étalonnage (color grading)",
+          "Musique libre de droits",
+          "Durée de la vidéo: jusqu'à 1min30",
+          "Drone: en option",
+          "sous titre inclus",
+          "Assistance après livraison"
+        ],
+        "cta": "Choisir cette formule"
+      },
+      {
+        "name": "Premium",
+        "desc": "Journée de tournage, plusieurs plans, drone (si nécessaire), version verticale incluse",
+        "price": "450 à 650 €",
+        "features": [
+          "Journée complète sur site",
+          "Photo et/ou vidéo selon besoin",
+          "Drone inclus si pertinent",
+          "Étalonnage (color grading)",
+          "Musique libre de droits",
+          "Droits d'usage commercial étendus",
+          "Livraison multi-formats",
+          "Assistance après livraison"
+        ],
+        "cta": "Demander un devis"
+      }
+    ],
+    "cta_subtitle": "Chaque devis est gratuit et personnalisé. Réponse sous 24h.",
+    "cta_title": "Discutons de vos <em class=\"accent\">besoins précis.</em>",
+    "pricing_badge": "Le plus choisi",
+    "photo_features": [
+      "Séances en studio ou en extérieur",
+      "Retouche professionnelle incluse sur toutes les photos",
+      "Galerie privée en ligne, téléchargement haute résolution",
+      "Livraison sous 5 jours ouvrés"
+    ],
+    "pricing_note": "Tarifs pour la Loire-Atlantique. Déplacement gratuit jusqu'à 30 km de Machecoul , 60ct/km. Tous les prix sont nets, je ne suis pas assujetti à la TVA.",
     "photo_title": "Portrait, book, événement.",
-    "photo_desc": "Que ce soit pour un portrait professionnel, un book artistique ou la couverture complète d'un événement, j'apporte une direction claire et une retouche soignée à chaque image livrée.",
-    "photo_features": ["Séances en studio ou en extérieur", "Retouche professionnelle incluse sur toutes les photos", "Galerie privée en ligne, téléchargement haute résolution", "Livraison sous 5 jours ouvrés"],
-    "video_kicker": "02 · Vidéo &amp; Reels",
+    "pricing_kicker": "Tarifs",
+    "pricing_subtitle": "Tarifs indicatifs pour la photographie. Chaque devis est personnalisé selon votre projet — contactez-moi pour un chiffrage précis, y compris pour la vidéo.",
+    "drone_title": "La vue d'ensemble qui change tout.",
+    "hero_title": "Services <em class=\"accent\">&amp; tarifs</em>",
     "video_title": "Du film d'entreprise au Reel viral.",
     "video_desc": "Clip commercial, vidéo institutionnelle, contenu pour réseaux sociaux : chaque projet vidéo est pensé pour son canal de diffusion, avec un montage rythmé et un étalonnage soigné.",
-    "video_features": ["Montage sur DaVinci Resolve, étalonnage professionnel", "Livraison multi-formats : horizontal, vertical, carré", "Musique libre de droits incluse", "Livraison sous 7 à 10 jours ouvrés"],
-    "drone_kicker": "03 · Drone DJI",
-    "drone_title": "La vue d'ensemble qui change tout.",
+    "video_kicker": "02 · Vidéo &amp; Reels",
+    "hero_kicker": "Ce que je propose",
     "drone_desc": "Pour un domaine, un événement ou un bien immobilier, la prise de vue aérienne ajoute une dimension que le sol ne permet pas. Pilotage certifié, sécurité et conformité réglementaire.",
-    "drone_features": ["Résolution 4K, stabilisation native", "Photo et vidéo aérienne combinées", "Idéal pour camping, domaine, événement, immobilier", "Pilote conforme à la réglementation DGAC"],
-    "pricing_kicker": "Tarifs",
-    "pricing_title": "Trois formules, <em class=\"accent\">une exigence.</em>",
-    "pricing_subtitle": "Tarifs indicatifs pour la photographie. Chaque devis est personnalisé selon votre projet — contactez-moi pour un chiffrage précis, y compris pour la vidéo.",
-    "pricing": [
-      { "name": "Essentielle", "desc": "Pour un portrait professionnel ou un mini-shooting ciblé.", "price": "180€", "features": ["Session de 1 heure", "15 photos retouchées", "1 lieu, 1 tenue", "Galerie en ligne privée", "Livraison sous 5 jours"], "cta": "Choisir cette formule" },
-      { "name": "Signature", "desc": "Pour une direction artistique poussée et un rendu premium.", "price": "420€", "features": ["Session de 3 heures", "40 photos retouchées", "Jusqu'à 3 lieux ou tenues", "Direction artistique personnalisée", "Galerie en ligne privée", "Accès prioritaire à l'agenda"], "cta": "Choisir cette formule" },
-      { "name": "Entreprise", "desc": "Pour les marques, événements et campagnes de communication.", "price": "Dès 750€", "features": ["Journée complète sur site", "Photo et/ou vidéo selon besoin", "Drone inclus si pertinent", "Droits d'usage commercial étendus", "Livraison multi-formats", "Interlocuteur dédié"], "cta": "Demander un devis" }
-    ],
-    "pricing_badge": "Le plus choisi",
-    "pricing_note": "Tarifs pour la Loire-Atlantique. Déplacement gratuit jusqu'à 50 km de Machecoul. Tous les prix sont nets, je ne suis pas assujetti à la TVA.",
-    "cta_kicker": "Un projet sur-mesure ?",
-    "cta_title": "Discutons de vos <em class=\"accent\">besoins précis.</em>",
-    "cta_subtitle": "Chaque devis est gratuit et personnalisé. Réponse sous 24h.",
-    "cta_button": "Demander un devis →"
+    "drone_kicker": "03 · Drone DJI",
+    "hero_subtitle": "Des formules claires, sans surprise. Chaque prestation est pensée pour répondre à un objectif précis — visibilité, image de marque, souvenir.",
+    "photo_desc": "Que ce soit pour un portrait professionnel, un book artistique ou la couverture complète d'un événement, j'apporte une direction claire et une retouche soignée à chaque image livrée.",
+    "pricing_title": "Trois formules, <em class=\"accent\">une exigence.</em>"
   },
   "realisations": {
-    "hero_kicker": "Portfolio complet",
-    "hero_title": "Réalisations <em class=\"accent\">photo &amp; vidéo</em>",
-    "hero_subtitle": "Projets clients, créations personnelles, collaborations. Chaque image raconte quelque chose.",
-    "tab_photos": "Photographie",
-    "tab_videos": "Vidéo &amp; Films",
     "cta_kicker": "Votre projet",
+    "tab_videos": "Vidéo &amp; Films",
+    "cta_secondary": "Voir les tarifs",
     "cta_title": "Prêt à créer <em class=\"accent\">quelque chose de remarquable ?</em>",
+    "tab_photos": "Photographie",
+    "hero_title": "Réalisations <em class=\"accent\">photo &amp; vidéo</em>",
     "cta_primary": "Démarrer un projet →",
-    "cta_secondary": "Voir les tarifs"
+    "hero_kicker": "Portfolio complet",
+    "hero_subtitle": "Projets clients, créations personnelles, collaborations. Chaque image raconte quelque chose."
   },
   "mentions_legales": {
-    "hero_kicker": "Informations légales",
-    "hero_title": "Mentions <em class=\"accent\">légales</em>",
-    "editeur_p1": "Le site remiproduction.fr est édité par Rémi CHAUVIN, entrepreneur individuel, dont le siège est basé à Machecoul (44270), Loire-Atlantique, France.",
     "editeur_siret": "Numéro SIRET : à compléter lors de l'immatriculation de l'activité.",
-    "directeur_pub": "Rémi CHAUVIN est responsable de la publication du contenu du présent site.",
+    "editeur_p1": "Le site remiproduction.fr est édité par Rémi CHAUVIN, particulier, dont le siège est basé à Machecoul (44270), Loire-Atlantique, France.",
+    "droit": "Le présent site est soumis au droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux français seront seuls compétents.",
     "hebergement": "Le site est hébergé par un prestataire d'hébergement web. Les coordonnées complètes de l'hébergeur sont disponibles sur demande auprès de l'éditeur.",
-    "propriete": "L'ensemble des contenus présents sur ce site (photographies, vidéos, textes, logo, identité visuelle) est la propriété exclusive de Rémi CHAUVIN, sauf mention contraire. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, sans autorisation écrite préalable est strictement interdite et constitue une contrefaçon sanctionnée par le Code de la propriété intellectuelle.",
-    "rgpd_p1": "Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition concernant les données personnelles vous concernant.",
-    "rgpd_p2": "Les données collectées via le formulaire de contact (nom, email, téléphone, message) sont utilisées uniquement dans le cadre du traitement de votre demande de devis ou de renseignement. Elles ne sont ni cédées ni revendues à des tiers.",
     "cookies": "Ce site n'utilise pas de cookies de suivi publicitaire. Seuls des cookies techniques strictement nécessaires au bon fonctionnement du site peuvent être utilisés.",
+    "hero_title": "Mentions <em class=\"accent\">légales</em>",
+    "rgpd_p1": "Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition concernant les données personnelles vous concernant.",
+    "directeur_pub": "Rémi CHAUVIN est responsable de la publication du contenu du présent site.",
+    "hero_kicker": "Informations légales",
+    "rgpd_p2": "Les données collectées via le formulaire de contact (nom, email, téléphone, message) sont utilisées uniquement dans le cadre du traitement de votre demande de devis ou de renseignement. Elles ne sont ni cédées ni revendues à des tiers.",
     "credits": "L'ensemble des photographies et vidéos présentées sur ce site sont réalisées par Rémi CHAUVIN, sauf mention contraire explicite. Les projets clients sont publiés avec l'accord préalable des personnes et entités concernées.",
-    "droit": "Le présent site est soumis au droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux français seront seuls compétents."
+    "propriete": "L'ensemble des contenus présents sur ce site (photographies, vidéos, textes, logo, identité visuelle) est la propriété exclusive de Rémi CHAUVIN, sauf mention contraire. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, sans autorisation écrite préalable est strictement interdite et constitue une contrefaçon sanctionnée par le Code de la propriété intellectuelle."
   }
 }
