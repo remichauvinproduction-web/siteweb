@@ -6,6 +6,13 @@
       "tag": "Film promotionnel · Camping · Drone",
       "title": " Teaser pour le camping des chênes vert a Bougneuf en retz",
       "description": " Teaser pour le camping des chênes vert a Bougneuf en retz"
+    },
+    {
+      "youtube_id": "https://www.youtube.com/watch?v=fWFlAkEkldY",
+      "thumbnail": "/images/cine.jpg",
+      "title": " En panne ! - court métrage",
+      "tag": "court métrage",
+      "description": "Court métrage réalisé pour le concours d’admission de la La CinéFabrique."
     }
   ]
 }
