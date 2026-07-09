@@ -9,9 +9,9 @@
     "portrait": "/images/whatsapp-image-2026-05-15-at-17.10.35.jpeg"
   },
   "services": {
-    "exemple_portrait": "/images/img-20260225-wa0000.jpg",
-    "exemple_video": "/images/image-11-.webp",
-    "exemple_drone": "/images/dji_0866.jpg"
+    "exemple_portrait": "https://i.ibb.co/QsV523k/IMAGE-3.webp",
+    "exemple_video": "https://i.ibb.co/Y4r9Mvcx/IMAGE-5.jpg",
+    "exemple_drone": "https://i.ibb.co/QFZzn7JP/DJI-0805.jpg"
   },
   "general": {
     "logo": "/images/remilogo.jpg"
