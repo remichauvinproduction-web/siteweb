@@ -168,15 +168,13 @@
     "pricing": [
       {
         "name": "Découverte",
-        "desc": "1 à 2 h de tournage, Durée de la vidéo (30 à 60 s),",
+        "desc": "1 à 2 h de tournage, durée de la vidéo (30 à 60 s),",
         "price": "120 à 180 €",
         "features": [
           "Jusqu'à 2 h de tournage",
           "Étalonnage (color grading)",
-          "Durée de la vidéo Jusqu'à 45 s",
-          "",
-          "Drone En option",
-          "Sous-titres En option"
+          "Durée de la vidéo jusqu'à 45 s",
+          "Drone et sous titre en option"
         ],
         "cta": "Choisir cette formule"
       },
