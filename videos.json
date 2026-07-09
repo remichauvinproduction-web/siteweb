@@ -9,10 +9,17 @@
     },
     {
       "youtube_id": "https://www.youtube.com/watch?v=fWFlAkEkldY",
-      "thumbnail": "/images/cine.jpg",
+      "thumbnail": "https://img.youtube.com/vi/fWFlAkEkldY/maxresdefault.jpg",
       "title": " En panne ! - court métrage",
       "tag": "court métrage",
       "description": "Court métrage réalisé pour le concours d’admission de la La CinéFabrique."
+    },
+    {
+      "youtube_id": "https://www.youtube.com/watch?v=pyaBJmrXP68&t=1s",
+      "thumbnail": "https://img.youtube.com/vi/pyaBJmrXP68/maxresdefault.jpg",
+      "tag": "cinématique , jardin",
+      "title": " Cinematic Garden",
+      "description": "Enchainement de plan de type cinématique pour contempler la nature"
     }
   ]
 }
