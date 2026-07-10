@@ -1,17 +1,17 @@
 {
   "accueil": {
     "hero": "/images/dji_0754.jpg",
-    "video_camping": "/images/maxresdefault.jpg",
-    "video_nature": "/images/maxresdefault-4-.jpg",
+    "video_camping": "/images/camping.jpg",
+    "video_nature": "/images/cine.jpg",
     "moto": "/images/photo-event-concert-01.webp"
   },
   "a_propos": {
     "portrait": "/images/whatsapp-image-2026-05-15-at-17.10.35.jpeg"
   },
   "services": {
-    "exemple_portrait": "https://i.ibb.co/G4DpMBK2/IMG-20260225-WA0001.jpg",
-    "exemple_video": "https://www.amaia-traduction.com/wp-content/uploads/2023/01/camera-sur-trepied-au-premier-plan-filmant-un-entretien-daffaires.jpg",
-    "exemple_drone": "https://i.ibb.co/QFZzn7JP/DJI-0805.jpg"
+    "exemple_portrait": "/images/portrait-02.jpg",
+    "exemple_video": "/images/camping.jpg",
+    "exemple_drone": "/images/dji_0805.jpg"
   },
   "general": {
     "logo": "/images/remilogo.jpg"
