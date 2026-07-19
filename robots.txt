@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /mentions-legales.html
 
-Sitemap: https://www.remiproduction.fr/sitemap.xml
+Sitemap: https://remiproduction.fr/sitemap.xml
