@@ -1,553 +1,571 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rémi Production | Vidéaste & Photographe</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        pastel: {
-                            bg: '#F5F2EB',
-                            surface: '#EAE6DB',
-                            accent: '#D9C8B8',
-                            blue: '#D2D9DB',
-                        },
-                        dark: {
-                            main: '#1A1A1A',
-                            muted: '#4A4A4A'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Anton', 'sans-serif'],
-                    },
-                    fontSize: {
-                        'massive': 'clamp(3rem, 10vw, 10rem)',
-                        'submassive': 'clamp(2.5rem, 8vw, 8rem)',
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        body { background-color: #F5F2EB; color: #1A1A1A; overflow-x: hidden; }
-        ::selection { background-color: #1A1A1A; color: #F5F2EB; }
-        
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #F5F2EB; }
-        ::-webkit-scrollbar-thumb { background: #D9C8B8; border-radius: 4px; }
+  <!-- SEO Primary -->
+  <title>Rémi CHAUVIN | Photographe &amp; Vidéaste Loire-Atlantique — Machecoul (44)</title>
+  <meta name="description" content="Photographe et vidéaste professionnel à Machecoul (44). Portrait, publicité, événements, drone. Contenu photo et vidéo pour marques, artistes et entreprises en Loire-Atlantique. Devis sous 24h.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://remiproduction.fr/">
 
-        .reveal { opacity: 0; transform: translateY(40px); transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1); }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-        .scale-reveal { opacity: 0; transform: scale(0.95); transition: all 1.5s cubic-bezier(0.25, 1, 0.5, 1); }
-        .scale-reveal.active { opacity: 1; transform: scale(1); }
-        
-        .img-wrapper { overflow: hidden; position: relative; }
-        .img-wrapper img { transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1); }
-        .img-wrapper:hover img { transform: scale(1.05); }
-        .img-overlay { background: linear-gradient(to top, rgba(26,26,26,0.8) 0%, transparent 100%); opacity: 0; transition: opacity 0.5s ease; }
-        .img-wrapper:hover .img-overlay { opacity: 1; }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://remiproduction.fr/">
+  <meta property="og:title" content="Rémi CHAUVIN | Photographe &amp; Vidéaste Loire-Atlantique">
+  <meta property="og:description" content="Photographe et vidéaste professionnel à Machecoul (44). Photo &amp; vidéo pour marques, artistes et entreprises. Devis sous 24h.">
+  <meta property="og:image" content="https://remiproduction.fr/images/dji_0754.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Rémi CHAUVIN — Production Visuelle">
 
-        .text-outline { color: transparent; -webkit-text-stroke: 1px #1A1A1A; }
-        @media (min-width: 768px) { .text-outline { -webkit-text-stroke: 2px #1A1A1A; } }
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rémi CHAUVIN | Photographe &amp; Vidéaste Loire-Atlantique">
+  <meta name="twitter:description" content="Photo &amp; vidéo professionnelle pour marques et entreprises à Machecoul (44).">
+  <meta name="twitter:image" content="https://remiproduction.fr/images/dji_0754.jpg">
 
-        /* Loader */
-        #page-loader { transition: opacity 0.5s ease; }
-    </style>
-</head>
-<body class="font-sans antialiased min-h-screen flex flex-col">
-
-    <!-- ATTENTION : Ne modifiez pas la structure de cette balise manuellement. Le CMS l'utilise. -->
-    <script id="site-data" type="application/json">
-{
-  "github": {
-    "owner": "remichauvinproduction-web",
-    "repo": "siteweb",
-    "file": "index.html"
-  },
-  "hero": {
-    "surtitle": "Vidéaste & Réalisateur • Vendée",
-    "title1": "Capturez",
-    "title2": "L'Instant.",
-    "title3": "Cinématographique.",
-    "description": "Création de contenus visuels modernes et authentiques pour les particuliers et les entreprises. De l'idée au montage, avec une esthétique documentaire et spontanée."
-  },
-  "vision": {
-    "title": "Mon Approche.",
-    "text": "Je ne cherche pas la perfection lisse. Je cherche l'authenticité. Mon style s'inspire du documentaire : capter la spontanéité, jouer avec la lumière naturelle, et raconter une histoire avec une esthétique cinématographique.",
-    "image": "https://placehold.co/1000x800/2A2A2A/D9C8B8?text=Backstage+Production"
-  },
-  "portfolio": [
-    {
-      "id": "item_1",
-      "image": "https://placehold.co/1200x800/EAE6DB/1A1A1A?text=Shooting+Corporate",
-      "category": "Corporate",
-      "title": "Vidéo Entreprise",
-      "size": "large"
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Rémi CHAUVIN — Production Visuelle",
+    "url": "https://remiproduction.fr",
+    "logo": "https://remiproduction.fr/images/remilogo.jpg",
+    "image": "https://remiproduction.fr/images/dji_0754.jpg",
+    "description": "Photographe et vidéaste professionnel basé à Machecoul (Loire-Atlantique). Spécialisé en contenu photo et vidéo pour marques, artistes et entreprises.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Machecoul",
+      "postalCode": "44270",
+      "addressRegion": "Loire-Atlantique",
+      "addressCountry": "FR"
     },
-    {
-      "id": "item_2",
-      "image": "https://placehold.co/800x1600/D9C8B8/1A1A1A?text=Portrait+Spontan%C3%A9",
-      "category": "Particulier",
-      "title": "Shooting Portrait",
-      "size": "tall"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "46.9898",
+      "longitude": "-1.8238"
     },
-    {
-      "id": "item_3",
-      "image": "https://placehold.co/800x800/D2D9DB/1A1A1A?text=Clip+Musical",
-      "category": "Créatif",
-      "title": "Clip Rap",
-      "size": "square"
+    "email": "contact@remiproduction.fr",
+    "sameAs": [
+      "https://www.instagram.com/remi.prod",
+      "https://www.youtube.com/@remiproduction"
+    ],
+    "priceRange": "€€",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Loire-Atlantique"
     },
-    {
-      "id": "item_4",
-      "image": "https://placehold.co/800x800/EAE6DB/1A1A1A?text=Documentaire",
-      "category": "Événement",
-      "title": "Reportage",
-      "size": "square"
-    }
-  ],
-  "contact": {
-    "whatsapp": "33750035631",
-    "phone": "07 50 03 56 31",
-    "location": "Montaigu-Vendée (85)"
+    "serviceType": ["Photographie professionnelle", "Production vidéo", "Drone", "Reels Instagram", "Portrait", "Événementiel"]
   }
-}
-    </script>
+  </script>
 
-    <div id="page-loader" class="fixed inset-0 bg-pastel-bg z-[100] flex items-center justify-center">
-        <div class="animate-pulse font-display text-4xl uppercase tracking-widest text-dark-main">Chargement...</div>
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Combien de temps pour recevoir mes photos ou vidéos ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pour la photographie, la galerie est livrée sous 5 jours ouvrés. Pour la vidéo, comptez 7 à 10 jours selon la complexité du montage. Un délai express est possible sur demande." }
+      },
+      {
+        "@type": "Question",
+        "name": "Vous vous déplacez en dehors de Machecoul ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oui, je me déplace dans toute la Loire-Atlantique et les départements limitrophes (Vendée, Maine-et-Loire, Ille-et-Vilaine) sans supplément jusqu'à 50 km de Machecoul. Au-delà, les frais de déplacement sont calculés au cas par cas." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment se déroule concrètement une prestation ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Tout commence par un échange (appel ou message) pour cerner vos besoins. Je vous envoie ensuite un devis sous 24h. Après validation, nous fixons la date de tournage. La post-production est réalisée dans les délais convenus, avec une révision incluse." }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Space+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/remilogo.jpg">
+</head>
+<body>
+
+<!-- ── NAVIGATION ────────────────────────────────────────────── -->
+<header>
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="Rémi CHAUVIN — Accueil">
+        Rémi <span>CHAUVIN</span>
+      </a>
+
+      <div class="nav__links" role="list">
+        <a href="realisations.html" class="nav__link" role="listitem">Réalisations</a>
+        <a href="services.html" class="nav__link" role="listitem">Services</a>
+        <a href="a-propos.html" class="nav__link" role="listitem">À propos</a>
+        <a href="index.html#faq" class="nav__link" role="listitem">FAQ</a>
+      </div>
+
+      <a href="contact.html" class="nav__cta">
+        <span data-content="global.cta_label">Démarrer un projet</span> <span class="btn__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <button class="nav__hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
 
-    <header class="fixed top-0 w-full z-50 bg-pastel-bg/80 backdrop-blur-lg border-b border-pastel-surface px-6 py-4 flex justify-between items-center transition-all" id="navbar">
-        <div class="text-xl font-display tracking-wide uppercase">Rémi.Prod</div>
-        <nav class="hidden md:flex gap-8 text-sm font-medium">
-            <a href="#vision" class="hover:text-pastel-accent transition-colors">Vision</a>
-            <a href="#portfolio" class="hover:text-pastel-accent transition-colors">Portfolio</a>
-        </nav>
-        <a href="#contact" class="px-5 py-2.5 bg-dark-main text-pastel-bg rounded-full text-sm font-medium hover:bg-pastel-accent hover:text-dark-main transition-all transform hover:scale-105">
-            Demander un devis
+    <nav id="mobile-menu" class="nav__mobile" aria-label="Menu mobile">
+      <a href="realisations.html" class="nav__link">Réalisations</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="a-propos.html" class="nav__link">À propos</a>
+      <a href="index.html#faq" class="nav__link">FAQ</a>
+      <a href="contact.html" class="btn btn--primary">Démarrer un projet →</a>
+    </nav>
+  </nav>
+</header>
+
+<!-- ── HERO ──────────────────────────────────────────────────── -->
+<main id="main-content">
+<section class="hero" aria-label="Introduction">
+  <div class="hero__bg">
+    <img
+      src="images/dji_0754.jpg"
+      data-img-key="accueil.hero"
+      alt="Photo de nuit, ambiance cinématographique — Rémi CHAUVIN"
+      fetchpriority="high"
+      decoding="async"
+      style="opacity:1;transition:opacity 0.4s ease"
+    >
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__overlay-2" aria-hidden="true"></div>
+  </div>
+
+  <div class="hero__content">
+    <div class="hero__inner">
+      <div class="hero__kicker reveal">
+        <span class="hero__kicker-line" aria-hidden="true"></span>
+        <span class="t-kicker" data-content="accueil.hero_kicker">Photographe · Vidéaste · Machecoul (44)</span>
+      </div>
+
+      <div class="hero__tagline reveal reveal-delay-1">
+        <h1 class="t-display">
+          <span data-content="accueil.hero_title_line1">Votre projet mérite</span><br>
+          <em class="accent" data-content="accueil.hero_title_line2">des images qui marquent.</em>
+        </h1>
+      </div>
+
+      <p class="hero__sub reveal reveal-delay-2" data-content="accueil.hero_subtitle">
+        Photo &amp; vidéo professionnelle pour marques, artistes et entreprises en Loire-Atlantique.
+      </p>
+
+      <div class="hero__actions reveal reveal-delay-3">
+        <a href="realisations.html" class="btn btn--primary">
+          <span data-content="accueil.hero_cta_primary">Voir mes réalisations</span> <span class="btn__arrow" aria-hidden="true">→</span>
         </a>
-    </header>
+        <a href="contact.html" class="btn btn--ghost">
+          <span data-content="accueil.hero_cta_secondary">Discutons de votre projet</span>
+        </a>
+      </div>
 
-    <main class="flex-grow pt-24" id="main-content" style="opacity: 0; transition: opacity 0.8s ease;">
-        <section class="relative min-h-[90vh] flex flex-col justify-center px-6 md:px-12 lg:px-24 overflow-hidden">
-            <div class="absolute top-1/4 right-10 w-64 h-64 bg-pastel-accent rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
-            <div class="absolute bottom-1/4 left-10 w-80 h-80 bg-pastel-blue rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse" style="animation-delay: 2s;"></div>
-
-            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-8 z-20">
-                    <p id="dom-hero-surtitle" class="font-medium text-dark-muted mb-4 uppercase tracking-widest text-sm reveal"></p>
-                    
-                    <h1 class="font-display text-massive leading-[0.85] uppercase flex flex-col reveal">
-                        <span id="dom-hero-title1"></span>
-                        <span id="dom-hero-title2" class="text-pastel-accent"></span>
-                        <span id="dom-hero-title3" class="text-outline"></span>
-                    </h1>
-                    
-                    <p id="dom-hero-desc" class="mt-8 text-lg md:text-xl font-light text-dark-muted max-w-xl leading-relaxed reveal"></p>
-                    
-                    <div class="mt-10 flex gap-4 items-center reveal">
-                        <a href="#portfolio" class="flex items-center gap-2 pb-1 border-b-2 border-dark-main hover:text-pastel-accent hover:border-pastel-accent transition-colors font-medium">
-                            Découvrir les shootings
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="vision" class="py-24 px-6 md:px-12 lg:px-24 bg-dark-main text-pastel-bg relative overflow-hidden">
-            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div class="order-2 md:order-1 img-wrapper rounded-lg scale-reveal">
-                    <img id="dom-vision-img" src="" alt="Backstage" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
-                </div>
-                <div class="order-1 md:order-2 space-y-8 reveal">
-                    <h2 id="dom-vision-title" class="font-display text-5xl md:text-7xl uppercase text-pastel-accent leading-none"></h2>
-                    <p id="dom-vision-text" class="text-xl md:text-2xl font-light leading-relaxed text-pastel-bg/80"></p>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio" class="py-32 px-6 md:px-12 lg:px-24">
-            <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 reveal">
-                    <div>
-                        <span class="text-pastel-accent font-medium uppercase tracking-widest text-sm mb-2 block">Derniers Projets</span>
-                        <h2 class="font-display text-submassive uppercase leading-none">Archives Visuelles</h2>
-                    </div>
-                    <a href="https://www.instagram.com/remi.prod" target="_blank" class="hidden md:inline-flex items-center gap-2 px-6 py-3 border border-dark-main rounded-full hover:bg-dark-main hover:text-pastel-bg transition-colors font-medium">
-                        Voir tout sur Instagram ↗
-                    </a>
-                </div>
-
-                <!-- La grille est générée dynamiquement par le JS -->
-                <div id="dom-portfolio-grid" class="grid grid-cols-1 md:grid-cols-12 gap-4 auto-rows-[300px] md:auto-rows-[400px]">
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="py-32 px-6 md:px-12 lg:px-24 bg-pastel-surface border-t border-pastel-accent/30 text-center">
-            <div class="max-w-4xl mx-auto flex flex-col items-center">
-                <span class="inline-block px-4 py-2 bg-pastel-blue/30 text-dark-main rounded-full text-xs font-bold uppercase tracking-widest mb-8 reveal">Disponible pour de nouveaux projets</span>
-                <h2 class="font-display text-submassive uppercase leading-none mb-8 reveal">Prêt à raconter <br><span class="text-pastel-accent">votre histoire ?</span></h2>
-                
-                <div class="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mt-8 reveal">
-                    <a id="dom-contact-whatsapp" href="#" class="group flex items-center justify-center gap-3 bg-dark-main text-pastel-bg px-8 py-5 rounded-full text-lg font-medium hover:bg-pastel-accent hover:text-dark-main transition-all transform hover:-translate-y-1 shadow-lg">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        Message WhatsApp
-                    </a>
-                    <div class="flex flex-col justify-center items-center sm:items-start gap-1">
-                        <a id="dom-contact-phone" href="#" class="text-dark-muted hover:text-dark-main transition-colors font-medium text-lg"></a>
-                        <p id="dom-contact-location" class="text-sm text-dark-muted/70 uppercase tracking-widest"></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-dark-main text-pastel-bg pt-20 pb-10 px-6 md:px-12 lg:px-24">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs text-pastel-bg/40 font-medium tracking-widest uppercase">
-            <p>&copy; 2026 Rémi Production. Tous droits réservés.</p>
-            <button onclick="document.getElementById('admin-modal').classList.remove('hidden')" class="mt-4 md:mt-0 hover:text-pastel-accent transition-colors flex items-center gap-2">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                Administration (GitHub)
-            </button>
+      <div class="hero__trust reveal reveal-delay-4" aria-label="Chiffres clés">
+        <div class="hero__trust-item">
+          <span class="hero__trust-dot" aria-hidden="true"></span>
+          <span data-content="accueil.hero_trust_1">20+ projets réalisés</span>
         </div>
-    </footer>
-
-    <div id="admin-modal" class="fixed inset-0 z-[999] bg-dark-main/95 backdrop-blur-sm hidden overflow-y-auto">
-        <div class="min-h-screen p-6 flex flex-col items-center">
-            
-            <div class="w-full max-w-4xl bg-pastel-bg text-dark-main rounded-2xl shadow-2xl overflow-hidden mt-10 mb-20 relative">
-                <!-- Header Admin -->
-                <div class="bg-dark-main text-pastel-bg p-6 flex justify-between items-center">
-                    <h2 class="text-2xl font-display uppercase tracking-wider">CMS GitHub - Rémi.Prod</h2>
-                    <button onclick="document.getElementById('admin-modal').classList.add('hidden')" class="text-pastel-bg/70 hover:text-white">Fermer ✕</button>
-                </div>
-
-                <div class="p-8">
-                    <!-- Config GitHub (Requis pour push) -->
-                    <div class="bg-pastel-surface p-4 rounded-xl border border-dark-main/10 mb-8">
-                        <h3 class="text-sm font-bold uppercase tracking-widest mb-2 flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            Authentification GitHub
-                        </h3>
-                        <p class="text-xs text-dark-muted mb-3">Pour modifier le site en ligne, entrez un "Personal Access Token" GitHub avec les droits de lecture/écriture sur votre dépôt. <br><strong class="text-red-500 font-bold mt-1 inline-block">Sécurité avancée :</strong> Votre token n'est stocké temporairement que pour votre session en cours (effacé à la fermeture de l'onglet).</p>
-                        <input type="password" id="admin-gh-token" placeholder="ghp_..." class="w-full bg-white border-0 p-3 rounded-lg text-sm focus:ring-2 focus:ring-dark-main">
-                    </div>
-
-                    <!-- Formulaires générés dynamiquement -->
-                    <div class="space-y-8" id="admin-forms">
-                        <!-- Rempli par le JS -->
-                    </div>
-
-                    <!-- Actions -->
-                    <div class="mt-12 pt-6 border-t border-dark-main/10 flex justify-between items-center">
-                        <p id="admin-status" class="text-sm font-medium"></p>
-                        <button onclick="saveToGitHub()" id="btn-save" class="bg-dark-main text-pastel-bg px-8 py-3 rounded-full font-medium hover:bg-pastel-accent hover:text-dark-main transition-colors flex items-center gap-2">
-                            Publier les modifications
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <div class="hero__trust-item">
+          <span class="hero__trust-dot" aria-hidden="true"></span>
+          <span data-content="accueil.hero_trust_2">Loire-Atlantique &amp; Vendée</span>
         </div>
+        <div class="hero__trust-item">
+          <span class="hero__trust-dot" aria-hidden="true"></span>
+          <span data-content="accueil.hero_trust_3">Réponse sous 24h</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span class="hero__scroll-line"></span>
+    <span class="hero__scroll-label">Scroll</span>
+  </div>
+</section>
+
+<!-- ── STATS ─────────────────────────────────────────────────── -->
+<section class="section--sm" aria-label="Chiffres clés">
+  <div class="container">
+    <div class="stats-bar reveal">
+      <div class="stat-item">
+        <div class="stat-number" data-content="accueil.stats.0.number" aria-label="Plus de 20 projets réalisés">20+</div>
+        <div class="stat-label" data-content="accueil.stats.0.label">Projets réalisés</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-content="accueil.stats.1.number" aria-label="4 ans d'expérience">4</div>
+        <div class="stat-label" data-content="accueil.stats.1.label">Ans d'expérience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-content="accueil.stats.2.number" aria-label="Réponse garantie sous 24 heures">24h</div>
+        <div class="stat-label" data-content="accueil.stats.2.label">Réponse garantie</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ── VIDEO SHOWCASE ─────────────────────────────────────────── -->
+<section class="section" id="videos" aria-labelledby="video-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="t-kicker">Réalisations vidéo</p>
+      <h2 class="t-h2" id="video-heading">Des vidéos qui vendent,<br>qui racontent, <em class="accent">qui marquent.</em></h2>
+      <p class="t-sub mt-md">Clips commerciaux, court métrages, contenus drone — chaque projet raconte une histoire avec précision.</p>
     </div>
 
-    <script>
-        // --- 1. GESTION DES DONNÉES ET RENDU ---
-        let siteData = {};
+    <div class="video-grid" data-video-grid="3"></div>
 
-        function loadDataAndRender() {
-            try {
-                const dataScript = document.getElementById('site-data').textContent;
-                siteData = JSON.parse(dataScript);
-                
-                // Remplissage Hero
-                document.getElementById('dom-hero-surtitle').textContent = siteData.hero.surtitle;
-                document.getElementById('dom-hero-title1').textContent = siteData.hero.title1;
-                document.getElementById('dom-hero-title2').textContent = siteData.hero.title2;
-                document.getElementById('dom-hero-title3').textContent = siteData.hero.title3;
-                document.getElementById('dom-hero-desc').textContent = siteData.hero.description;
+    <div class="text-center mt-xl reveal">
+      <a href="realisations.html" class="btn btn--ghost">
+        Voir toutes les réalisations <span class="btn__arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
 
-                // Remplissage Vision
-                document.getElementById('dom-vision-title').textContent = siteData.vision.title;
-                document.getElementById('dom-vision-text').textContent = siteData.vision.text;
-                document.getElementById('dom-vision-img').src = siteData.vision.image;
+<!-- Video lightbox -->
+<div class="video-lightbox" role="dialog" aria-modal="true" aria-label="Lecteur vidéo" tabindex="-1">
+  <div class="video-lightbox__inner">
+    <button class="video-lightbox__close" aria-label="Fermer la vidéo">✕</button>
+    <iframe
+      title="Vidéo Rémi CHAUVIN"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
 
-                // Remplissage Portfolio
-                const grid = document.getElementById('dom-portfolio-grid');
-                grid.innerHTML = siteData.portfolio.map((item, index) => {
-                    let colClass = "md:col-span-4"; // Square (par défaut)
-                    if(item.size === 'large') colClass = "md:col-span-8";
-                    if(item.size === 'tall') colClass = "md:col-span-4 md:row-span-2";
+<div class="section-divider" aria-hidden="true"></div>
 
-                    // SÉCURITÉ : Échappement des variables injectées dans le DOM
-                    const safeImage = escapeHTML(item.image);
-                    const safeTitle = escapeHTML(item.title);
-                    const safeCategory = escapeHTML(item.category);
+<!-- ── GALLERY PREVIEW ────────────────────────────────────────── -->
+<section class="section" id="galerie" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="t-kicker" data-content="accueil.gallery_kicker">Portfolio photo</p>
+      <h2 class="t-h2" id="gallery-heading" data-content="accueil.gallery_title"><em class="accent">Chaque image</em><br>a une intention.</h2>
+      <p class="t-sub mt-md" data-content="accueil.gallery_subtitle">Portrait, événement, sport, nature — une approche toujours juste, jamais hasardeuse.</p>
+    </div>
 
-                    return `
-                    <div class="${colClass} img-wrapper rounded-xl group reveal">
-                        <img src="${safeImage}" alt="${safeTitle}" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 img-overlay flex flex-col justify-end p-8">
-                            <span class="text-pastel-bg/80 text-sm font-medium tracking-widest uppercase mb-1">${safeCategory}</span>
-                            <h3 class="text-pastel-bg font-display text-3xl uppercase tracking-wide">${safeTitle}</h3>
-                        </div>
-                    </div>`;
-                }).join('');
+    <div class="gallery-filters" role="group" aria-label="Filtrer par catégorie">
+      <button class="gallery-filter active" data-filter="all" aria-pressed="true">Tout</button>
+      <button class="gallery-filter" data-filter="portrait" aria-pressed="false">Portrait</button>
+      <button class="gallery-filter" data-filter="evenement" aria-pressed="false">Événement</button>
+      <button class="gallery-filter" data-filter="sport" aria-pressed="false">Sport</button>
+      <button class="gallery-filter" data-filter="nature" aria-pressed="false">Nature</button>
+    </div>
 
-                // Remplissage Contact
-                document.getElementById('dom-contact-whatsapp').href = `https://wa.me/${siteData.contact.whatsapp}`;
-                document.getElementById('dom-contact-phone').textContent = siteData.contact.phone;
-                document.getElementById('dom-contact-phone').href = `tel:+${siteData.contact.phone.replace(/\s/g, '')}`;
-                document.getElementById('dom-contact-location').textContent = siteData.contact.location;
+    <div class="gallery-grid" role="list" aria-label="Galerie photo" data-gallery-grid="8"></div>
 
-                // Initialiser les animations une fois le DOM rempli
-                initAnimations();
-                buildAdminUI();
+    <!-- Photo lightbox -->
+    <div class="photo-lightbox" role="dialog" aria-modal="true" aria-label="Agrandissement photo" tabindex="-1">
+      <button class="lightbox-prev" aria-label="Photo précédente">‹</button>
+      <div class="photo-lightbox__inner">
+        <button class="photo-lightbox__close" aria-label="Fermer">✕</button>
+        <img class="photo-lightbox__img" src="" alt="">
+      </div>
+      <button class="lightbox-next" aria-label="Photo suivante">›</button>
+    </div>
 
-                // Cacher le loader
-                setTimeout(() => {
-                    document.getElementById('page-loader').style.opacity = '0';
-                    document.getElementById('main-content').style.opacity = '1';
-                    setTimeout(() => document.getElementById('page-loader').remove(), 500);
-                }, 300);
+    <div class="text-center mt-xl reveal">
+      <a href="realisations.html" class="btn btn--ghost">
+        <span data-content="accueil.gallery_cta">Voir toutes les photos</span> <span class="btn__arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
 
-            } catch(e) {
-                console.error("Erreur de chargement des données", e);
-                alert("Erreur de chargement des données du site.");
-            }
-        }
+<div class="section-divider" aria-hidden="true"></div>
 
-        // --- 2. ANIMATIONS (Intersection Observer) ---
-        function initAnimations() {
-            const observer = new IntersectionObserver((entries, obs) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        obs.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
+<!-- ── SERVICES OVERVIEW ──────────────────────────────────────── -->
+<section class="section" id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="t-kicker" data-content="accueil.services_kicker">Expertises</p>
+      <h2 class="t-h2" id="services-heading" data-content="accueil.services_title">Ce que je fais <em class="accent">pour vous.</em></h2>
+    </div>
 
-            document.querySelectorAll('.reveal, .scale-reveal').forEach(el => observer.observe(el));
-        }
+    <div class="services-grid">
+      <article class="service-card reveal" aria-label="Service : Photographie">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        </div>
+        <div class="service-card__name" data-content="accueil.services.0.name">Photographie</div>
+        <p class="service-card__desc" data-content="accueil.services.0.desc">Portrait, book, événements et concerts. Retouche professionnelle incluse. Galerie en ligne livrée sous 5 jours ouvrés.</p>
+        <div class="service-card__tags">
+          <span class="service-tag">Portrait</span>
+          <span class="service-tag">Événement</span>
+          <span class="service-tag">Book</span>
+          <span class="service-tag">Concert</span>
+        </div>
+      </article>
 
-        // --- Lancement au chargement ---
-        document.addEventListener('DOMContentLoaded', loadDataAndRender);
+      <article class="service-card reveal reveal-delay-1" aria-label="Service : Vidéo &amp; Reels">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        </div>
+        <div class="service-card__name" data-content="accueil.services.1.name">Vidéo &amp; Reels</div>
+        <p class="service-card__desc" data-content="accueil.services.1.desc">Clips commerciaux, publicités, court métrages et Reels Instagram. Montage sur DaVinci Resolve. Multi-formats, prêt à publier.</p>
+        <div class="service-card__tags">
+          <span class="service-tag">Clip comm.</span>
+          <span class="service-tag">Reels</span>
+          <span class="service-tag">Court métrage</span>
+        </div>
+      </article>
 
-        // Navbar blur effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('shadow-sm');
-                navbar.classList.replace('py-4', 'py-3');
-            } else {
-                navbar.classList.remove('shadow-sm');
-                navbar.classList.replace('py-3', 'py-4');
-            }
+      <article class="service-card reveal reveal-delay-2" aria-label="Service : Drone DJI">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="service-card__name" data-content="accueil.services.2.name">Drone DJI</div>
+        <p class="service-card__desc" data-content="accueil.services.2.desc">Prises de vue aériennes spectaculaires pour vos films d'entreprise, immobilier ou événements. Résolution 4K.</p>
+        <div class="service-card__tags">
+          <span class="service-tag">Aérien 4K</span>
+          <span class="service-tag">Immobilier</span>
+          <span class="service-tag">Événement</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="text-center mt-xl reveal">
+      <a href="services.html" class="btn btn--ghost">
+        <span data-content="accueil.services_cta">Voir les tarifs &amp; formules</span> <span class="btn__arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ── PROCESS ───────────────────────────────────────────────── -->
+<section class="section" id="processus" aria-labelledby="process-heading">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <p class="t-kicker" data-content="accueil.process_kicker">Comment ça se passe</p>
+      <h2 class="t-h2" id="process-heading" data-content="accueil.process_title">Simple, clair, <em class="accent">efficace.</em></h2>
+      <p class="t-sub mt-md" data-content="accueil.process_subtitle">De la première prise de contact à la livraison finale, je gère tout.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <div class="process-step__num" aria-label="Étape 1">01</div>
+        <h3 class="process-step__title" data-content="accueil.process_steps.0.title">Brief &amp; Devis</h3>
+        <p class="process-step__desc" data-content="accueil.process_steps.0.desc">Vous m'expliquez votre projet. Je vous envoie un devis personnalisé et gratuit sous 24h. Aucun engagement.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="process-step__num" aria-label="Étape 2">02</div>
+        <h3 class="process-step__title" data-content="accueil.process_steps.1.title">Tournage</h3>
+        <p class="process-step__desc" data-content="accueil.process_steps.1.desc">Nous fixons ensemble la date, le lieu, les intentions artistiques. Le jour J, je m'occupe de tout.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="process-step__num" aria-label="Étape 3">03</div>
+        <h3 class="process-step__title" data-content="accueil.process_steps.2.title">Livraison</h3>
+        <p class="process-step__desc" data-content="accueil.process_steps.2.desc">Galerie en ligne, exports multi-formats, une révision incluse. Vous repartez avec des images prêtes à l'emploi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ── FAQ ───────────────────────────────────────────────────── -->
+<section class="section" id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="t-kicker" data-content="accueil.faq_kicker">Questions fréquentes</p>
+      <h2 class="t-h2" id="faq-heading" data-content="accueil.faq_title">Tout ce que vous <em class="accent">voulez savoir.</em></h2>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item reveal" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">
+          <span data-content="accueil.faq_items.0.question">Combien de temps pour recevoir mes photos ou vidéos ?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-1" role="region" aria-labelledby="faq-btn-1">
+          <div class="faq-answer__inner">
+            <p data-content="accueil.faq_items.0.answer">Pour la photographie, la galerie est livrée sous <strong>5 jours ouvrés</strong>. Pour la vidéo, comptez <strong>7 à 10 jours</strong> selon la complexité du montage. Un délai express est possible sur demande.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
+          <span data-content="accueil.faq_items.1.question">Vous vous déplacez en dehors de Machecoul ?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-2" role="region" aria-labelledby="faq-btn-2">
+          <div class="faq-answer__inner">
+            <p data-content="accueil.faq_items.1.answer">Oui, je me déplace dans toute la Loire-Atlantique et les départements limitrophes (Vendée, Maine-et-Loire) <strong>sans supplément jusqu'à 50 km</strong> de Machecoul. Au-delà, les frais kilométriques sont calculés au cas par cas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
+          <span data-content="accueil.faq_items.2.question">Je ne suis pas à l'aise devant l'objectif, est-ce un problème ?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-3" role="region" aria-labelledby="faq-btn-3">
+          <div class="faq-answer__inner">
+            <p data-content="accueil.faq_items.2.answer">Pas du tout. La grande majorité de mes clients ne sont pas mannequins ! Je prends le temps de vous mettre à l'aise, de vous guider dans les poses et de créer une ambiance détendue. Les meilleurs portraits sont souvent les plus naturels.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-4" id="faq-btn-4">
+          <span data-content="accueil.faq_items.3.question">Est-ce que le paiement en plusieurs fois est possible ?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-btn-4">
+          <div class="faq-answer__inner">
+            <p data-content="accueil.faq_items.3.answer">Oui. Pour les prestations supérieures à 300 €, un <strong>acompte de 30 % à la réservation</strong> et le solde à la livraison sont la norme. Des arrangements en deux ou trois versements peuvent être discutés selon les projets.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-5" id="faq-btn-5">
+          <span data-content="accueil.faq_items.4.question">Les droits d'utilisation commerciale sont-ils inclus ?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-5" role="region" aria-labelledby="faq-btn-5">
+          <div class="faq-answer__inner">
+            <p data-content="accueil.faq_items.4.answer">Oui. Toutes mes prestations incluent les <strong>droits d'utilisation pour vos supports de communication</strong> : site web, réseaux sociaux, print. Pour une diffusion commerciale large (télévision, affichage national), contactez-moi pour établir un contrat adapté.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-6" id="faq-btn-6">
+          <span data-content="accueil.faq_items.5.question">Que se passe-t-il en cas de mauvais temps ?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-6" role="region" aria-labelledby="faq-btn-6">
+          <div class="faq-answer__inner">
+            <p data-content="accueil.faq_items.5.answer">Pour les shootings en extérieur, je surveille la météo la veille. En cas de conditions défavorables, nous pouvons <strong>reporter la séance sans frais</strong> sur une date qui vous convient. Parfois, une lumière couverte est même plus flatteuse qu'un soleil direct !</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-7" id="faq-btn-7">
+          <span data-content="accueil.faq_items.6.question">Comment réserver et démarrer un projet ?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-7" role="region" aria-labelledby="faq-btn-7">
+          <div class="faq-answer__inner">
+            <p data-content="accueil.faq_items.6.answer">Rien de plus simple : remplissez le formulaire de contact en décrivant votre projet (type de prestation, date souhaitée, contexte). Je vous réponds <strong>personnellement sous 24h</strong> avec un devis et les premières questions. Pas de jargon, pas d'attente interminable.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-8" id="faq-btn-8">
+          <span data-content="accueil.faq_items.7.question">Quelle est la différence entre vos formules Essentielle et Signature ?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-8" role="region" aria-labelledby="faq-btn-8">
+          <div class="faq-answer__inner">
+            <p data-content="accueil.faq_items.7.answer">La formule <strong>Essentielle</strong> couvre une session de 1h avec livraison de 15 photos retouchées — idéale pour un portrait professionnel ou un mini-shooting. La formule <strong>Signature</strong> inclut une session longue (3h), 40 photos, une direction artistique poussée et un accès prioritaire à l'agenda. Consultez la page Services pour le détail complet.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ── CTA FINAL ──────────────────────────────────────────────── -->
+<section class="section" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-section reveal">
+      <p class="t-kicker" data-content="accueil.cta_final_kicker">Prêt à démarrer ?</p>
+      <h2 class="t-h2" id="cta-heading" data-content="accueil.cta_final_title">Parlons de <em class="accent">votre projet.</em></h2>
+      <p class="t-sub mt-md" style="max-width:520px;margin-inline:auto" data-content="accueil.cta_final_subtitle">Je vous réponds personnellement sous 24 heures. Devis gratuit, sans engagement.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn--primary">
+          <span data-content="global.cta_label">Démarrer un projet</span> <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="services.html" class="btn btn--ghost">
+          Voir les tarifs
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo">Rémi <span class="text-accent">CHAUVIN</span></div>
+        <p class="footer__tagline" data-content="global.footer_tagline">Photographe &amp; Vidéaste · Machecoul (44)</p>
+      </div>
+      <nav class="footer__links" aria-label="Liens footer">
+        <a href="realisations.html" class="footer__link">Réalisations</a>
+        <a href="services.html" class="footer__link">Services</a>
+        <a href="a-propos.html" class="footer__link">À propos</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="https://www.instagram.com/remi.prod" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram (ouvre dans un nouvel onglet)">Instagram</a>
+        <a href="https://www.youtube.com/@remiproduction" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="YouTube (ouvre dans un nouvel onglet)">YouTube</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy" data-content="global.footer_copyright">© 2026 Rémi CHAUVIN — Tous droits réservés</p>
+      <div class="footer__legal-links">
+        <a href="mentions-legales.html" class="footer__legal-link">Mentions légales</a>
+        <a href="mentions-legales.html#confidentialite" class="footer__legal-link">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" aria-label="Revenir en haut de page">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="fixed-images-loader.js" defer></script>
+<script src="content-loader.js" defer></script>
+<script src="gallery-loader.js" defer></script>
+<script src="video-loader.js" defer></script>
+<script src="script.js" defer></script>
+
+<!-- Netlify Identity : intercepte le token d'invitation et de récupération de mot de passe -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
         });
-    </script>
-
-    <script>
-        // Utilitaires Base64 sécurisés pour les caractères accentués (UTF-8)
-        function utf8_to_b64(str) {
-            return window.btoa(unescape(encodeURIComponent(str)));
-        }
-        function b64_to_utf8(str) {
-            return decodeURIComponent(escape(window.atob(str)));
-        }
-
-        // --- SÉCURITÉ : Échappement HTML (Anti-XSS) ---
-        function escapeHTML(str) {
-            if (typeof str !== 'string') return str;
-            return str.replace(/[&<>'"]/g, tag => ({
-                '&': '&amp;',
-                '<': '&lt;',
-                '>': '&gt;',
-                "'": '&#39;',
-                '"': '&quot;'
-            }[tag]));
-        }
-
-        // --- 3. GÉNÉRATION DE L'INTERFACE ADMIN ---
-        function buildAdminUI() {
-            const container = document.getElementById('admin-forms');
-            
-            // SÉCURITÉ : Utilisation de sessionStorage (effacé à la fermeture de l'onglet) au lieu de localStorage
-            const savedToken = sessionStorage.getItem('gh_token');
-            if(savedToken) document.getElementById('admin-gh-token').value = savedToken;
-
-            let html = `
-                <!-- Textes Hero -->
-                <div class="mb-8">
-                    <h3 class="font-display text-xl uppercase mb-4 border-b border-dark-main/10 pb-2">Section Accueil</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div><label class="text-xs uppercase font-bold text-dark-muted">Surtitre</label><input type="text" id="edit-hero-sur" value="${escapeHTML(siteData.hero.surtitle)}" class="w-full p-2 bg-white rounded border border-dark-main/20"></div>
-                        <div><label class="text-xs uppercase font-bold text-dark-muted">Titre 1</label><input type="text" id="edit-hero-t1" value="${escapeHTML(siteData.hero.title1)}" class="w-full p-2 bg-white rounded border border-dark-main/20"></div>
-                        <div><label class="text-xs uppercase font-bold text-dark-muted">Titre 2</label><input type="text" id="edit-hero-t2" value="${escapeHTML(siteData.hero.title2)}" class="w-full p-2 bg-white rounded border border-dark-main/20"></div>
-                        <div><label class="text-xs uppercase font-bold text-dark-muted">Titre 3</label><input type="text" id="edit-hero-t3" value="${escapeHTML(siteData.hero.title3)}" class="w-full p-2 bg-white rounded border border-dark-main/20"></div>
-                        <div class="md:col-span-2"><label class="text-xs uppercase font-bold text-dark-muted">Description</label><textarea id="edit-hero-desc" class="w-full p-2 bg-white rounded border border-dark-main/20 h-24">${escapeHTML(siteData.hero.description)}</textarea></div>
-                    </div>
-                </div>
-
-                <!-- Textes Vision -->
-                <div class="mb-8">
-                    <h3 class="font-display text-xl uppercase mb-4 border-b border-dark-main/10 pb-2">Section Vision</h3>
-                    <div class="grid grid-cols-1 gap-4">
-                        <div><label class="text-xs uppercase font-bold text-dark-muted">Titre</label><input type="text" id="edit-vision-t" value="${escapeHTML(siteData.vision.title)}" class="w-full p-2 bg-white rounded border border-dark-main/20"></div>
-                        <div><label class="text-xs uppercase font-bold text-dark-muted">Texte</label><textarea id="edit-vision-desc" class="w-full p-2 bg-white rounded border border-dark-main/20 h-24">${escapeHTML(siteData.vision.text)}</textarea></div>
-                        <div><label class="text-xs uppercase font-bold text-dark-muted">Lien de l'image (URL)</label><input type="text" id="edit-vision-img" value="${escapeHTML(siteData.vision.image)}" class="w-full p-2 bg-white rounded border border-dark-main/20"></div>
-                    </div>
-                </div>
-
-                <!-- Portfolio (Liste dynamique) -->
-                <div class="mb-8">
-                    <div class="flex justify-between items-center mb-4 border-b border-dark-main/10 pb-2">
-                        <h3 class="font-display text-xl uppercase">Portfolio (Shootings)</h3>
-                        <button onclick="addPortfolioItem()" class="text-xs bg-dark-main text-pastel-bg px-3 py-1 rounded"> + Ajouter</button>
-                    </div>
-                    <div id="admin-portfolio-list" class="space-y-4">
-                        ${siteData.portfolio.map((item, idx) => generatePortfolioItemHTML(item, idx)).join('')}
-                    </div>
-                </div>
-            `;
-            container.innerHTML = html;
-        }
-
-        function generatePortfolioItemHTML(item, idx) {
-            return `
-                <div class="p-4 bg-white rounded border border-dark-main/10 relative" id="edit-port-${idx}">
-                    <button onclick="document.getElementById('edit-port-${idx}').remove()" class="absolute top-2 right-2 text-red-500 text-xs font-bold">Supprimer</button>
-                    <div class="grid grid-cols-2 gap-2 mb-2">
-                        <div><label class="text-[10px] uppercase font-bold">Titre</label><input type="text" class="port-t w-full p-1 border rounded text-sm" value="${escapeHTML(item.title)}"></div>
-                        <div><label class="text-[10px] uppercase font-bold">Catégorie</label><input type="text" class="port-c w-full p-1 border rounded text-sm" value="${escapeHTML(item.category)}"></div>
-                    </div>
-                    <div class="mb-2">
-                        <label class="text-[10px] uppercase font-bold">URL de l'image</label>
-                        <input type="text" class="port-img w-full p-1 border rounded text-sm" value="${escapeHTML(item.image)}">
-                    </div>
-                    <div>
-                        <label class="text-[10px] uppercase font-bold">Taille (Grille)</label>
-                        <select class="port-size w-full p-1 border rounded text-sm">
-                            <option value="square" ${item.size === 'square' ? 'selected' : ''}>Carré (Normal)</option>
-                            <option value="large" ${item.size === 'large' ? 'selected' : ''}>Large (Paysage)</option>
-                            <option value="tall" ${item.size === 'tall' ? 'selected' : ''}>Grand (Portrait)</option>
-                        </select>
-                    </div>
-                </div>
-            `;
-        }
-
-        function addPortfolioItem() {
-            const newItem = { title: "Nouveau", category: "Catégorie", image: "https://placehold.co/800", size: "square" };
-            const list = document.getElementById('admin-portfolio-list');
-            const tempDiv = document.createElement('div');
-            // Generate a random index for the ID
-            const rId = Math.floor(Math.random() * 10000);
-            tempDiv.innerHTML = generatePortfolioItemHTML(newItem, rId);
-            list.prepend(tempDiv.firstElementChild);
-        }
-
-        // --- 4. SAUVEGARDE VIA GITHUB API ---
-        async function saveToGitHub() {
-            const token = document.getElementById('admin-gh-token').value.trim();
-            if(!token) return alert("Veuillez entrer un token GitHub.");
-            // SÉCURITÉ : Le token est stocké en session (effacé à la fermeture du navigateur)
-            sessionStorage.setItem('gh_token', token);
-
-            const status = document.getElementById('admin-status');
-            const btn = document.getElementById('btn-save');
-            btn.innerHTML = "Sauvegarde en cours...";
-            btn.disabled = true;
-
-            try {
-                // 1. Récolter les nouvelles données depuis les formulaires
-                const newData = JSON.parse(JSON.stringify(siteData)); // Clone
-                
-                newData.hero.surtitle = document.getElementById('edit-hero-sur').value;
-                newData.hero.title1 = document.getElementById('edit-hero-t1').value;
-                newData.hero.title2 = document.getElementById('edit-hero-t2').value;
-                newData.hero.title3 = document.getElementById('edit-hero-t3').value;
-                newData.hero.description = document.getElementById('edit-hero-desc').value;
-
-                newData.vision.title = document.getElementById('edit-vision-t').value;
-                newData.vision.text = document.getElementById('edit-vision-desc').value;
-                newData.vision.image = document.getElementById('edit-vision-img').value;
-
-                const portItems = document.getElementById('admin-portfolio-list').children;
-                newData.portfolio = Array.from(portItems).map(div => ({
-                    title: div.querySelector('.port-t').value,
-                    category: div.querySelector('.port-c').value,
-                    image: div.querySelector('.port-img').value,
-                    size: div.querySelector('.port-size').value,
-                    id: "item_" + Math.random().toString(36).substr(2, 9)
-                }));
-
-                // 2. Fetcher le fichier HTML actuel depuis GitHub pour obtenir le SHA et le code source complet
-                const apiUrl = `https://api.github.com/repos/${newData.github.owner}/${newData.github.repo}/contents/${newData.github.file}`;
-                
-                status.textContent = "Récupération du fichier source...";
-                const getRes = await fetch(apiUrl, {
-                    headers: { 'Authorization': `Bearer ${token}` }
-                });
-                
-                if(!getRes.ok) throw new Error("Accès refusé. Vérifiez votre token et les droits du dépôt.");
-                const fileData = await getRes.json();
-                
-                const fileSha = fileData.sha;
-                const rawHtml = b64_to_utf8(fileData.content);
-
-                // SÉCURITÉ : Prévention de l'échappement de balise <script> dans le JSON pour éviter les failles
-                const safeJsonString = JSON.stringify(newData, null, 2).replace(/</g, '\\u003c');
-
-                // 3. Remplacer le bloc JSON dans le code source HTML
-                status.textContent = "Modification du code...";
-                const regex = /(<script id="site-data" type="application\/json">)[\s\S]*?(<\/script>)/;
-                const updatedHtml = rawHtml.replace(regex, `$1\n${safeJsonString}\n$2`);
-
-                // 4. Pousser la mise à jour (PUT) sur GitHub
-                status.textContent = "Envoi de la mise à jour...";
-                const putRes = await fetch(apiUrl, {
-                    method: 'PUT',
-                    headers: { 
-                        'Authorization': `Bearer ${token}`,
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        message: "Mise à jour du site via CMS en ligne",
-                        content: utf8_to_b64(updatedHtml),
-                        sha: fileSha
-                    })
-                });
-
-                if(!putRes.ok) throw new Error("Erreur lors de la sauvegarde sur GitHub.");
-
-                status.innerHTML = `<span class="text-green-600 font-bold">✓ Succès ! Le site a été mis à jour. (Rechargez la page dans quelques secondes)</span>`;
-                
-                // Mettre à jour l'affichage en direct
-                siteData = newData;
-                loadDataAndRender();
-
-            } catch (err) {
-                console.error(err);
-                status.innerHTML = `<span class="text-red-600 font-bold">Erreur: ${err.message}</span>`;
-            } finally {
-                btn.innerHTML = "Publier les modifications";
-                btn.disabled = false;
-            }
-        }
-    </script>
+      }
+    });
+  }
+</script>
 </body>
 </html>
