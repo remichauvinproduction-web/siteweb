@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "title": "Teaser — Camping Les Chênes Verts",
+      "category": "publicite",
+      "type": "Film promotionnel · Drone",
+      "client": "Camping Les Chênes Verts, Bourgneuf-en-Retz",
+      "description": "Teaser promotionnel pour un camping de Bourgneuf-en-Retz, avec prises de vue aériennes.",
+      "role": "",
+      "orientation": "16:9",
+      "youtube": "https://www.youtube.com/watch?v=moNNm05GPL4",
+      "file": "",
+      "thumbnail": "/images/vignette-camping-chenes-verts.webp",
+      "featured": true
+    },
+    {
+      "title": "En panne !",
+      "category": "creation",
+      "type": "Court métrage",
+      "client": "",
+      "description": "Court métrage réalisé pour le concours d'admission de La CinéFabrique.",
+      "role": "",
+      "orientation": "16:9",
+      "youtube": "https://www.youtube.com/watch?v=fWFlAkEkldY",
+      "file": "",
+      "thumbnail": "/images/vignette-en-panne.webp",
+      "featured": true
+    },
+    {
+      "title": "Cinematic Garden",
+      "category": "creation",
+      "type": "Cinématique · Nature",
+      "client": "",
+      "description": "Enchaînement de plans cinématiques pour contempler la nature.",
+      "role": "",
+      "orientation": "16:9",
+      "youtube": "https://www.youtube.com/watch?v=pyaBJmrXP68",
+      "file": "",
+      "thumbnail": "",
+      "featured": true
+    }
+  ]
+}
