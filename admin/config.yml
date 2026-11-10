@@ -80,6 +80,34 @@ collections:
               - { label: Légende affichée, name: label, widget: string }
               - { label: Texte alternatif (accessibilité et SEO), name: alt, widget: string, hint: "Décris la photo en une phrase" }
 
+  - name: galeries_clients
+    label: Galeries clients
+    label_singular: Galerie client
+    folder: data/galeries
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    identifier_field: title
+    summary: "{{title}} — https://{{slug}}.remiproduction.fr (ou /galerie/{{slug}})"
+    fields:
+      - { label: Nom de la galerie, name: title, widget: string }
+      - { label: Client, name: client, widget: string, required: false }
+      - { label: Date de la séance, name: date, widget: string, required: false, hint: "Ex : 14 juin 2026" }
+      - { label: Lieu, name: location, widget: string, required: false }
+      - { label: Message d’introduction, name: description, widget: text, required: false }
+      - { label: Photo de couverture, name: cover, widget: image, required: false }
+      - label: Photos livrées
+        name: photos
+        widget: list
+        label_singular: Photo
+        summary: "{{fields.label}}"
+        fields:
+          - { label: Image, name: image, widget: image }
+          - { label: Légende, name: label, widget: string, required: false }
+          - { label: Texte alternatif, name: alt, widget: string, required: false }
+          - { label: Fichier HD à télécharger (facultatif), name: download, widget: string, required: false, hint: "Vide : l’image affichée est téléchargée." }
+
   - name: showreel
     label: Bande démo (accueil)
     files:
