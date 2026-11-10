@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f4ef">
+<meta name="robots" content="noindex, nofollow">
+<title>Galerie photo | Rémi PRODUCTION</title>
+<meta name="description" content="Une galerie photo réalisée par Rémi PRODUCTION.">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="preload" href="/assets/fonts/inter-tight-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/galerie.css">
+<script>document.documentElement.className+=' js';</script>
+</head>
+<body class="delivery">
+<header class="delivery__top">
+  <a class="brand" href="/" aria-label="Rémi PRODUCTION"><span class="brand__remi">Remi</span><span class="brand__prod">Production</span></a>
+  <span class="delivery__badge"><i></i> Galerie client</span>
+</header>
+<main id="gallery-main" class="delivery__main">
+  <section class="delivery__intro">
+    <p class="kicker">Votre galerie photo</p>
+    <h1 id="gallery-title">Chargement…</h1>
+    <p id="gallery-meta" class="delivery__meta"></p>
+    <p id="gallery-description" class="delivery__description"></p>
+    <div class="delivery__actions">
+      <button id="download-all" class="btn btn--primary" type="button">Télécharger les photos</button>
+      <button id="copy-link" class="btn btn--ghost" type="button">Copier le lien</button>
+    </div>
+  </section>
+  <section class="delivery__content" aria-label="Photos de la galerie">
+    <div class="delivery__toolbar"><span id="photo-count"></span><button id="favorites-only" class="delivery__filter" type="button" aria-pressed="false">♡ Mes favoris <span id="favorite-count">0</span></button></div>
+    <div id="gallery-grid" class="delivery__grid" aria-live="polite"></div>
+  </section>
+  <p class="delivery__signature">Photographié et livré avec soin par <a href="https://remiproduction.fr">Rémi PRODUCTION</a></p>
+</main>
+<dialog id="photo-viewer" class="delivery__viewer" aria-label="Photo agrandie">
+  <button id="viewer-close" class="delivery__close" type="button" aria-label="Fermer">×</button>
+  <button id="viewer-prev" class="delivery__nav delivery__nav--prev" type="button" aria-label="Photo précédente">‹</button>
+  <figure><img id="viewer-image" alt=""><figcaption id="viewer-caption"></figcaption></figure>
+  <button id="viewer-next" class="delivery__nav delivery__nav--next" type="button" aria-label="Photo suivante">›</button>
+</dialog>
+<div id="gallery-message" class="delivery__message" role="status" hidden></div>
+<script src="/assets/js/galerie.js" defer></script>
+</body>
+</html>
