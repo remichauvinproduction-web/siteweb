@@ -101,12 +101,11 @@ collections:
         name: photos
         widget: list
         label_singular: Photo
-        summary: "{{fields.label}}"
-        fields:
-          - { label: Image, name: image, widget: image }
-          - { label: Légende, name: label, widget: string, required: false }
-          - { label: Texte alternatif, name: alt, widget: string, required: false }
-          - { label: Fichier HD à télécharger (facultatif), name: download, widget: string, required: false, hint: "Vide : l’image affichée est téléchargée." }
+        hint: "Ajoutez une photo puis glissez-déposez le fichier dans son champ. Une ligne = une photo ; les images sont envoyées dans images/."
+        field:
+          label: Photo (glisser-déposer)
+          widget: image
+          choose_url: false
 
   - name: showreel
     label: Bande démo (accueil)

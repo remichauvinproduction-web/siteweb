@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f5f4ef">
+<meta name="theme-color" content="#0a0a0a">
 <meta name="robots" content="noindex, nofollow">
 <title>Galerie photo | Rémi PRODUCTION</title>
 <meta name="description" content="Une galerie photo réalisée par Rémi PRODUCTION.">
@@ -26,7 +26,7 @@
     <p id="gallery-meta" class="delivery__meta"></p>
     <p id="gallery-description" class="delivery__description"></p>
     <div class="delivery__actions">
-      <button id="download-all" class="btn btn--primary" type="button">Télécharger les photos</button>
+      <button id="download-all" class="btn btn--primary" type="button">Tout télécharger · ZIP</button>
       <button id="copy-link" class="btn btn--ghost" type="button">Copier le lien</button>
     </div>
   </section>
@@ -39,10 +39,22 @@
 <dialog id="photo-viewer" class="delivery__viewer" aria-label="Photo agrandie">
   <button id="viewer-close" class="delivery__close" type="button" aria-label="Fermer">×</button>
   <button id="viewer-prev" class="delivery__nav delivery__nav--prev" type="button" aria-label="Photo précédente">‹</button>
-  <figure><img id="viewer-image" alt=""><figcaption id="viewer-caption"></figcaption></figure>
+  <figure><img id="viewer-image" alt=""><figcaption id="viewer-caption"></figcaption><button id="viewer-download" class="btn btn--primary" type="button">Télécharger cette photo</button></figure>
   <button id="viewer-next" class="delivery__nav delivery__nav--next" type="button" aria-label="Photo suivante">›</button>
 </dialog>
 <div id="gallery-message" class="delivery__message" role="status" hidden></div>
+<dialog id="download-dialog" class="delivery__download-dialog" aria-labelledby="download-title">
+  <form id="download-form">
+    <button id="download-cancel" class="delivery__dialog-close" type="button" aria-label="Fermer">×</button>
+    <p class="kicker">Avant le téléchargement</p>
+    <h2 id="download-title">Votre adresse e-mail</h2>
+    <p>Elle sera conservée 12 mois avec cette galerie pour garder une trace de la livraison. Elle ne servira pas à vous envoyer de la publicité. L’e-mail ne verrouille pas la galerie : toute personne qui possède le lien peut voir les photos. <a href="/mentions-legales#confidentialite">En savoir plus sur vos données</a>.</p>
+    <label for="download-email">Adresse e-mail</label>
+    <input id="download-email" class="input" type="email" autocomplete="email" required maxlength="254" placeholder="vous@exemple.fr">
+    <button id="download-submit" class="btn btn--primary" type="submit">Continuer</button>
+    <p id="download-error" class="delivery__download-error" role="alert" hidden></p>
+  </form>
+</dialog>
 <script src="/assets/js/galerie.js" defer></script>
 </body>
 </html>
