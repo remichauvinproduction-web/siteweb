@@ -11,6 +11,8 @@ assets/css/style.css                    → tout le design (palette, typographie
 assets/js/main.js                       → menu, portfolio, lecteur vidéo, bande démo, formulaire
 assets/fonts/                           → polices auto-hébergées (aucune requête vers Google)
 data/videos.json · gallery.json         → réalisations vidéo et galerie photo
+data/galeries/*.json                     → galeries de livraison client (une galerie = un fichier)
+cloudflare/                              → Worker routeur pour les sous-domaines de galerie
 data/showreel.json                      → bande démo de l'accueil
 images/                                 → images optimisées (WebP) + logo + image de partage
 admin/                                  → interface Decap CMS (/admin) pour le portfolio
@@ -23,12 +25,19 @@ sitemap.xml · robots.txt · _headers     → SEO et cache
 |---|---|
 | Ajouter / modifier une vidéo | `/admin` › Réalisations vidéo (ou `data/videos.json`) |
 | Ajouter / modifier une photo | `/admin` › Galerie photo (ou `data/gallery.json`) |
+| Créer / modifier une galerie client | `/admin` › Galeries clients |
 | Activer la bande démo | `/admin` › Bande démo : renseigner le lien YouTube (ou `data/showreel.json`) |
 | Tarifs | `services.html`, bloc entouré de « MODIFIER LES TARIFS ICI » |
 | Textes des pages | directement dans le fichier `.html` concerné |
 | Témoignages | modèle commenté dans `index.html` (« TÉMOIGNAGES »), à activer avec un accord écrit du client |
 
 Format d'une vidéo : `orientation` = `16:9` ou `9:16`, `category` = `publicite`, `entreprise`, `reseaux`, `evenementiel` ou `creation`. Seules les catégories qui contiennent un projet apparaissent dans les filtres. Les champs `client` et `role` vides ne sont pas affichés.
+
+## Galeries de livraison client
+
+Dans `/admin` › **Galeries clients**, créez un album, ajoutez une ligne par photo et glissez-déposez le fichier dans le champ Image. Les images sont stockées dans `images/`. Le nom de la galerie crée son fichier JSON dans `data/galeries/` et son slug fournit les liens `https://slug.remiproduction.fr/` et `https://remiproduction.fr/galerie/slug`. La page reprend le thème du site, propose l’agrandissement et les favoris, le téléchargement de chaque photo et un ZIP pour tout télécharger. Pour télécharger, le client saisit son e-mail, conservé avec le slug 12 mois après son dernier téléchargement, sans usage marketing. La configuration Cloudflare et D1 est décrite dans [`cloudflare/README.md`](cloudflare/README.md).
+
+Les galeries sont accessibles par leur URL et ne sont pas protégées par mot de passe. Pour activer les sous-domaines, suivre [`cloudflare/README.md`](cloudflare/README.md) : la configuration ajoute un DNS wildcard et un Worker Route qui relaie les requêtes au site Pages.
 
 ## Formulaire de contact
 

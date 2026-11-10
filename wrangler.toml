@@ -1,0 +1,24 @@
+name = "galeries-remiproduction"
+main = "galerie-router.js"
+compatibility_date = "2026-11-10"
+workers_dev = false
+
+[vars]
+PAGES_ORIGIN = "siteweb-3vb.pages.dev"
+
+[[routes]]
+pattern = "remiproduction.fr/api/*"
+zone_name = "remiproduction.fr"
+
+[[routes]]
+pattern = "*.remiproduction.fr/*"
+zone_name = "remiproduction.fr"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "galeries-remiproduction"
+database_id = "REMPLACER_PAR_ID_D1"
+migrations_dir = "migrations"
+
+[triggers]
+crons = ["0 3 * * *"]
