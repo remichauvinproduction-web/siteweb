@@ -1,11 +1,45 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Studio — Rémi PRODUCTION</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="stylesheet" href="/admin/admin.css">
+  <script defer src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <div class="studio-shell">
+    <header class="studio-topbar">
+      <a class="studio-brand" href="/" aria-label="Rémi PRODUCTION — retour au site">
+        <span class="studio-brand__name">RÉMI</span><span class="studio-brand__production">PRODUCTION</span>
+      </a>
+      <a class="studio-site-link" href="/">Voir le site <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main class="studio-main">
+      <section class="studio-intro" aria-labelledby="studio-title">
+        <div class="studio-kicker"><span></span> Espace privé · Gestion du site</div>
+        <div class="studio-intro__row">
+          <div>
+            <h1 id="studio-title">Le studio<span>.</span></h1>
+            <p>Gérez vos galeries clients, vos images et vos réalisations depuis un seul espace.</p>
+          </div>
+          <div class="studio-status"><i aria-hidden="true"></i> Espace d’administration</div>
+        </div>
+      </section>
+
+      <section class="studio-workspace" aria-label="Gestion des contenus">
+        <div id="nc-root"></div>
+      </section>
+
+      <footer class="studio-footer">
+        <span>Rémi PRODUCTION</span>
+        <span>Création audiovisuelle · Vendée &amp; Grand Ouest</span>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
