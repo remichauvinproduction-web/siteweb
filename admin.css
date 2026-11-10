@@ -1,0 +1,38 @@
+@font-face{font-family:Inter;src:url(/assets/fonts/inter-latin-var.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Inter Tight";src:url(/assets/fonts/inter-tight-latin-var.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:Yellowtail;src:url(/assets/fonts/yellowtail-latin.woff2) format("woff2");font-weight:400;font-display:swap}
+:root{color-scheme:dark;--admin-bg:#0a0a0a;--admin-surface:#131315;--admin-surface-2:#1c1d21;--admin-text:#f3f0e9;--admin-muted:rgba(243,240,233,.64);--admin-line:rgba(243,240,233,.13);--admin-yellow:#f4c928;--admin-font:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;--admin-display:"Inter Tight",Inter,system-ui,sans-serif}
+*{box-sizing:border-box}
+html{min-height:100%;background:var(--admin-bg)}
+body{min-height:100vh;margin:0;background:radial-gradient(ellipse at 50% -25%,#242318 0,transparent 47%),var(--admin-bg);color:var(--admin-text);font:15px/1.6 var(--admin-font);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.studio-shell{min-height:100vh}
+.studio-topbar{height:76px;padding:0 clamp(1.1rem,5vw,4.5rem);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--admin-line);background:rgba(10,10,10,.82);backdrop-filter:blur(16px)}
+.studio-brand{display:inline-flex;align-items:baseline;gap:.38rem;white-space:nowrap}
+.studio-brand__name{font:800 italic 1.45rem/1 var(--admin-display);letter-spacing:-.04em}
+.studio-brand__production{color:var(--admin-yellow);font:1.35rem/1 Yellowtail,cursive}
+.studio-site-link{display:inline-flex;align-items:center;gap:.65rem;color:var(--admin-muted);font-size:.88rem;transition:color .2s}
+.studio-site-link:hover{color:var(--admin-yellow)}
+.studio-site-link span{color:var(--admin-yellow);font-size:1.1rem}
+.studio-main{width:min(1480px,100%);margin-inline:auto;padding:clamp(2.6rem,6vw,5.25rem) clamp(1rem,4vw,3.5rem) 1.5rem}
+.studio-intro{margin:0 auto 2.2rem;max-width:1160px}
+.studio-kicker{display:flex;align-items:center;gap:.65rem;margin-bottom:1rem;color:var(--admin-yellow);font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.studio-kicker span{width:1.6rem;height:2px;background:var(--admin-yellow)}
+.studio-intro__row{display:flex;align-items:end;justify-content:space-between;gap:1.5rem}
+.studio-intro h1{margin:0;font:800 clamp(2.8rem,7vw,5.3rem)/.98 var(--admin-display);letter-spacing:-.055em}
+.studio-intro h1 span{color:var(--admin-yellow)}
+.studio-intro p{max-width:42rem;margin:.8rem 0 0;color:var(--admin-muted);font-size:1rem}
+.studio-status{display:inline-flex;align-items:center;gap:.55rem;flex:none;padding:.55rem .85rem;border:1px solid var(--admin-line);border-radius:999px;color:var(--admin-muted);font-size:.76rem;letter-spacing:.02em}
+.studio-status i{width:7px;height:7px;border-radius:50%;background:var(--admin-yellow);box-shadow:0 0 12px rgba(244,201,40,.55)}
+.studio-workspace{max-width:1320px;margin:0 auto;min-height:50vh;border:1px solid var(--admin-line);border-radius:18px;overflow:hidden;background:rgba(19,19,21,.72);box-shadow:0 24px 70px -32px rgba(0,0,0,.9)}
+#nc-root{min-height:68vh;color:var(--admin-text);font-family:var(--admin-font)}
+#nc-root a{color:var(--admin-yellow)}
+#nc-root button{font-family:var(--admin-font);border-radius:999px}
+#nc-root input:not([type=checkbox]):not([type=radio]),#nc-root textarea,#nc-root select{max-width:100%;border:1px solid rgba(243,240,233,.2);border-radius:9px;background:#171719;color:var(--admin-text);font:inherit}
+#nc-root input:focus,#nc-root textarea:focus,#nc-root select:focus{outline:2px solid var(--admin-yellow);outline-offset:1px}
+#nc-root [role=main]{background:transparent;color:var(--admin-text)}
+#nc-root [role=dialog]{border:1px solid var(--admin-line);border-radius:16px;background:#171719;color:var(--admin-text)}
+#nc-root ::selection{background:var(--admin-yellow);color:#111}
+.studio-footer{display:flex;justify-content:space-between;gap:1rem;padding:1.35rem .2rem .5rem;color:rgba(243,240,233,.42);font-size:.76rem;letter-spacing:.02em}
+@media(max-width:760px){.studio-topbar{height:66px}.studio-main{padding-top:2.5rem}.studio-intro__row{align-items:start;flex-direction:column}.studio-status{order:-1}.studio-workspace{border-radius:12px}.studio-footer{flex-direction:column;gap:.2rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}

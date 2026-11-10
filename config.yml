@@ -2,6 +2,13 @@
 # Gère : réalisations vidéo, galerie photo, bande démo.
 # Les textes et les tarifs se modifient directement dans les fichiers .html
 # (blocs repérés par des commentaires « MODIFIER ICI »).
+locale: fr
+site_url: https://remiproduction.fr
+display_url: https://remiproduction.fr
+logo:
+  src: /images/remilogo.jpg
+  show_in_header: true
+
 backend:
   name: github
   repo: remichauvinproduction-web/siteweb
