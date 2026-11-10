@@ -1,0 +1,38 @@
+/* Galerie de livraison client — responsive, inspirée par les galeries Pacco. */
+.delivery{min-height:100vh;background:#f5f4ef;color:#191916}
+.delivery__top{height:76px;padding:0 clamp(1.25rem,5vw,5rem);display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(25,25,22,.1);background:rgba(245,244,239,.92)}
+.delivery__top .brand__remi,.delivery__top .brand__prod{color:#191916}
+.delivery__badge{font-size:.77rem;color:#595951;letter-spacing:.08em;text-transform:uppercase}
+.delivery__badge i{display:inline-block;width:7px;height:7px;background:#8b9b7c;border-radius:50%;margin-right:.45rem}
+.delivery__main{max-width:1440px;margin:auto;padding:clamp(2rem,7vw,6rem) clamp(1.25rem,5vw,5rem) 2rem}
+.delivery__intro{max-width:760px;margin:0 auto 3rem;text-align:center}
+.delivery__intro .kicker{color:#75746d;justify-content:center}
+.delivery__intro h1{font-size:clamp(2.5rem,7vw,5.4rem);line-height:.98;letter-spacing:-.065em;margin:.7rem 0 1rem}
+.delivery__meta{color:#77766e;font-size:.9rem}
+.delivery__description{margin:1rem auto 0;max-width:38rem;color:#55554e}
+.delivery__actions{display:flex;justify-content:center;flex-wrap:wrap;gap:.7rem;margin-top:1.7rem}
+.delivery .btn--primary{background:#d2aa37;color:#16150f;border-color:#d2aa37}
+.delivery .btn--ghost{border-color:rgba(25,25,22,.2);color:#292923}
+.delivery__content{margin-top:3.5rem}
+.delivery__toolbar{display:flex;justify-content:space-between;align-items:center;padding:0 0 1rem;border-bottom:1px solid rgba(25,25,22,.14);font-size:.85rem;color:#77766e}
+.delivery__filter{border:0;background:none;color:#302f29;cursor:pointer;font:inherit;padding:.5rem}
+.delivery__filter[aria-pressed=true]{color:#a27c13}
+.delivery__grid{columns:4 230px;column-gap:12px;margin-top:12px}
+.delivery__photo{position:relative;break-inside:avoid;margin:0 0 12px;background:#e7e5dd;overflow:hidden}
+.delivery__photo img{display:block;width:100%;height:auto;cursor:zoom-in;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.delivery__photo:hover img{transform:scale(1.025)}
+.delivery__photo button{position:absolute;right:10px;top:10px;width:38px;height:38px;border:1px solid rgba(255,255,255,.65);border-radius:50%;background:rgba(20,20,18,.5);color:white;font-size:1.2rem;cursor:pointer;backdrop-filter:blur(8px)}
+.delivery__photo button[aria-pressed=true]{background:#d2aa37;color:#18170f}
+.delivery__signature{text-align:center;color:#838279;font-size:.78rem;margin:3.5rem auto 0}
+.delivery__signature a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.delivery__viewer{width:100vw;height:100vh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:rgba(13,13,12,.96);color:white}
+.delivery__viewer::backdrop{background:rgba(13,13,12,.96)}
+.delivery__viewer figure{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;margin:0;padding:4rem 5rem 3.7rem}
+.delivery__viewer img{max-width:100%;max-height:calc(100vh - 9rem);object-fit:contain}
+.delivery__viewer figcaption{padding-top:.8rem;color:#deddd5;font-size:.85rem}
+.delivery__close,.delivery__nav{position:absolute;border:0;background:rgba(255,255,255,.12);color:white;cursor:pointer;border-radius:50%;width:48px;height:48px;font-size:1.7rem}
+.delivery__close{top:1.2rem;right:1.2rem}.delivery__nav{top:50%;transform:translateY(-50%);font-size:2rem}.delivery__nav--prev{left:1.2rem}.delivery__nav--next{right:1.2rem}
+.delivery__message{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);padding:.8rem 1.2rem;border-radius:99px;background:#191916;color:white;box-shadow:0 8px 30px #0003;font-size:.9rem}
+.delivery__empty{column-span:all;text-align:center;padding:4rem 1rem;color:#77766e}
+@media(max-width:760px){.delivery__grid{columns:2 150px;column-gap:8px}.delivery__photo{margin-bottom:8px}.delivery__main{padding-top:2.5rem}.delivery__content{margin-top:2.5rem}.delivery__viewer figure{padding:4rem 1rem}.delivery__nav--prev{left:.5rem}.delivery__nav--next{right:.5rem}}
+@media(max-width:380px){.delivery__grid{columns:1}}
