@@ -104,16 +104,15 @@ collections:
       - { label: Lieu, name: location, widget: string, required: false }
       - { label: Message d’introduction, name: description, widget: text, required: false }
       - { label: Photo de couverture, name: cover, widget: image, required: false }
-      - label: Photos livrées
+      - label: Photos livrées · ajout multiple
         name: photos
-        widget: list
-        label_singular: Photo
-        hint: "Ajoutez une photo puis glissez-déposez le fichier dans son champ. Une ligne = une photo ; les images sont envoyées dans images/."
-        field:
-          label: Photo (glisser-déposer)
-          name: image
-          widget: image
-          choose_url: false
+        widget: image
+        required: false
+        choose_url: false
+        media_library:
+          config:
+            multiple: true
+        hint: "Glissez-déposez ou sélectionnez toutes les photos en une fois. Elles seront ajoutées automatiquement ; vous pourrez ensuite les réorganiser."
 
   - name: showreel
     label: Bande démo (accueil)
