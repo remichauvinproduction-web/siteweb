@@ -111,6 +111,7 @@ collections:
         hint: "Ajoutez une photo puis glissez-déposez le fichier dans son champ. Une ligne = une photo ; les images sont envoyées dans images/."
         field:
           label: Photo (glisser-déposer)
+          name: image
           widget: image
           choose_url: false
 
