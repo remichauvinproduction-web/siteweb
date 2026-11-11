@@ -8,38 +8,25 @@
   <title>Studio — Rémi PRODUCTION</title>
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="stylesheet" href="/admin/admin.css">
-  <script defer src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script defer src="/admin/admin.js"></script>
 </head>
 <body>
   <div class="studio-shell">
     <header class="studio-topbar">
-      <a class="studio-brand" href="/" aria-label="Rémi PRODUCTION — retour au site">
-        <span class="studio-brand__name">RÉMI</span><span class="studio-brand__production">PRODUCTION</span>
-      </a>
-      <a class="studio-site-link" href="/">Voir le site <span aria-hidden="true">↗</span></a>
+      <a class="studio-brand" href="/" aria-label="Rémi PRODUCTION — retour au site"><span class="studio-brand__name">RÉMI</span><span class="studio-brand__production">PRODUCTION</span></a>
+      <div class="top-actions"><a class="studio-site-link" href="/">Voir le site <span aria-hidden="true">↗</span></a><button id="logout" class="button button--quiet" hidden>Déconnexion</button></div>
     </header>
-
     <main class="studio-main">
       <section class="studio-intro" aria-labelledby="studio-title">
         <div class="studio-kicker"><span></span> Espace privé · Gestion du site</div>
-        <div class="studio-intro__row">
-          <div>
-            <h1 id="studio-title">Le studio<span>.</span></h1>
-            <p>Gérez vos galeries clients, vos images et vos réalisations depuis un seul espace.</p>
-          </div>
-          <div class="studio-status"><i aria-hidden="true"></i> Espace d’administration</div>
-        </div>
+        <div class="studio-intro__row"><div><h1 id="studio-title">Le studio<span>.</span></h1><p>Créez et gérez les galeries photo de vos clients en un seul endroit.</p></div><div class="studio-status"><i></i> Administration</div></div>
       </section>
-
-      <section class="studio-workspace" aria-label="Gestion des contenus">
-        <div id="nc-root"></div>
+      <section class="studio-workspace" aria-label="Gestion des galeries">
+        <div id="app" aria-live="polite"><div class="loading">Chargement de l’espace…</div></div>
       </section>
-
-      <footer class="studio-footer">
-        <span>Rémi PRODUCTION</span>
-        <span>Création audiovisuelle · Vendée &amp; Grand Ouest</span>
-      </footer>
+      <footer class="studio-footer"><span>Rémi PRODUCTION</span><span>Création audiovisuelle · Vendée &amp; Grand Ouest</span></footer>
     </main>
   </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

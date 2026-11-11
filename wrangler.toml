@@ -20,5 +20,9 @@ database_name = "galeries-remiproduction"
 database_id = "REMPLACER_PAR_ID_D1"
 migrations_dir = "migrations"
 
+[[r2_buckets]]
+binding = "GALLERY_MEDIA"
+bucket_name = "galeries-remiproduction-media"
+
 [triggers]
 crons = ["0 3 * * *"]

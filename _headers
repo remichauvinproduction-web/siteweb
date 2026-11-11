@@ -20,3 +20,9 @@
 
 /*.html
   Cache-Control: no-cache, must-revalidate
+
+/admin/*
+  Cache-Control: no-cache, must-revalidate
+
+/galerie.js
+  Cache-Control: no-cache, must-revalidate

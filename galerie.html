@@ -27,8 +27,12 @@
     <p id="gallery-description" class="delivery__description"></p>
     <div class="delivery__actions">
       <button id="download-all" class="btn btn--primary" type="button">Tout télécharger · ZIP</button>
+      <button id="submit-selection" class="btn btn--ghost" type="button">Envoyer mes favoris <span id="selection-count">0</span></button>
+      <button id="buy-gallery" class="btn btn--ghost" type="button" hidden>Acheter les fichiers numériques</button>
+      <button id="download-purchased" class="btn btn--primary" type="button" hidden>Récupérer mon achat</button>
       <button id="copy-link" class="btn btn--ghost" type="button">Copier le lien</button>
     </div>
+  <p id="purchase-message" class="delivery__download-error" role="status" hidden></p>
   </section>
   <section class="delivery__content" aria-label="Photos de la galerie">
     <div class="delivery__toolbar"><span id="photo-count"></span><button id="favorites-only" class="delivery__filter" type="button" aria-pressed="false">♡ Mes favoris <span id="favorite-count">0</span></button></div>
@@ -41,6 +45,18 @@
   <button id="viewer-prev" class="delivery__nav delivery__nav--prev" type="button" aria-label="Photo précédente">‹</button>
   <figure><img id="viewer-image" alt=""><figcaption id="viewer-caption"></figcaption><button id="viewer-download" class="btn btn--primary" type="button">Télécharger cette photo</button></figure>
   <button id="viewer-next" class="delivery__nav delivery__nav--next" type="button" aria-label="Photo suivante">›</button>
+</dialog>
+<dialog id="selection-dialog" class="delivery__download-dialog" aria-labelledby="selection-title">
+  <form id="selection-form">
+    <button id="selection-cancel" class="delivery__dialog-close" type="button" aria-label="Fermer">×</button>
+    <p class="kicker">Votre choix</p>
+    <h2 id="selection-title">Envoyer ma sélection</h2>
+    <p>Votre sélection sera transmise à Rémi pour préparer votre album ou vos tirages. Aucun compte client n’est nécessaire.</p>
+    <label for="selection-email">E-mail (facultatif)</label>
+    <input id="selection-email" class="input" type="email" autocomplete="email" maxlength="254" placeholder="vous@exemple.fr">
+    <button id="selection-submit" class="btn btn--primary" type="submit">Envoyer la sélection</button>
+    <p id="selection-error" class="delivery__download-error" role="alert" hidden></p>
+  </form>
 </dialog>
 <div id="gallery-message" class="delivery__message" role="status" hidden></div>
 <dialog id="download-dialog" class="delivery__download-dialog" aria-labelledby="download-title">
